@@ -2726,6 +2726,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hapi/boom", "npm:9.1.0"],
             ["@hapi/hapi", "npm:19.2.0"],
             ["@hapi/joi", "npm:17.1.1"],
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.28"],
             ["@protokol/nft-exchange-transactions", "npm:1.0.0-beta.28"],
             ["latest-version", "npm:5.1.0"]
           ],
