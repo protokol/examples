@@ -10,7 +10,7 @@ export const guardianGroupPermission = async (): Promise<any> => {
 	);
 
 	// Configure our API client
-	const client = new ProtokolConnection("http://nft.protokol.com:4003/api");
+	const client = new ProtokolConnection("https://api.protokol.com/api");
 	const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
 	// Step 1: Retrieve the nonce of the sender wallet
