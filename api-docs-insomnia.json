@@ -1305,7 +1305,7 @@
 			"color": "#26cb16",
 			"created": 1589462814417,
 			"data": {
-				"base_url": "https://api.protokol.com/api",
+				"base_url": "https://api.protokol.com",
 				"wallet_passphrase": "hurdle pulse sheriff anchor two hope income pattern hazard bacon book night"
 			},
 			"dataPropertyOrder": { "&": ["base_url", "wallet_passphrase"] },
