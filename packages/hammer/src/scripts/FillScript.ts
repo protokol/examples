@@ -133,12 +133,11 @@ export class FillScript {
 		for (const [key, value] of this.auctionBids) {
 			const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
 			nonce = nonce.plus(1);
-
 			transactions.push(
 				createTrade(
 					{
 						auctionId: key,
-						bidId: value[faker.random.number({ max: value.length, min: 0 })],
+						bidId: value[faker.random.number({ max: value.length - 1, min: 0 })],
 					},
 					nonce.toFixed(),
 					this.passphrase,

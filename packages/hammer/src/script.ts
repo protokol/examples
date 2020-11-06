@@ -3,8 +3,8 @@ import fifaCollection = require("./data/collections/fifa-collection.json");
 import delay from "delay";
 import faker from "faker";
 
-import { setupScript } from "./setup";
 import { FillScript } from "./scripts/FillScript";
+import { setupScript } from "./setup";
 
 export const main = async () => {
 	setupScript();
