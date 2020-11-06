@@ -42,5 +42,5 @@ export const main = async () => {
 	await delay(8000);
 
 	console.log("Create trades");
-	await scriptType.createTrades(scriptType.auctionBids.length);
+	await scriptType.createTrades();
 };

@@ -14,7 +14,7 @@ export class FillScript {
 	public collections: string[] = [];
 	public assets: string[] = [];
 	public auctions: string[] = [];
-	public auctionBids: { auction: string; bids: string[] }[] = [];
+	public auctionBids: Map<string, string[]> = new Map<string, string[]>();
 
 	public async createCollections(
 		numberOfBatchs: number,
@@ -117,37 +117,28 @@ export class FillScript {
 				const broadcastResponse = await this.client.api("transactions").create({ transactions: transactions });
 				console.log(JSON.stringify(broadcastResponse.body.data, null, 4));
 				for (const bidId of broadcastResponse.body.data.accept) {
-					const auctionBidsClone = this.auctionBids.slice();
-					let auction = auctionBidsClone.find((auction) => auction.auction === this.auctions[i]);
-					if (!auction) {
-						auction = {
-							auction: this.auctions[i],
-							bids: [],
-						};
+					let entry = this.auctionBids.get(this.auctions[i]);
+					if (!entry) {
+						entry = [];
 					}
-					if (!auction.bids) {
-						auction.bids = [];
-					}
-					auction.bids.push(bidId);
-					auctionBidsClone.push(auction);
-					this.auctionBids = auctionBidsClone;
+					entry.push(bidId);
+					this.auctionBids.set(this.auctions[i], entry);
 				}
 			}
 		}
 	}
 
-	public async createTrades(numberOfTrades: number): Promise<void> {
+	public async createTrades(): Promise<void> {
 		let nonce = await this.getNonce(this.passphrase);
-		for (let i = 0; i < numberOfTrades; i++) {
+		for (const [key, value] of this.auctionBids) {
 			const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
 			nonce = nonce.plus(1);
+
 			transactions.push(
 				createTrade(
 					{
-						auctionId: this.auctionBids[i].auction,
-						bidId: this.auctionBids[i].bids[
-							faker.random.number({ max: this.auctionBids[i].bids.length - 1, min: 0 })
-						],
+						auctionId: key,
+						bidId: value[faker.random.number({ max: value.length, min: 0 })],
 					},
 					nonce.toFixed(),
 					this.passphrase,

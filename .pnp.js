@@ -25,13 +25,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@protokol/examples",
         "reference": "workspace:packages/examples"
+      },
+      {
+        "name": "@protokol/hammer",
+        "reference": "workspace:packages/hammer"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
       ["@protokol/examples", ["workspace:packages/examples"]],
-      ["@protokol/examples-repo", ["workspace:."]]
+      ["@protokol/examples-repo", ["workspace:."]],
+      ["@protokol/hammer", ["workspace:packages/hammer"]]
     ],
     "fallbackPool": [
     ],
@@ -2493,6 +2498,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@protokol/hammer", [
+        ["workspace:packages/hammer", {
+          "packageLocation": "./packages/hammer/",
+          "packageDependencies": [
+            ["@protokol/hammer", "workspace:packages/hammer"],
+            ["@protokol/client", "npm:1.0.0-beta.28"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.28"],
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.28"],
+            ["@types/faker", "npm:5.1.4"],
+            ["delay", "npm:4.4.0"],
+            ["faker", "npm:5.1.0"],
+            ["rimraf", "npm:3.0.2"],
+            ["typescript", "patch:typescript@npm%3A4.0.3#builtin<compat/typescript>::version=4.0.3&hash=5bf698"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@protokol/nft-base-api", [
         ["npm:1.0.0-beta.28", {
           "packageLocation": "./.yarn/cache/@protokol-nft-base-api-npm-1.0.0-beta.28-bc9b84c414-b7dcb25b82.zip/node_modules/@protokol/nft-base-api/",
@@ -2815,6 +2837,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-estree-npm-0.0.45-71d6bd2510-9d339cbcf2.zip/node_modules/@types/estree/",
           "packageDependencies": [
             ["@types/estree", "npm:0.0.45"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/faker", [
+        ["npm:5.1.4", {
+          "packageLocation": "./.yarn/cache/@types-faker-npm-5.1.4-de64fbc9a1-8203d575d8.zip/node_modules/@types/faker/",
+          "packageDependencies": [
+            ["@types/faker", "npm:5.1.4"]
           ],
           "linkType": "HARD",
         }]
@@ -6549,6 +6580,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/extsprintf-npm-1.3.0-61a92b324c-892efd56aa.zip/node_modules/extsprintf/",
           "packageDependencies": [
             ["extsprintf", "npm:1.3.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["faker", [
+        ["npm:5.1.0", {
+          "packageLocation": "./.yarn/cache/faker-npm-5.1.0-1d65bf8480-cc0a0c2b29.zip/node_modules/faker/",
+          "packageDependencies": [
+            ["faker", "npm:5.1.0"]
           ],
           "linkType": "HARD",
         }]

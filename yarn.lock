@@ -2261,6 +2261,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@protokol/hammer@workspace:packages/hammer":
+  version: 0.0.0-use.local
+  resolution: "@protokol/hammer@workspace:packages/hammer"
+  dependencies:
+    "@protokol/client": ^1.0.0-beta.28
+    "@protokol/nft-base-crypto": ^1.0.0-beta.28
+    "@protokol/nft-exchange-crypto": ^1.0.0-beta.28
+    "@types/faker": ^5
+    delay: ^4.4.0
+    faker: ^5.1.0
+    rimraf: ^3.0.2
+    typescript: ~4.0.2
+  languageName: unknown
+  linkType: soft
+
 "@protokol/nft-base-api@npm:beta":
   version: 1.0.0-beta.28
   resolution: "@protokol/nft-base-api@npm:1.0.0-beta.28"
@@ -2544,6 +2559,13 @@ __metadata:
   version: 0.0.45
   resolution: "@types/estree@npm:0.0.45"
   checksum: 9d339cbcf29a96a32e9d40efc21009c2342e93c4f653294dd1ef081ae474bca9e54707e5d4a1cff90b9e3566e8bdd71ac31e0c3d24bc2ff1d3d5aa75058b3937
+  languageName: node
+  linkType: hard
+
+"@types/faker@npm:^5":
+  version: 5.1.4
+  resolution: "@types/faker@npm:5.1.4"
+  checksum: 8203d575d8ed241ef41e7c4a13230640be14abdc2d6752714de22bb8cd2bf8428a024f399701fd41c9f00689717178c94878b4afbd3d905713b75035a0e6c1c4
   languageName: node
   linkType: hard
 
@@ -5021,7 +5043,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"delay@npm:^4.3.0":
+"delay@npm:^4.3.0, delay@npm:^4.4.0":
   version: 4.4.0
   resolution: "delay@npm:4.4.0"
   checksum: cb54b19a68b8f299c601e59819b54f6c9927421556d2eed75ddc1fcffccfe030259fb4b573da41d59d3beca4591c15f7018bfd89c5845cf38dd4897c70730a07
@@ -5831,6 +5853,13 @@ __metadata:
   version: 1.3.0
   resolution: "extsprintf@npm:1.3.0"
   checksum: 892efd56aa9b27cbfbca42ad0c59308633f66000e71d1fb19c6989ea7309b32f3ff281778871bd2ce9bc7f3ad02515aa2783cea0323d0f6ff840b7c6a6a4603e
+  languageName: node
+  linkType: hard
+
+"faker@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "faker@npm:5.1.0"
+  checksum: cc0a0c2b2952d0e7ddad67ec6302aa097d916c0bbb7baa2240a02ecdee4f42df260a233c5be108f782302e63b246add181d859ead9026687db9284050672084a
   languageName: node
   linkType: hard
 
