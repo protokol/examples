@@ -1,7 +1,9 @@
 import fifaCollection = require("./data/collections/fifa-collection.json");
 import marvelCollection = require("./data/collections/marvel-collection.json");
-import ironManAsset = require("./data/assets/marvel/iron-man.json");
+import breitlingCollection = require("./data/collections/breitling-collection.json");
 
+import ironManAsset = require("./data/assets/marvel/iron-man.json");
+import breaitlingAsset = require("./data/assets/breitling/breitling-watch1.json");
 
 import delay from "delay";
 import faker from "faker";
@@ -47,29 +49,55 @@ export const main = async () => {
 	// console.log("Create trades");
 	// await scriptType.createTrades();
 
-	const fillScriptMarvelCollection = new FillScript();
+	// const fillScriptMarvelCollection = new FillScript();
+	//
+	// console.log("Create marvel collections");
+	// await fillScriptMarvelCollection.createCollections(1, 5, marvelCollection);
+	// await delay(8000);
+	//
+	// console.log("Create Iron Man assets");
+	// await fillScriptMarvelCollection.createAssets(1, 5, 3, {
+	// 	attributes: ironManAsset,
+	// });
+	//
+	// await delay(8000);
+	//
+	// console.log("Create auctions");
+	// await fillScriptMarvelCollection.createAuctions(2, 4);
+	//
+	// await delay(8000);
+	//
+	// console.log("Create bids");
+	// await fillScriptMarvelCollection.createBids(10, 2);
+	//
+	// await delay(8000);
+	//
+	// console.log("Create trades");
+	// await fillScriptMarvelCollection.createTrades();
 
-	console.log("Create marvel collections");
-	await fillScriptMarvelCollection.createCollections(1, 5, marvelCollection);
+	const fillScriptBreitlingCollection = new FillScript();
+
+	console.log("Create breitling collections");
+	await fillScriptBreitlingCollection.createCollections(1, 5, breitlingCollection);
 	await delay(8000);
 
-	console.log("Create Iron Man assets");
-	await fillScriptMarvelCollection.createAssets(1, 5, 3, {
-		attributes: ironManAsset,
+	console.log("Create watch assets");
+	await fillScriptBreitlingCollection.createAssets(1, 5, 3, {
+		attributes: breaitlingAsset,
 	});
 
 	await delay(8000);
 
 	console.log("Create auctions");
-	await fillScriptMarvelCollection.createAuctions(2, 4);
+	await fillScriptBreitlingCollection.createAuctions(2, 4);
 
 	await delay(8000);
 
 	console.log("Create bids");
-	await fillScriptMarvelCollection.createBids(10, 2);
+	await fillScriptBreitlingCollection.createBids(10, 2);
 
 	await delay(8000);
 
 	console.log("Create trades");
-	await fillScriptMarvelCollection.createTrades();
+	await fillScriptBreitlingCollection.createTrades();
 };
