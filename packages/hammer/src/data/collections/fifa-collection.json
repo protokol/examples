@@ -1,7 +1,7 @@
 {
   "name": "FIFA-20-PLAYERS",
   "description": "FIFA 2020 Players",
-  "maximumSupply": 100,
+  "maximumSupply": 10000,
   "jsonSchema": {
 	"properties": {
 	  "name": {
