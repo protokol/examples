@@ -2,10 +2,12 @@ import fifaCollection = require("./data/collections/fifa-collection.json");
 import marvelCollection = require("./data/collections/marvel-collection.json");
 import breitlingCollection = require("./data/collections/breitling-collection.json");
 import nascarCollection = require("./data/collections/nascar-collection.json");
+import IWCCollection = require("./data/collections/iwc-collection.json");
 
 import ironManAsset = require("./data/assets/marvel/iron-man.json");
 import breaitlingAsset = require("./data/assets/breitling/breitling-watch1.json");
 import nascarAsset = require("./data/assets/nascar/driver1.json");
+import IWCAsset = require("./data/assets/iwc/iwc-watch1.json");
 
 import delay from "delay";
 import faker from "faker";
@@ -161,4 +163,32 @@ export const main = async () => {
 	//
 	// console.log("Create trades");
 	// await fillScriptNascarCollection.createTrades();
+
+	/** IWC collection fill script */
+
+	// const fillScriptIWCCollection = new FillScript();
+	//
+	// console.log("Create IWC collections");
+	// await fillScriptIWCCollection.createCollections(1, 1, IWCCollection);
+	// await delay(8000);
+	//
+	// console.log("Create watch assets");
+	// await fillScriptIWCCollection.createAssets(2, 40, 1, {
+	// 	attributes: IWCAsset,
+	// });
+	//
+	// await delay(8000);
+	//
+	// console.log("Create auctions");
+	// await fillScriptIWCCollection.createAuctions(2, 20);
+	//
+	// await delay(8000);
+	//
+	// console.log("Create bids");
+	// await fillScriptIWCCollection.createBids(15, 10);
+	//
+	// await delay(8000);
+	//
+	// console.log("Create trades");
+	// await fillScriptIWCCollection.createTrades();
 };
