@@ -1,9 +1,11 @@
 import fifaCollection = require("./data/collections/fifa-collection.json");
 import marvelCollection = require("./data/collections/marvel-collection.json");
 import breitlingCollection = require("./data/collections/breitling-collection.json");
+import nascarCollection = require("./data/collections/nascar-collection.json");
 
 import ironManAsset = require("./data/assets/marvel/iron-man.json");
 import breaitlingAsset = require("./data/assets/breitling/breitling-watch1.json");
+import nascarAsset = require("./data/assets/nascar/driver1.json");
 
 import delay from "delay";
 import faker from "faker";
@@ -24,7 +26,7 @@ export const main = async () => {
 	 *	40 transactions per batch since the default number is 40 in core
 	 *	The third argument is the collection asset
 	 */
-	await scriptType.createCollections(1, 5, fifaCollection);
+	await scriptType.createCollections(1, 1, fifaCollection);
 
 	await delay(8000);
 
@@ -35,7 +37,7 @@ export const main = async () => {
 	 *	The third argument is number of collections used, it takes of an example first three collections
 	 * 	you created in first par of the script and makes that many batches of transactions for each
 	 */
-	await scriptType.createAssets(1, 5, 3, {
+	await scriptType.createAssets(5, 40, 1, {
 		attributes: {
 			name: faker.name.findName(),
 			pac: faker.random.number({ max: 100, min: 1 }),
@@ -56,7 +58,7 @@ export const main = async () => {
 	 * part of the script
 	 * The second argument is the number of transactions you want to create
 	 * */
-	await scriptType.createAuctions(2, 4);
+	await scriptType.createAuctions(4, 10);
 
 	await delay(8000);
 
@@ -67,7 +69,7 @@ export const main = async () => {
 	 * The second argument is the number of auctions you want to bid to, make sure you created enough of them in
 	 * previous part of the script
 	 * */
-	await scriptType.createBids(10, 2);
+	await scriptType.createBids(15, 100);
 
 	await delay(8000);
 
@@ -81,25 +83,25 @@ export const main = async () => {
 	// const fillScriptMarvelCollection = new FillScript();
 	//
 	// console.log("Create marvel collections");
-	// await fillScriptMarvelCollection.createCollections(1, 5, marvelCollection);
-	// await delay(8000);
+	// await fillScriptMarvelCollection.createCollections(1, 1, marvelCollection);
+	// await delay(80000);
 	//
 	// console.log("Create Iron Man assets");
-	// await fillScriptMarvelCollection.createAssets(1, 5, 3, {
+	// await fillScriptMarvelCollection.createAssets(1, 40, 1, {
 	// 	attributes: ironManAsset,
 	// });
 	//
-	// await delay(8000);
+	// await delay(80000);
 	//
 	// console.log("Create auctions");
-	// await fillScriptMarvelCollection.createAuctions(2, 4);
+	// await fillScriptMarvelCollection.createAuctions(2, 10);
 	//
-	// await delay(8000);
+	// await delay(80000);
 	//
 	// console.log("Create bids");
-	// await fillScriptMarvelCollection.createBids(10, 2);
+	// await fillScriptMarvelCollection.createBids(10, 8);
 	//
-	// await delay(8000);
+	// await delay(80000);
 	//
 	// console.log("Create trades");
 	// await fillScriptMarvelCollection.createTrades();
@@ -109,26 +111,54 @@ export const main = async () => {
 	// const fillScriptBreitlingCollection = new FillScript();
 	//
 	// console.log("Create breitling collections");
-	// await fillScriptBreitlingCollection.createCollections(1, 5, breitlingCollection);
+	// await fillScriptBreitlingCollection.createCollections(1, 1, breitlingCollection);
 	// await delay(8000);
 	//
 	// console.log("Create watch assets");
-	// await fillScriptBreitlingCollection.createAssets(1, 5, 3, {
+	// await fillScriptBreitlingCollection.createAssets(2, 40, 1, {
 	// 	attributes: breaitlingAsset,
 	// });
 	//
 	// await delay(8000);
 	//
 	// console.log("Create auctions");
-	// await fillScriptBreitlingCollection.createAuctions(2, 4);
+	// await fillScriptBreitlingCollection.createAuctions(2, 20);
 	//
 	// await delay(8000);
 	//
 	// console.log("Create bids");
-	// await fillScriptBreitlingCollection.createBids(10, 2);
+	// await fillScriptBreitlingCollection.createBids(15, 10);
 	//
 	// await delay(8000);
 	//
 	// console.log("Create trades");
 	// await fillScriptBreitlingCollection.createTrades();
+
+	/** Nascar collection fill script */
+
+	// const fillScriptNascarCollection = new FillScript();
+	//
+	// console.log("Create breitling collections");
+	// await fillScriptNascarCollection.createCollections(1, 1, nascarCollection);
+	// await delay(8000);
+	//
+	// console.log("Create watch assets");
+	// await fillScriptNascarCollection.createAssets(2, 40, 1, {
+	// 	attributes: nascarAsset,
+	// });
+	//
+	// await delay(8000);
+	//
+	// console.log("Create auctions");
+	// await fillScriptNascarCollection.createAuctions(2, 20);
+	//
+	// await delay(8000);
+	//
+	// console.log("Create bids");
+	// await fillScriptNascarCollection.createBids(15, 10);
+	//
+	// await delay(8000);
+	//
+	// console.log("Create trades");
+	// await fillScriptNascarCollection.createTrades();
 };

@@ -1,5 +1,5 @@
 export const configurations = {
-	clientHost: "http://localhost:4003/api",
+	clientHost: "https://testnet-explorer.protokol.sh/api",
 	network: "testnet",
 	networkHeight: 2,
 };
