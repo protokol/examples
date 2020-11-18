@@ -1,7 +1,5 @@
 import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto } from "@protokol/nft-base-crypto";
-
-import delegates = require("../data/delegates/delegates.json");
 import faker from "faker";
 
 import { configurations } from "../configurations";
@@ -9,24 +7,32 @@ import { createAsset, createAuction, createBid, createCollection, createTrade } 
 
 export class FillScript {
 	public client = new ProtokolConnection(configurations.clientHost);
-	public passphrase = delegates.secrets[faker.random.number({ max: delegates.secrets.length - 1, min: 0 })];
+	public mainPassphrase: string;
 
 	public collections: string[] = [];
 	public assets: string[] = [];
 	public auctions: string[] = [];
 	public auctionBids: Map<string, string[]> = new Map<string, string[]>();
 
+	public constructor(public readonly passphrases: string[], mainPassphrase?: string) {
+		if (mainPassphrase) {
+			this.mainPassphrase = mainPassphrase;
+		} else {
+			this.mainPassphrase = passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })];
+		}
+	}
+
 	public async createCollections(
-		numberOfBatchs: number,
+		numberOfBatches: number,
 		numberOfTransactionsPerBatch: number,
 		collection: any,
 	): Promise<void> {
-		let nonce = await this.getNonce(this.passphrase);
-		for (let i = 0; i < numberOfBatchs; i++) {
+		let nonce = await this.getNonce(this.mainPassphrase);
+		for (let i = 0; i < numberOfBatches; i++) {
 			const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
 			for (let i = 1; i < numberOfTransactionsPerBatch + 1; i++) {
 				nonce = nonce.plus(1);
-				transactions.push(createCollection(collection, nonce.toFixed(), this.passphrase));
+				transactions.push(createCollection(collection, nonce.toFixed(), this.mainPassphrase));
 			}
 
 			const broadcastResponse = await this.client.api("transactions").create({ transactions: transactions });
@@ -42,7 +48,7 @@ export class FillScript {
 		collectionsUsed: number,
 		attributes: any,
 	): Promise<void> {
-		let nonce = await this.getNonce(this.passphrase);
+		let nonce = await this.getNonce(this.mainPassphrase);
 		for (let j = 0; j < collectionsUsed; j++) {
 			for (let i = 0; i < batchs; i++) {
 				const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
@@ -55,7 +61,7 @@ export class FillScript {
 								...attributes,
 							},
 							nonce.toFixed(),
-							this.passphrase,
+							this.mainPassphrase,
 						),
 					);
 				}
@@ -69,7 +75,7 @@ export class FillScript {
 		}
 	}
 	public async createAuctions(assetsPerAuction: number, auctions: number): Promise<void> {
-		let nonce = await this.getNonce(this.passphrase);
+		let nonce = await this.getNonce(this.mainPassphrase);
 		const clonedAssets = [...this.assets];
 		for (let i = 0; i < auctions; i++) {
 			const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
@@ -84,7 +90,7 @@ export class FillScript {
 						},
 					},
 					nonce.toFixed(),
-					this.passphrase,
+					this.mainPassphrase,
 				),
 			);
 
@@ -98,7 +104,7 @@ export class FillScript {
 	public async createBids(bidsPerAuction: number, auctionsToBid: number): Promise<void> {
 		for (let i = 0; i < auctionsToBid; i++) {
 			for (let j = 0; j < bidsPerAuction; j++) {
-				const pass = delegates.secrets[faker.random.number({ max: delegates.secrets.length - 1, min: 0 })];
+				const pass = this.passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })];
 				const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
 				const nonce = await this.getNonce(pass);
 				transactions.push(
@@ -129,7 +135,7 @@ export class FillScript {
 	}
 
 	public async createTrades(): Promise<void> {
-		let nonce = await this.getNonce(this.passphrase);
+		let nonce = await this.getNonce(this.mainPassphrase);
 		for (const [key, value] of this.auctionBids) {
 			const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
 			nonce = nonce.plus(1);
@@ -140,7 +146,7 @@ export class FillScript {
 						bidId: value[faker.random.number({ max: value.length - 1, min: 0 })],
 					},
 					nonce.toFixed(),
-					this.passphrase,
+					this.mainPassphrase,
 				),
 			);
 

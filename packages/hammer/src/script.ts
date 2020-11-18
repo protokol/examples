@@ -12,6 +12,7 @@ import IWCAsset = require("./data/assets/iwc/iwc-watch1.json");
 import delay from "delay";
 import faker from "faker";
 
+import { configurations } from "./configurations";
 import { FillScript } from "./scripts/FillScript";
 import { setupScript } from "./setup";
 
@@ -19,7 +20,7 @@ export const main = async () => {
 	/** Setup the script - registering transaction types and network settings */
 	setupScript();
 
-	const scriptType = new FillScript();
+	const scriptType = new FillScript(configurations.passphrasesFile.secrets);
 
 	console.log("Create FIFA collections");
 	/**
@@ -82,7 +83,7 @@ export const main = async () => {
 	await scriptType.createTrades();
 
 	/** Marvel collection fill script */
-	// const fillScriptMarvelCollection = new FillScript();
+	// const fillScriptMarvelCollection = new FillScript(configurations.passphrasesFile.secrets);
 	//
 	// console.log("Create marvel collections");
 	// await fillScriptMarvelCollection.createCollections(1, 1, marvelCollection);
@@ -110,7 +111,7 @@ export const main = async () => {
 
 	/** Breitling collection fill script */
 
-	// const fillScriptBreitlingCollection = new FillScript();
+	// const fillScriptBreitlingCollection = new FillScript(configurations.passphrasesFile.secrets);
 	//
 	// console.log("Create breitling collections");
 	// await fillScriptBreitlingCollection.createCollections(1, 1, breitlingCollection);
@@ -138,7 +139,7 @@ export const main = async () => {
 
 	/** Nascar collection fill script */
 
-	// const fillScriptNascarCollection = new FillScript();
+	// const fillScriptNascarCollection = new FillScript(configurations.passphrasesFile.secrets);
 	//
 	// console.log("Create breitling collections");
 	// await fillScriptNascarCollection.createCollections(1, 1, nascarCollection);
@@ -166,7 +167,7 @@ export const main = async () => {
 
 	/** IWC collection fill script */
 
-	// const fillScriptIWCCollection = new FillScript();
+	// const fillScriptIWCCollection = new FillScript(configurations.passphrasesFile.secrets);
 	//
 	// console.log("Create IWC collections");
 	// await fillScriptIWCCollection.createCollections(1, 1, IWCCollection);
