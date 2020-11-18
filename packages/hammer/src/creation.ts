@@ -1,6 +1,34 @@
 import { ARKCrypto, Builders as NFTBaseBuilders, Interfaces as NFTBaseInterfaces } from "@protokol/nft-base-crypto";
 import { Builders as NFTExchangeBuilders, Interfaces as NFTExchangeInterfaces } from "@protokol/nft-exchange-crypto";
 
+export const createTransfer = (
+	address: string,
+	tokens: number,
+	nonce: string,
+	passphrase: string,
+): ARKCrypto.Interfaces.ITransactionJson => {
+	return ARKCrypto.Transactions.BuilderFactory.transfer()
+		.recipientId(address)
+		.amount(tokens.toString())
+		.nonce(nonce)
+		.sign(passphrase)
+		.build()
+		.toJson();
+};
+
+export const createDelegate = (
+	username: string,
+	nonce: string,
+	passphrase: string,
+): ARKCrypto.Interfaces.ITransactionJson => {
+	return ARKCrypto.Transactions.BuilderFactory.delegateRegistration()
+		.usernameAsset(username)
+		.nonce(nonce)
+		.sign(passphrase)
+		.build()
+		.toJson();
+};
+
 export const createCollection = (
 	collection: NFTBaseInterfaces.NFTCollectionAsset,
 	nonce: string,

@@ -1,5 +1,5 @@
 import { ProtokolConnection } from "@protokol/client";
-import { ARKCrypto } from "@protokol/nft-base-crypto";
+import { ARKCrypto, Interfaces as NFTBaseInterfaces } from "@protokol/nft-base-crypto";
 import faker from "faker";
 
 import { configurations } from "../configurations";
@@ -25,14 +25,14 @@ export class FillScript {
 	public async createCollections(
 		numberOfBatches: number,
 		numberOfTransactionsPerBatch: number,
-		collection: any,
+		collection: () => NFTBaseInterfaces.NFTCollectionAsset,
 	): Promise<void> {
 		let nonce = await this.getNonce(this.mainPassphrase);
 		for (let i = 0; i < numberOfBatches; i++) {
 			const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
 			for (let i = 1; i < numberOfTransactionsPerBatch + 1; i++) {
 				nonce = nonce.plus(1);
-				transactions.push(createCollection(collection, nonce.toFixed(), this.mainPassphrase));
+				transactions.push(createCollection(collection(), nonce.toFixed(), this.mainPassphrase));
 			}
 
 			const broadcastResponse = await this.client.api("transactions").create({ transactions: transactions });
@@ -46,7 +46,7 @@ export class FillScript {
 		batchs: number,
 		transactionsPerBatch: number,
 		collectionsUsed: number,
-		attributes: any,
+		attributes: () => any,
 	): Promise<void> {
 		let nonce = await this.getNonce(this.mainPassphrase);
 		for (let j = 0; j < collectionsUsed; j++) {
@@ -58,7 +58,7 @@ export class FillScript {
 						createAsset(
 							{
 								collectionId: this.collections[j],
-								...attributes,
+								attributes: attributes(),
 							},
 							nonce.toFixed(),
 							this.mainPassphrase,
