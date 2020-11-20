@@ -433,6 +433,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@arkecosystem/platform-sdk-crypto@npm:^1.1.8":
+  version: 1.1.8
+  resolution: "@arkecosystem/platform-sdk-crypto@npm:1.1.8"
+  dependencies:
+    argon2-browser: ^1.15.2
+    bcryptjs: ^2.4.3
+    bcrypto: ^5.3.0
+    bip32: ^2.0.6
+    bip38: ^3.1.1
+    bip39: ^3.0.3
+    keytar: ^7.1.0
+    node-forge: ^0.10.0
+    safe-buffer: ^5.2.1
+  checksum: d07d9819b1535cd1325c82765109c321feba06cebd0507be6eee35b9fc5ec4bc8c5f3edc980f4580116b719fde67005e7daeed0ddabe2d47ddcf62b143b8a222
+  languageName: node
+  linkType: hard
+
 "@arkecosystem/utils@npm:^1.2.0":
   version: 1.2.0
   resolution: "@arkecosystem/utils@npm:1.2.0"
@@ -2265,6 +2282,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protokol/hammer@workspace:packages/hammer"
   dependencies:
+    "@arkecosystem/platform-sdk-crypto": ^1.1.8
     "@protokol/client": ^1.0.0-beta.28
     "@protokol/nft-base-crypto": ^1.0.0-beta.28
     "@protokol/nft-exchange-crypto": ^1.0.0-beta.28
@@ -3400,6 +3418,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"argon2-browser@npm:^1.15.2":
+  version: 1.15.2
+  resolution: "argon2-browser@npm:1.15.2"
+  checksum: fa746fce9cdcc3ce6388574d68b85a59f6bd45c368ebe5b5f0484118d25edc91df83f4a6e6251999379a45a8116d5b425401a9785498a7ac874dd055d944e948
+  languageName: node
+  linkType: hard
+
 "argon2@npm:^0.26.2":
   version: 0.26.2
   resolution: "argon2@npm:0.26.2"
@@ -3727,6 +3752,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bcryptjs@npm:^2.4.3":
+  version: 2.4.3
+  resolution: "bcryptjs@npm:2.4.3"
+  checksum: 5a320711757b5932da200856a5193cad0123df7c43b46417172eabf2aa436a8f08f64851722052fea6335453f96290005b6694a7dd26d8951810362de343175c
+  languageName: node
+  linkType: hard
+
 "bcrypto@npm:^5.3.0":
   version: 5.3.0
   resolution: "bcrypto@npm:5.3.0"
@@ -3747,6 +3779,13 @@ __metadata:
     prebuild-install: ^5.3.3
     tar: 4.4.10
   checksum: 9cc8d7d1043c4f4f1bcd2884ce9c0ba9838b505fef5d15c2528e4b075254abbfe4134b0eeab7997ba001752bd0791e268d774ba854f7e459288fa3a6ba446a1e
+  languageName: node
+  linkType: hard
+
+"bigi@npm:^1.1.0, bigi@npm:^1.2.0":
+  version: 1.4.2
+  resolution: "bigi@npm:1.4.2"
+  checksum: 1cf78da7b300a018da23f47e4c93aa105ef57f9f07499f91d2ed2285a36d9ac67bb4be57a0e08df5760d4cef4caaa2a1ef6c9651b4a40247c8f02b080214400f
   languageName: node
   linkType: hard
 
@@ -3783,7 +3822,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bip32@npm:^2.0.4":
+"bip32@npm:^2.0.4, bip32@npm:^2.0.6":
   version: 2.0.6
   resolution: "bip32@npm:2.0.6"
   dependencies:
@@ -3798,6 +3837,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bip38@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "bip38@npm:3.1.1"
+  dependencies:
+    bigi: ^1.2.0
+    browserify-aes: ^1.0.1
+    bs58check: <3.0.0
+    buffer-xor: ^1.0.2
+    create-hash: ^1.1.1
+    ecurve: ^1.0.0
+    safe-buffer: ~5.1.1
+    scryptsy: ^2.1.0
+  checksum: e593140aad2138119d102165d29da237858fd19fab8a47c42de8bc3065994064253bc3749f1fc50ed893a507b0226a54857b5191c8db02aff81008b18ab1a9c0
+  languageName: node
+  linkType: hard
+
 "bip39@npm:^3.0.2":
   version: 3.0.2
   resolution: "bip39@npm:3.0.2"
@@ -3807,6 +3862,18 @@ __metadata:
     pbkdf2: ^3.0.9
     randombytes: ^2.0.1
   checksum: 24c59dafc6c3b5c4ff0b8d0861509c0007bc0301b217125d1f1de6a39e84d21c9cfc1df743d472237c2ec4116387a46389843b36c95585b0eacebb6f5be6ecbd
+  languageName: node
+  linkType: hard
+
+"bip39@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "bip39@npm:3.0.3"
+  dependencies:
+    "@types/node": 11.11.6
+    create-hash: ^1.1.0
+    pbkdf2: ^3.0.9
+    randombytes: ^2.0.1
+  checksum: 948443cd3713921ea1a5a5d15b52cd62280d0c30fc4a5cee3df261567808cde5e11622c0d34bccee8fadefdffa7db4244682a5567be6b9f70e195948b9d23bf8
   languageName: node
   linkType: hard
 
@@ -3895,7 +3962,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserify-aes@npm:^1.2.0":
+"browserify-aes@npm:^1.0.1, browserify-aes@npm:^1.2.0":
   version: 1.2.0
   resolution: "browserify-aes@npm:1.2.0"
   dependencies:
@@ -3980,7 +4047,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer-xor@npm:^1.0.3":
+"buffer-xor@npm:^1.0.2, buffer-xor@npm:^1.0.3":
   version: 1.0.3
   resolution: "buffer-xor@npm:1.0.3"
   checksum: 58ce260802968a06448f58ba20f83146ef21c7fb55839602ad951aa3b839035f181341375f2692aca46c86c15f6fcf668985ceef2063a2d33eafb5c6a0a4f627
@@ -4657,7 +4724,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-hash@npm:^1.1.0, create-hash@npm:^1.1.2, create-hash@npm:^1.2.0":
+"create-hash@npm:^1.1.0, create-hash@npm:^1.1.1, create-hash@npm:^1.1.2, create-hash@npm:^1.2.0":
   version: 1.2.0
   resolution: "create-hash@npm:1.2.0"
   dependencies:
@@ -5198,6 +5265,16 @@ __metadata:
     jsbn: ~0.1.0
     safer-buffer: ^2.1.0
   checksum: 5b4dd05f24b2b94c1bb882488dba2b878bb5b83182669aa71fbdf53c6941618180cb226c4eb9a3e2fa51ad11f87b5edb0a7d7289cdef468ba2e6024542f73f07
+  languageName: node
+  linkType: hard
+
+"ecurve@npm:^1.0.0":
+  version: 1.0.6
+  resolution: "ecurve@npm:1.0.6"
+  dependencies:
+    bigi: ^1.1.0
+    safe-buffer: ^5.0.1
+  checksum: aafaf69d1220f8351dd827a7c0d87981bf799b5e122839e46db86efee01025c2eba299c5b41fe1683f83237da2a9a9d252f236364d9d223e5b07da494dc5ae24
   languageName: node
   linkType: hard
 
@@ -8295,6 +8372,17 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"keytar@npm:^7.1.0":
+  version: 7.2.0
+  resolution: "keytar@npm:7.2.0"
+  dependencies:
+    node-addon-api: ^3.0.0
+    node-gyp: latest
+    prebuild-install: ^6.0.0
+  checksum: a15afc229e3a61eddd3955fadb6ac217114c4dd698004696df8c56f7cafa654b6b22f3bfac03669eb4efe8a3efe449d865218aaf45c7e741067261710a5ab986
+  languageName: node
+  linkType: hard
+
 "keyv@npm:^3.0.0":
   version: 3.1.0
   resolution: "keyv@npm:3.1.0"
@@ -9309,7 +9397,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"node-addon-api@npm:*":
+"node-addon-api@npm:*, node-addon-api@npm:^3.0.0":
   version: 3.0.2
   resolution: "node-addon-api@npm:3.0.2"
   dependencies:
@@ -9360,6 +9448,13 @@ fsevents@^2.1.2:
     data-uri-to-buffer: ^3.0.0
     fetch-blob: ^1.0.6
   checksum: 9a98f12932a21004120f5f1a94563c5fb64b1001284618a1d2612b708bdb2c4763fc883113b3bd22a729a24ceeffe5a728bd4c334151991513994f57ac4e9fc7
+  languageName: node
+  linkType: hard
+
+"node-forge@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "node-forge@npm:0.10.0"
+  checksum: c7a729933a0391e4f434d4455705e869340bf91c3cc6b51b3844a91a5ac9db6f8697f600ab1e62e25f990382b2c1592d93d31fd831bb1a0b1e66ce28d9d6d124
   languageName: node
   linkType: hard
 
@@ -10452,6 +10547,31 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"prebuild-install@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "prebuild-install@npm:6.0.0"
+  dependencies:
+    detect-libc: ^1.0.3
+    expand-template: ^2.0.3
+    github-from-package: 0.0.0
+    minimist: ^1.2.3
+    mkdirp-classic: ^0.5.3
+    napi-build-utils: ^1.0.1
+    node-abi: ^2.7.0
+    noop-logger: ^0.1.1
+    npmlog: ^4.0.1
+    pump: ^3.0.0
+    rc: ^1.2.7
+    simple-get: ^3.0.3
+    tar-fs: ^2.0.0
+    tunnel-agent: ^0.6.0
+    which-pm-runs: ^1.0.0
+  bin:
+    prebuild-install: ./bin.js
+  checksum: 02db5ebaf2c45996a5005928996ffcd2cf13ed5daf10386b3b4fc0ea51d27c4d045fa21acaf4359c07474773bed1d4e4f55f8a33b2efb24339566497cbe7d223
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -11199,7 +11319,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"safe-buffer@npm:^5.0.1, safe-buffer@npm:^5.1.0, safe-buffer@npm:^5.1.1, safe-buffer@npm:^5.1.2, safe-buffer@npm:^5.2.0, safe-buffer@npm:~5.2.0":
+"safe-buffer@npm:^5.0.1, safe-buffer@npm:^5.1.0, safe-buffer@npm:^5.1.1, safe-buffer@npm:^5.1.2, safe-buffer@npm:^5.2.0, safe-buffer@npm:^5.2.1, safe-buffer@npm:~5.2.0":
   version: 5.2.1
   resolution: "safe-buffer@npm:5.2.1"
   checksum: 0bb57f0d8f9d1fa4fe35ad8a2db1f83a027d48f2822d59ede88fd5cd4ddad83c0b497213feb7a70fbf90597a70c5217f735b0eb1850df40ce9b4ae81dd22b3f9
@@ -11261,6 +11381,13 @@ fsevents@^2.1.2:
   dependencies:
     xmlchars: ^2.2.0
   checksum: 6ad14be68da9b84af0fa3de346fd78bd3a8e8a73a462e2852279a1fff1e2619988919294001abe3ecef3783f9498962a0619d960ccca4ec2ca914526fde1acc2
+  languageName: node
+  linkType: hard
+
+"scryptsy@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "scryptsy@npm:2.1.0"
+  checksum: 9fd847955caa9d13a6d58a0360ba8fb31f8e7e7da9250b4c09c67db784a0f6dda757bc837313b0860c0e35f84a56ba068394c682dd4fba81c5899d82832aa7d6
   languageName: node
   linkType: hard
 
