@@ -17,11 +17,12 @@ import nascarTeam3 = require("./data/assets/nascar-team/gaunt-brothers-team.json
 import nascarTeam4 = require("./data/assets/nascar-team/germain-team.json");
 import nascarTeam5 = require("./data/assets/nascar-team/go-fas.json");
 
+import { ARKCrypto } from "@protokol/nft-base-crypto";
 import delay from "delay";
 import faker from "faker";
 
 import { configurations } from "./configurations";
-import { DelegateCreationScript } from "./scripts/DelegateCreationScript";
+import { DelegateScript } from "./scripts/DelegateScript";
 import { FillScript } from "./scripts/FillScript";
 import { ShareCoinsScript } from "./scripts/ShareCoinsScript";
 import { setupScript } from "./setup";
@@ -36,7 +37,7 @@ export const main = async () => {
 	// console.log(shareCoins.generatedPassphrases);
 	// await delay(8000);
 
-	// const createDelegate = new DelegateCreationScript(shareCoins.generatedPassphrases[0]);
+	// const createDelegate = new DelegateScript(shareCoins.generatedPassphrases[0]);
 	// await createDelegate.createDelegate("testscriptdelegate");
 
 	// const scriptType = new FillScript(configurations.passphrasesFile.secrets);
@@ -213,7 +214,7 @@ export const main = async () => {
 	// await fillScriptIWCCollection.createTrades();
 
 	/** Nascar team fill script */
-	// const createDelegate = new DelegateCreationScript(configurations.passphrasesFile.secrets[0]);
+	// const createDelegate = new DelegateScript(configurations.passphrasesFile.secrets[0]);
 	// await createDelegate.createDelegate("nascarteam");
 
 	// const nascarTeamScriptType = new FillScript(

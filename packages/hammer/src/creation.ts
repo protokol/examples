@@ -29,6 +29,10 @@ export const createDelegate = (
 		.toJson();
 };
 
+export const resignDelegate = (nonce: string, passphrase: string): ARKCrypto.Interfaces.ITransactionJson => {
+	return ARKCrypto.Transactions.BuilderFactory.delegateResignation().nonce(nonce).sign(passphrase).build().toJson();
+};
+
 export const createCollection = (
 	collection: NFTBaseInterfaces.NFTCollectionAsset,
 	nonce: string,
