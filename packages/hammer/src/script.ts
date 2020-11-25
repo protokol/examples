@@ -17,6 +17,8 @@ import nascarTeam3 = require("./data/assets/nascar-team/gaunt-brothers-team.json
 import nascarTeam4 = require("./data/assets/nascar-team/germain-team.json");
 import nascarTeam5 = require("./data/assets/nascar-team/go-fas.json");
 
+import { Request } from "@arkecosystem/platform-sdk-http-ky";
+import { File } from "@arkecosystem/platform-sdk-ipfs";
 import { ProtokolConnection } from "@protokol/client";
 import { ARKCrypto } from "@protokol/nft-base-crypto";
 import chalk from "chalk";

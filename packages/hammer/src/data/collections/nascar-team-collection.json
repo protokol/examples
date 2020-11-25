@@ -1,5 +1,5 @@
 {
-  "name":"Nascar Team Collection",
+  "name":"Nascar Team",
   "description":"Nascar team information collection",
   "maximumSupply":10000,
   "jsonSchema":{
@@ -50,6 +50,11 @@
 			},
 			"number":{
 			  "type":"number"
+			},
+			"ipfsHashImage":{
+			  "type":"string",
+			  "maxLength":120,
+			  "minLength":1
 			}
 		  }
 		}
@@ -70,7 +75,7 @@
 		"maxLength":120,
 		"minLength":1
 	  },
-	  "ipfsHash":{
+	  "ipfsHashImage":{
 		"type":"string",
 		"maxLength":120,
 		"minLength":1

@@ -5,10 +5,12 @@
   "drivers":[
 	{
 	  "name":"Ty Dillon",
-	  "number":13
+	  "number":13,
+	  "ipfsHashImage":"QmPC4vcoVHrwhUApn4GE1fQ6kinzRysarmyV4XdpfGRCkS"
 	}
   ],
   "teamOwner":"Bob Germain Jr.",
   "headquarters":"Lexington , North Carolina",
-  "website":"https://www.germainracing.com"
+  "website":"https://www.germainracing.com",
+  "ipfsHashImage":"QmcsRexmNLRJDSi4SmpMTrs8wCtH1PXcGLPZeECcd1uqdD"
 }

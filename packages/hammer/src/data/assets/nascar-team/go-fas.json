@@ -5,10 +5,12 @@
   "drivers":[
 	{
 	  "name":"Corey Lajoie",
-	  "number":32
+	  "number":32,
+	  "ipfsHashImage":"QmULgKQzXJbn6ZHMCEVx42T9AvPtQjpWFAfbvKHJDzxHnj"
 	}
   ],
   "teamOwner":"Archie St. Hilaire",
   "headquarters":"Mooresville , North Carolina",
-  "website":"https://www.gofasracing.com"
+  "website":"https://www.gofasracing.com",
+  "ipfsHashImage":"QmaeqqpGWqZg8VzaVjdaT3QMQc7bkY5kcNiqGThdEvvbAu"
 }
