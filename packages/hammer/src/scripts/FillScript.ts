@@ -6,7 +6,7 @@ import { configurations } from "../configurations";
 import { createAsset, createAuction, createBid, createCollection, createTrade } from "../creation";
 
 export class FillScript {
-	public client = new ProtokolConnection(configurations.clientHost);
+	public client: ProtokolConnection;
 	public mainPassphrase: string;
 
 	public collections: string[] = [];
@@ -15,6 +15,7 @@ export class FillScript {
 	public auctionBids: Map<string, string[]> = new Map<string, string[]>();
 
 	public constructor(public readonly passphrases: string[], mainPassphrase?: string) {
+		this.client = new ProtokolConnection(configurations.clientHost);
 		if (mainPassphrase) {
 			this.mainPassphrase = mainPassphrase;
 		} else {
@@ -111,7 +112,7 @@ export class FillScript {
 					createBid(
 						{
 							bidAmount: ARKCrypto.Utils.BigNumber.make(
-								faker.random.number({ max: 1000000, min: 1 }).toString(),
+								faker.random.number({ max: 1000000, min: 2 }).toString(),
 							),
 							auctionId: this.auctions[i],
 						},

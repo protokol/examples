@@ -2526,6 +2526,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.28"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.28"],
             ["@types/faker", "npm:5.1.4"],
+            ["chalk", "npm:4.1.0"],
             ["delay", "npm:4.4.0"],
             ["faker", "npm:5.1.0"],
             ["rimraf", "npm:3.0.2"],

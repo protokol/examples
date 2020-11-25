@@ -2287,6 +2287,7 @@ __metadata:
     "@protokol/nft-base-crypto": ^1.0.0-beta.28
     "@protokol/nft-exchange-crypto": ^1.0.0-beta.28
     "@types/faker": ^5
+    chalk: ^4.1.0
     delay: ^4.4.0
     faker: ^5.1.0
     rimraf: ^3.0.2
