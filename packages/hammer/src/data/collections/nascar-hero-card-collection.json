@@ -6,13 +6,18 @@
 	"type":"object",
 	"additionalProperties":false,
 	"required":[
-	  "ipfsHashImage",
+	  "ipfsHashImageFront",
 	  "issuedDate",
 	  "issuedLocation",
 	  "signed"
 	],
 	"properties":{
-	  "ipfsHashImage":{
+	  "ipfsHashImageFront":{
+		"type":"string",
+		"maxLength":120,
+		"minLength":1
+	  },
+	  "ipfsHashImageBack":{
 		"type":"string",
 		"maxLength":120,
 		"minLength":1

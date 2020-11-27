@@ -20,7 +20,7 @@ import nascarTeam5 = require("./data/assets/nascar-team/go-fas.json");
 
 // Nascar Hero Cards
 import nascarHeroCard1 = require("./data/assets/nascar-hero-card/hero-card1.json");
-import nascarHeroCard2 = require("./data/assets/nascar-hero-card/hero-card2.json");
+// import nascarHeroCard2 = require("./data/assets/nascar-hero-card/hero-card2.json");
 import nascarHeroCard3 = require("./data/assets/nascar-hero-card/hero-card3.json");
 import nascarHeroCard4 = require("./data/assets/nascar-hero-card/hero-card4.json");
 
@@ -291,8 +291,8 @@ export const main = async () => {
 
 	console.log(chalk.green("Create Nascar Hero Cards assets"));
 	await nascarHeroCardsScriptType.createAssets(3, 40, 1, () => {
-		const heroCard = [nascarHeroCard1, nascarHeroCard2, nascarHeroCard3, nascarHeroCard4][
-			faker.random.number({ max: 3, min: 0 })
+		const heroCard = [nascarHeroCard1, nascarHeroCard3, nascarHeroCard4][
+			faker.random.number({ max: 2, min: 0 })
 		];
 
 		heroCard.issuedDate = faker.date.between("2015-1-1", "2020-11-25").toISOString().slice(0, 10);
@@ -301,6 +301,8 @@ export const main = async () => {
 
 		return heroCard;
 	});
+
+	await delay(8000);
 
 	console.log(chalk.green("Create Nascar Hero Cards auctions"));
 	await nascarHeroCardsScriptType.createAuctions(2, 5);
