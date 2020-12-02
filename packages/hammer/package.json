@@ -1,0 +1,60 @@
+{
+	"private": true,
+	"name": "@protokol/hammer",
+	"description": "A TypeScript Test script to fill the blockchain with data",
+	"homepage": "https://docs.protokol.com/",
+	"bugs": {
+		"url": "https://github.com/protokol/examples/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/protokol/examples.git"
+	},
+	"keywords": [
+		"protokol",
+		"ark",
+		"core",
+		"sdk",
+		"nft",
+		"blockchain",
+		"test",
+		"script"
+	],
+	"contributors": [
+		"Žan Kovač <zan@protokol.com",
+		"Kristjan Košič <kristjan@protokol.com>"
+	],
+	"license": "CC-BY-NC-SA-4.0",
+	"files": [
+		"/dist"
+	],
+	"main": "dist/index",
+	"types": "dist/index",
+	"scripts": {
+		"build": "yarn clean && tsc",
+		"build:watch": "yarn build -w",
+		"clean": "rimraf .coverage dist tmp",
+		"format": "yarn lint && yarn prettier",
+		"lint": "tslint -c tslint.json -p tslint.json 'src/**/*.ts' --fix",
+		"prettier": "prettier --write \"./*.{ts,js,json,md}\" \"./**/*.{ts,js,json,md}\""
+	},
+	"dependencies": {
+		"@arkecosystem/platform-sdk-crypto": "^1.1.8",
+		"@arkecosystem/platform-sdk-http-ky": "^1.1.15",
+		"@arkecosystem/platform-sdk-ipfs": "^1.1.15",
+		"@protokol/client": "^1.0.0-beta.28",
+		"@protokol/nft-base-crypto": "^1.0.0-beta.28",
+		"@protokol/nft-exchange-crypto": "^1.0.0-beta.28",
+		"chalk": "^4.1.0",
+		"delay": "^4.4.0",
+		"faker": "^5.1.0"
+	},
+	"devDependencies": {
+		"@types/faker": "^5",
+		"rimraf": "^3.0.2",
+		"typescript": "~4.0.2"
+	},
+	"engines": {
+		"node": ">=10.x"
+	}
+}
