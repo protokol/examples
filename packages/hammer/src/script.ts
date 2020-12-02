@@ -24,6 +24,9 @@ import nascarHeroCard1 = require("./data/assets/nascar-hero-card/hero-card1.json
 import nascarHeroCard3 = require("./data/assets/nascar-hero-card/hero-card3.json");
 import nascarHeroCard4 = require("./data/assets/nascar-hero-card/hero-card4.json");
 
+// passphrases
+import devnetPassphrases = require("./data/passphrases/protokol-devnet-passphrases.json");
+
 import { Request } from "@arkecosystem/platform-sdk-http-ky";
 import { File } from "@arkecosystem/platform-sdk-ipfs";
 import { ProtokolConnection } from "@protokol/client";
@@ -43,13 +46,12 @@ export const main = async () => {
 	console.log(chalk.blue("Setup script"));
 	await setupScript();
 
-	// const tokens = new ShareCoinsScript("");
-	// await tokens.splitCoins(100000, 20);
-	// console.log(tokens.generatedPassphrases);
-	// for (const pass of tokens.generatedPassphrases) {
-	// 	console.log("Pass: " + pass);
-	// 	console.log("Address: " + ARKCrypto.Identities.Address.fromPassphrase(pass));
-	// }
+	/** Transfer coins to known wallet from master wallet which you get from the arguments */
+	console.log(chalk.green("Transfer coins to known wallets"));
+	const shareCoins = new ShareCoinsScript(process.argv.slice(2).join(" "));
+	await shareCoins.splitCoins(50000, devnetPassphrases.secrets);
+
+	await delay(8000);
 
 	const scriptType = new FillScript(
 		configurations.passphrasesFile.secrets,
@@ -291,9 +293,7 @@ export const main = async () => {
 
 	console.log(chalk.green("Create Nascar Hero Cards assets"));
 	await nascarHeroCardsScriptType.createAssets(3, 40, 1, () => {
-		const heroCard = [nascarHeroCard1, nascarHeroCard3, nascarHeroCard4][
-			faker.random.number({ max: 2, min: 0 })
-		];
+		const heroCard = [nascarHeroCard1, nascarHeroCard3, nascarHeroCard4][faker.random.number({ max: 2, min: 0 })];
 
 		heroCard.issuedDate = faker.date.between("2015-1-1", "2020-11-25").toISOString().slice(0, 10);
 		heroCard.issuedLocation = faker.address.state();
@@ -310,7 +310,7 @@ export const main = async () => {
 	await delay(8000);
 
 	console.log(chalk.green("Create Nascar Hero Cards bids"));
-	await nascarHeroCardsScriptType.createBids(3, 10);
+	await nascarHeroCardsScriptType.createBids(3, 4);
 
 	await delay(8000);
 

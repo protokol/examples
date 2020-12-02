@@ -11,7 +11,13 @@ export class ShareCoinsScript {
 
 	public constructor(public readonly passphrase: string) {}
 
-	public async splitCoins(tokens: number, wallets: number) {
+	public generateRandomPassphrases(wallets: number) {
+		for (let i = 0; i < wallets; i++) {
+			const pass = BIP39.generate();
+			this.generatedPassphrases.push(pass);
+		}
+	}
+	public async splitCoins(tokens: number, passphrases: string[]) {
 		const wallet = await this.client
 			.api("wallets")
 			.get(ARKCrypto.Identities.Address.fromPassphrase(this.passphrase));
@@ -19,9 +25,7 @@ export class ShareCoinsScript {
 		let nonce = +wallet.body.data.nonce;
 		const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
 
-		for (let i = 0; i < wallets; i++) {
-			const pass = BIP39.generate();
-			this.generatedPassphrases.push(pass);
+		for (const pass of passphrases) {
 			nonce++;
 			const transfer = createTransfer(
 				ARKCrypto.Identities.Address.fromPassphrase(pass),

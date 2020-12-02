@@ -4,12 +4,17 @@
 
 A Protokol module providing test script to fill up the blockchain.
 
-### Usage instructions
+## Usage instructions
 The purpose of this module is to fill the blockchain with various types of data.
 Here are some basic instructions to make the script work.
 
+### Usage instructions via command line
+```sh
+yarn node dist/index put passphrase here
+```
+### Usage instructions via code
 First you have to setup the script.
-Setup the configurations inside - `configurations.ts`
+Set up the configurations inside - `configurations.ts`
 ```ts
 export const configurations = {
 	clientHost: "http://localhost:4003/api",
@@ -27,18 +32,18 @@ const scriptType = new FillScript();
 ```
 Now you can start using the fillScript methods which are implemented for filling the chain with NFT Transactions
 ```ts
-await scriptType.createCollections(1, 5, fifaCollection);
+await scriptType.createCollections(1, 5, () => fifaCollection);
 
-await scriptType.createAssets(1, 5, 3, {
-		attributes: {
-			name: faker.name.findName(),
-			pac: faker.random.number({ max: 100, min: 1 }),
-			sho: faker.random.number({ max: 100, min: 1 }),
-			pas: faker.random.number({ max: 100, min: 1 }),
-			dri: faker.random.number({ max: 100, min: 1 }),
-			def: faker.random.number({ max: 100, min: 1 }),
-			phy: faker.random.number({ max: 100, min: 1 }),
-		},
+await scriptType.createAssets(1, 5, 3, () => {
+	return {
+		name: faker.name.findName(),
+		pac: faker.random.number({ max: 100, min: 1 }),
+		sho: faker.random.number({ max: 100, min: 1 }),
+		pas: faker.random.number({ max: 100, min: 1 }),
+		dri: faker.random.number({ max: 100, min: 1 }),
+		def: faker.random.number({ max: 100, min: 1 }),
+		phy: faker.random.number({ max: 100, min: 1 }),
+	};
 });
 
 await scriptType.createAuctions(2, 4);
