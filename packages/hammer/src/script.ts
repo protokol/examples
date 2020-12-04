@@ -24,6 +24,13 @@ import nascarHeroCard1 = require("./data/assets/nascar-hero-card/hero-card1.json
 import nascarHeroCard3 = require("./data/assets/nascar-hero-card/hero-card3.json");
 import nascarHeroCard4 = require("./data/assets/nascar-hero-card/hero-card4.json");
 
+// FIFA Players
+import fifaPlayer1 = require("./data/assets/fifa/player1.json");
+import fifaPlayer2 = require("./data/assets/fifa/player2.json");
+import fifaPlayer3 = require("./data/assets/fifa/player3.json");
+import fifaPlayer4 = require("./data/assets/fifa/player4.json");
+import fifaPlayer5 = require("./data/assets/fifa/player5.json");
+
 // passphrases
 import devnetPassphrases = require("./data/passphrases/protokol-devnet-passphrases.json");
 
@@ -77,15 +84,9 @@ export const main = async () => {
 	 * 	you created in first par of the script and makes that many batches of transactions for each
 	 */
 	await scriptType.createAssets(3, 40, 1, () => {
-		return {
-			name: faker.name.findName(),
-			pac: faker.random.number({ max: 100, min: 1 }),
-			sho: faker.random.number({ max: 100, min: 1 }),
-			pas: faker.random.number({ max: 100, min: 1 }),
-			dri: faker.random.number({ max: 100, min: 1 }),
-			def: faker.random.number({ max: 100, min: 1 }),
-			phy: faker.random.number({ max: 100, min: 1 }),
-		};
+		return [fifaPlayer1, fifaPlayer2, fifaPlayer3, fifaPlayer4, fifaPlayer5][
+			faker.random.number({ max: 4, min: 0 })
+		];
 	});
 
 	await delay(8000);
