@@ -39,9 +39,9 @@
 		"prettier": "prettier --write \"./*.{ts,js,json,md}\" \"./**/*.{ts,js,json,md}\""
 	},
 	"dependencies": {
-		"@arkecosystem/platform-sdk-crypto": "1.1.8",
-		"@arkecosystem/platform-sdk-http-ky": "1.1.15",
-		"@arkecosystem/platform-sdk-ipfs": "1.1.15",
+		"@arkecosystem/platform-sdk-crypto": "1.2.7",
+		"@arkecosystem/platform-sdk-http-ky": "1.2.7",
+		"@arkecosystem/platform-sdk-ipfs": "1.2.7",
 		"@protokol/client": "1.0.0-beta.36",
 		"@protokol/nft-base-crypto": "1.0.0-beta.51",
 		"@protokol/nft-exchange-crypto": "1.0.0-beta.51",
