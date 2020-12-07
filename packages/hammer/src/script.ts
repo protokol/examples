@@ -295,9 +295,9 @@ export const main = async () => {
 	await nascarHeroCardsScriptType.createAssets(3, 40, 1, () => {
 		const heroCard = [nascarHeroCard1, nascarHeroCard3, nascarHeroCard4][faker.random.number({ max: 2, min: 0 })];
 
-		heroCard.issuedDate = faker.date.between("2015-1-1", "2020-11-25").toISOString().slice(0, 10);
-		heroCard.issuedLocation = faker.address.state();
-		heroCard.signed = faker.random.boolean();
+		heroCard!.issuedDate = faker.date.between("2015-1-1", "2020-11-25").toISOString().slice(0, 10);
+		heroCard!.issuedLocation = faker.address.state();
+		heroCard!.signed = faker.random.boolean();
 
 		return heroCard;
 	});
