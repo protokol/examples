@@ -92,7 +92,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-cli@npm:^3.0.0-next.12, @arkecosystem/core-cli@npm:^3.0.0-next.9":
+"@arkecosystem/core-cli@npm:3.0.0-next.12, @arkecosystem/core-cli@npm:^3.0.0-next.12":
   version: 3.0.0-next.12
   resolution: "@arkecosystem/core-cli@npm:3.0.0-next.12"
   dependencies:
@@ -451,7 +451,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core@npm:^3.0.0-next.9":
+"@arkecosystem/core@npm:3.0.0-next.12":
   version: 3.0.0-next.12
   resolution: "@arkecosystem/core@npm:3.0.0-next.12"
   dependencies:
@@ -2453,7 +2453,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/client@npm:1.0.0-beta.36, @protokol/client@npm:^1.0.0-beta.28":
+"@protokol/client@npm:1.0.0-beta.36":
   version: 1.0.0-beta.36
   resolution: "@protokol/client@npm:1.0.0-beta.36"
   dependencies:
@@ -2471,8 +2471,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protokol/examples-repo@workspace:."
   dependencies:
-    "@arkecosystem/core": ^3.0.0-next.9
-    "@arkecosystem/core-cli": ^3.0.0-next.9
+    "@arkecosystem/core": 3.0.0-next.12
+    "@arkecosystem/core-cli": 3.0.0-next.12
     "@sindresorhus/tsconfig": ^0.8.0
     "@types/eslint": ^7.2.0
     "@types/eslint-plugin-prettier": ^3.1.0
@@ -2502,27 +2502,27 @@ __metadata:
     typescript: ~4.1.2
     typescript-language-server: ~0.4.0
   dependenciesMeta:
-    "@arkecosystem/core-api@3.0.0-next.9":
+    "@arkecosystem/core":
       unplugged: true
-    "@arkecosystem/core-cli@3.0.0-next.9":
+    "@arkecosystem/core-api":
       unplugged: true
-    "@arkecosystem/core-database@3.0.0-next.9":
+    "@arkecosystem/core-cli":
       unplugged: true
-    "@arkecosystem/core-kernel@3.0.0-next.9":
+    "@arkecosystem/core-database":
       unplugged: true
-    "@arkecosystem/core-state@3.0.0-next.9":
+    "@arkecosystem/core-kernel":
       unplugged: true
-    "@arkecosystem/core-test-framework@3.0.0-next.9":
+    "@arkecosystem/core-state":
       unplugged: true
-    "@arkecosystem/core-transaction-pool@3.0.0-next.9":
+    "@arkecosystem/core-test-framework":
       unplugged: true
-    "@arkecosystem/core-transactions@3.0.0-next.9":
+    "@arkecosystem/core-transaction-pool":
       unplugged: true
-    "@arkecosystem/core@3.0.0-next.9":
+    "@arkecosystem/core-transactions":
       unplugged: true
-    "@arkecosystem/crypto@3.0.0-next.9":
+    "@arkecosystem/crypto":
       unplugged: true
-    "@arkecosystem/utils@1.2.0":
+    "@arkecosystem/utils":
       unplugged: true
   languageName: unknown
   linkType: soft
@@ -2531,10 +2531,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protokol/examples@workspace:packages/examples"
   dependencies:
-    "@protokol/client": ^1.0.0-beta.28
-    "@protokol/guardian-crypto": ^1.0.0-beta.28
-    "@protokol/nft-base-crypto": ^1.0.0-beta.28
-    "@protokol/nft-exchange-crypto": ^1.0.0-beta.28
+    "@protokol/client": 1.0.0-beta.36
+    "@protokol/guardian-crypto": 1.0.0-beta.34
+    "@protokol/nft-base-crypto": 1.0.0-beta.51
+    "@protokol/nft-exchange-crypto": 1.0.0-beta.51
     "@sindresorhus/tsconfig": ^0.7.0
     "@types/eslint": ^7.2.0
     "@types/eslint-plugin-prettier": ^3.1.0
@@ -2588,7 +2588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/guardian-crypto@npm:1.0.0-beta.34, @protokol/guardian-crypto@npm:^1.0.0-beta.28":
+"@protokol/guardian-crypto@npm:1.0.0-beta.34":
   version: 1.0.0-beta.34
   resolution: "@protokol/guardian-crypto@npm:1.0.0-beta.34"
   dependencies:
@@ -2651,7 +2651,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/nft-base-crypto@npm:1.0.0-beta.51, @protokol/nft-base-crypto@npm:^1.0.0-beta.28":
+"@protokol/nft-base-crypto@npm:1.0.0-beta.51":
   version: 1.0.0-beta.51
   resolution: "@protokol/nft-base-crypto@npm:1.0.0-beta.51"
   dependencies:
@@ -2694,7 +2694,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/nft-exchange-crypto@npm:1.0.0-beta.51, @protokol/nft-exchange-crypto@npm:^1.0.0-beta.28":
+"@protokol/nft-exchange-crypto@npm:1.0.0-beta.51":
   version: 1.0.0-beta.51
   resolution: "@protokol/nft-exchange-crypto@npm:1.0.0-beta.51"
   dependencies:
