@@ -1,9 +1,10 @@
-import testnetPassphrases = require("./data/passphrases/protokol-devnet-passphrases.json");
+import testnetPassphrases = require("./data/networks/delegates.json");
 
 export const configurations = {
+	// clientHost: "http://localhost:5003/api",
 	clientHost: "https://devnet-explorer.protokol.sh/api",
 	network: "devnet",
-	networkHeight: 2,
+	networkHeight: 0,
 	passphrasesFile: testnetPassphrases,
 	// protokol devnet - networks can be empty and it will take default configurations
 	// TODO

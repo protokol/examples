@@ -31,8 +31,13 @@ import fifaPlayer3 = require("./data/assets/fifa/player3.json");
 import fifaPlayer4 = require("./data/assets/fifa/player4.json");
 import fifaPlayer5 = require("./data/assets/fifa/player5.json");
 
+// Breitling watches
+import breitlingWatch1 = require("./data/assets/breitling/breitling-watch1.json");
+import breitlingWatch2 = require("./data/assets/breitling/breitling-watch2.json");
+import breitlingWatch3 = require("./data/assets/breitling/breitling-watch3.json");
+
 // passphrases
-import devnetPassphrases = require("./data/passphrases/protokol-devnet-passphrases.json");
+import devnetPassphrases = require("./data/networks/delegates.json");
 
 import { Request } from "@arkecosystem/platform-sdk-http-ky";
 import { File } from "@arkecosystem/platform-sdk-ipfs";
@@ -43,6 +48,7 @@ import delay from "delay";
 import faker from "faker";
 
 import { configurations } from "./configurations";
+import { createCollection } from "./creation";
 import { DelegateScript } from "./scripts/DelegateScript";
 import { FillScript } from "./scripts/FillScript";
 import { ShareCoinsScript } from "./scripts/ShareCoinsScript";
@@ -53,8 +59,21 @@ export const main = async () => {
 	console.log(chalk.blue("Setup script"));
 	await setupScript();
 
+	// const client = new ProtokolConnection(configurations.clientHost);
+	// const senderWallet = await client
+	// 	.api("wallets")
+	// 	.get(ARKCrypto.Identities.Address.fromPassphrase("deer clean library cram brush scissors soda buyer matrix actor timber endless"));
+	// const a = createCollection(
+	// 	nascarCollection,
+	// 	ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1).toFixed(),
+	// 	"deer clean library cram brush scissors soda buyer matrix actor timber endless",
+	// );
+	// console.log(JSON.stringify(a,null,3));
+	// await delay(80000);
+
 	/** Transfer coins to known wallet from master wallet which you get from the arguments */
 	console.log(chalk.green("Transfer coins to known wallets"));
+	console.log(ARKCrypto.Identities.Address.fromPassphrase("deer clean library cram brush scissors soda buyer matrix actor timber endless"));
 	const shareCoins = new ShareCoinsScript(process.argv.slice(2).join(" "));
 	await shareCoins.splitCoins(50000, devnetPassphrases.secrets);
 
@@ -142,7 +161,7 @@ export const main = async () => {
 	await delay(8000);
 
 	console.log(chalk.green("Create Marvel bids"));
-	await fillScriptMarvelCollection.createBids(10, 8);
+	await fillScriptMarvelCollection.createBids(5, 4);
 
 	await delay(8000);
 
@@ -157,13 +176,25 @@ export const main = async () => {
 		configurations.passphrasesFile.secrets,
 		configurations.passphrasesFile.secrets[2],
 	);
-
+	// const client = new ProtokolConnection(configurations.clientHost);
+	// const senderWallet = await client
+	// 	.api("wallets")
+	// 	.get(ARKCrypto.Identities.Address.fromPassphrase("alter limit bird stereo lemon venue hour release safe cage expand ready"));
+	// const a = createCollection(
+	// 	breitlingCollection,
+	// 	ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1).toFixed(),
+	// 	"alter limit bird stereo lemon venue hour release safe cage expand ready",
+	// );
+	// console.log(JSON.stringify(a,null,3));
+	// await delay(80000);
 	console.log(chalk.green("Create Breitling collections"));
 	await fillScriptBreitlingCollection.createCollections(1, 1, () => breitlingCollection);
 	await delay(8000);
 
 	console.log(chalk.green("Create Breitling watch assets"));
-	await fillScriptBreitlingCollection.createAssets(2, 40, 1, () => breaitlingAsset);
+	await fillScriptBreitlingCollection.createAssets(2, 40, 1, () => {
+		return [breitlingWatch1, breitlingWatch2, breitlingWatch3][faker.random.number({ max: 2, min: 0 })];
+	});
 
 	await delay(8000);
 
@@ -296,9 +327,9 @@ export const main = async () => {
 	await nascarHeroCardsScriptType.createAssets(3, 40, 1, () => {
 		const heroCard = [nascarHeroCard1, nascarHeroCard3, nascarHeroCard4][faker.random.number({ max: 2, min: 0 })];
 
-		heroCard.issuedDate = faker.date.between("2015-1-1", "2020-11-25").toISOString().slice(0, 10);
-		heroCard.issuedLocation = faker.address.state();
-		heroCard.signed = faker.random.boolean();
+		heroCard!.issuedDate = faker.date.between("2015-1-1", "2020-11-25").toISOString().slice(0, 10);
+		heroCard!.issuedLocation = faker.address.state();
+		heroCard!.signed = faker.random.boolean();
 
 		return heroCard;
 	});
@@ -311,7 +342,7 @@ export const main = async () => {
 	await delay(8000);
 
 	console.log(chalk.green("Create Nascar Hero Cards bids"));
-	await nascarHeroCardsScriptType.createBids(3, 4);
+	await nascarHeroCardsScriptType.createBids(3, 3);
 
 	await delay(8000);
 

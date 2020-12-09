@@ -19,7 +19,7 @@ export class FillScript {
 		if (mainPassphrase) {
 			this.mainPassphrase = mainPassphrase;
 		} else {
-			this.mainPassphrase = passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })];
+			this.mainPassphrase = passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })]!;
 		}
 	}
 
@@ -58,7 +58,7 @@ export class FillScript {
 					transactions.push(
 						createAsset(
 							{
-								collectionId: this.collections[j],
+								collectionId: this.collections[j]!,
 								attributes: attributes(),
 							},
 							nonce.toFixed(),
@@ -107,29 +107,30 @@ export class FillScript {
 			for (let j = 0; j < bidsPerAuction; j++) {
 				const pass = this.passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })];
 				const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
-				const nonce = await this.getNonce(pass);
+				let nonce = await this.getNonce(pass!);
+				nonce = nonce.plus(1);
 				transactions.push(
 					createBid(
 						{
 							bidAmount: ARKCrypto.Utils.BigNumber.make(
 								faker.random.number({ max: 1000000, min: 2 }).toString(),
 							),
-							auctionId: this.auctions[i],
+							auctionId: this.auctions[i]!,
 						},
-						nonce.plus(1).toString(),
-						pass,
+						nonce.toFixed(),
+						pass!,
 					),
 				);
 
 				const broadcastResponse = await this.client.api("transactions").create({ transactions: transactions });
 				console.log(JSON.stringify(broadcastResponse.body.data, null, 4));
 				for (const bidId of broadcastResponse.body.data.accept) {
-					let entry = this.auctionBids.get(this.auctions[i]);
+					let entry = this.auctionBids.get(this.auctions[i]!);
 					if (!entry) {
 						entry = [];
 					}
 					entry.push(bidId);
-					this.auctionBids.set(this.auctions[i], entry);
+					this.auctionBids.set(this.auctions[i]!, entry);
 				}
 			}
 		}
@@ -144,7 +145,7 @@ export class FillScript {
 				createTrade(
 					{
 						auctionId: key,
-						bidId: value[faker.random.number({ max: value.length - 1, min: 0 })],
+						bidId: value[faker.random.number({ max: value.length - 1, min: 0 })]!,
 					},
 					nonce.toFixed(),
 					this.mainPassphrase,

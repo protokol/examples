@@ -2,9 +2,9 @@ import { ARKCrypto, Transactions as NFTTransactions } from "@protokol/nft-base-c
 import { Transactions as NFTExchangeTransactions } from "@protokol/nft-exchange-crypto";
 
 import { configurations } from "./configurations";
-import exceptions from "./data/networks/exceptions.json";
-import milestones from "./data/networks/milestones.json";
-import configs from "./data/networks/network.json";
+import exceptions from "./data/networks/crypto/exceptions.json";
+import milestones from "./data/networks/crypto/milestones.json";
+import configs from "./data/networks/crypto/network.json";
 
 export const setupScript = async () => {
 	ARKCrypto.Managers.configManager.setFromPreset(configurations.network as "testnet" | "devnet" | "mainnet");
