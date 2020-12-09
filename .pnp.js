@@ -3002,7 +3002,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/platform-sdk-http-ky", "npm:1.2.7"],
             ["@arkecosystem/platform-sdk-ipfs", "npm:1.2.7"],
             ["@protokol/client", "npm:1.0.0-beta.36"],
-            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.51"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.52"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.51"],
             ["@types/faker", "npm:5.1.5"],
             ["chalk", "npm:4.1.0"],
@@ -3039,6 +3039,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.51"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.11"],
             ["@protokol/utils", "npm:1.0.0-beta.36"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.52", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-base-crypto-npm-1.0.0-beta.52-955e3b7a61-34212c5844.zip/node_modules/@protokol/nft-base-crypto/",
+          "packageDependencies": [
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.52"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.14"],
+            ["@protokol/utils", "npm:1.0.0-beta.37"],
             ["bytebuffer", "npm:5.0.1"]
           ],
           "linkType": "HARD",
@@ -3112,6 +3122,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@protokol-utils-npm-1.0.0-beta.36-cf9bc718f3-a620a550fc.zip/node_modules/@protokol/utils/",
           "packageDependencies": [
             ["@protokol/utils", "npm:1.0.0-beta.36"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.37", {
+          "packageLocation": "./.yarn/cache/@protokol-utils-npm-1.0.0-beta.37-85eca0c1f1-d8f1bf81fd.zip/node_modules/@protokol/utils/",
+          "packageDependencies": [
+            ["@protokol/utils", "npm:1.0.0-beta.37"]
           ],
           "linkType": "HARD",
         }]
