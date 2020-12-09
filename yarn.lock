@@ -2469,6 +2469,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@protokol/client@npm:1.0.0-beta.37":
+  version: 1.0.0-beta.37
+  resolution: "@protokol/client@npm:1.0.0-beta.37"
+  dependencies:
+    "@arkecosystem/client": 2.0.0
+    is-url-superb: ^5.0.0
+    ky: ^0.25.0
+    ky-universal: ^0.8.2
+    lodash.orderby: ^4.6.0
+    semver: ^7.3.2
+  checksum: e2f196a8a742eff80107c0e44d35f2f733b27ff0a785aa7da87113b8098beafcbc493627fffb706f93353bb3691431549e8629e1eb8ef08595a3752dc643b0ac
+  languageName: node
+  linkType: hard
+
 "@protokol/examples-repo@workspace:.":
   version: 0.0.0-use.local
   resolution: "@protokol/examples-repo@workspace:."
@@ -2624,7 +2638,7 @@ __metadata:
     "@arkecosystem/platform-sdk-crypto": 1.2.7
     "@arkecosystem/platform-sdk-http-ky": 1.2.7
     "@arkecosystem/platform-sdk-ipfs": 1.2.7
-    "@protokol/client": 1.0.0-beta.36
+    "@protokol/client": 1.0.0-beta.37
     "@protokol/nft-base-crypto": 1.0.0-beta.51
     "@protokol/nft-exchange-crypto": 1.0.0-beta.51
     "@types/faker": ^5
@@ -8022,7 +8036,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"is-url-superb@npm:*":
+"is-url-superb@npm:*, is-url-superb@npm:^5.0.0":
   version: 5.0.0
   resolution: "is-url-superb@npm:5.0.0"
   checksum: 5aaafcea83ba19a3734e11accc0ea9c7c6fe991f0207e6f0485557f665f58a8ab459eb52e17267617b82fa56908f2e65306d4861ea6f5540a351e2ebb4c4d0d5

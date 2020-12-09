@@ -42,7 +42,7 @@
 		"@arkecosystem/platform-sdk-crypto": "1.2.7",
 		"@arkecosystem/platform-sdk-http-ky": "1.2.7",
 		"@arkecosystem/platform-sdk-ipfs": "1.2.7",
-		"@protokol/client": "1.0.0-beta.36",
+		"@protokol/client": "1.0.0-beta.37",
 		"@protokol/nft-base-crypto": "1.0.0-beta.51",
 		"@protokol/nft-exchange-crypto": "1.0.0-beta.51",
 		"chalk": "^4.1.0",
