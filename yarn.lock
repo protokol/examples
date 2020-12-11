@@ -2535,7 +2535,7 @@ __metadata:
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
     "@protokol/client": 1.0.0-beta.37
-    "@protokol/guardian-crypto": 1.0.0-beta.36
+    "@protokol/guardian-crypto": 1.0.0-beta.37
     "@protokol/nft-base-crypto": 1.0.0-beta.55
     "@protokol/nft-exchange-crypto": 1.0.0-beta.55
     "@sindresorhus/tsconfig": ^0.7.0
@@ -2602,14 +2602,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/guardian-crypto@npm:1.0.0-beta.36":
-  version: 1.0.0-beta.36
-  resolution: "@protokol/guardian-crypto@npm:1.0.0-beta.36"
+"@protokol/guardian-crypto@npm:1.0.0-beta.37":
+  version: 1.0.0-beta.37
+  resolution: "@protokol/guardian-crypto@npm:1.0.0-beta.37"
   dependencies:
-    "@arkecosystem/core-kernel": ^3.0.0-next
     "@arkecosystem/crypto": ^3.0.0-next
+    "@protokol/utils": ^1.0.0-beta.37
     bytebuffer: ^5.0.1
-  checksum: ed48e1ade1c9d80ce15c55403d7774b287f4c46e7956cd65944574bf5565e94a353b7ac416e2784571dbd16a00d3b6696410f8c1f69eef6652ad68a4bab9c1d8
+  checksum: b951e531700bb475b9a64feb91581610c4f0df88f618596648d8ea0c84c2150547acfe6923b89158837ea31efda284c24435412a4873a91d380a1e9bc7f65ec3
   languageName: node
   linkType: hard
 

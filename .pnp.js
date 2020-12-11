@@ -2868,7 +2868,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/examples", "workspace:packages/examples"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.16"],
             ["@protokol/client", "npm:1.0.0-beta.37"],
-            ["@protokol/guardian-crypto", "npm:1.0.0-beta.36"],
+            ["@protokol/guardian-crypto", "npm:1.0.0-beta.37"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.55"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.55"],
             ["@sindresorhus/tsconfig", "npm:0.7.0"],
@@ -2976,12 +2976,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:1.0.0-beta.36", {
-          "packageLocation": "./.yarn/cache/@protokol-guardian-crypto-npm-1.0.0-beta.36-812244d3ac-ed48e1ade1.zip/node_modules/@protokol/guardian-crypto/",
+        ["npm:1.0.0-beta.37", {
+          "packageLocation": "./.yarn/cache/@protokol-guardian-crypto-npm-1.0.0-beta.37-6cc0045a5e-b951e53170.zip/node_modules/@protokol/guardian-crypto/",
           "packageDependencies": [
-            ["@protokol/guardian-crypto", "npm:1.0.0-beta.36"],
-            ["@arkecosystem/core-kernel", "npm:3.0.0-next.16"],
+            ["@protokol/guardian-crypto", "npm:1.0.0-beta.37"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.16"],
+            ["@protokol/utils", "npm:1.0.0-beta.37"],
             ["bytebuffer", "npm:5.0.1"]
           ],
           "linkType": "HARD",
