@@ -552,7 +552,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/crypto@npm:^3.0.0-next.14, @arkecosystem/crypto@npm:^3.0.0-next.16":
+"@arkecosystem/crypto@npm:^3.0.0-next, @arkecosystem/crypto@npm:^3.0.0-next.14, @arkecosystem/crypto@npm:^3.0.0-next.16":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/crypto@npm:3.0.0-next.16"
   dependencies:
@@ -2626,8 +2626,8 @@ __metadata:
     "@arkecosystem/platform-sdk-http-ky": 1.2.7
     "@arkecosystem/platform-sdk-ipfs": 1.2.7
     "@protokol/client": 1.0.0-beta.37
-    "@protokol/nft-base-crypto": 1.0.0-beta.52
-    "@protokol/nft-exchange-crypto": 1.0.0-beta.52
+    "@protokol/nft-base-crypto": 1.0.0-beta.55
+    "@protokol/nft-exchange-crypto": 1.0.0-beta.55
     "@types/faker": ^5
     chalk: ^4.1.0
     delay: ^4.4.0
@@ -2662,6 +2662,17 @@ __metadata:
     "@protokol/utils": 1.0.0-beta.37
     bytebuffer: ^5.0.1
   checksum: 34212c58444dee0a445e3049f72b8df1055c24650e5a9cffd3973b2458afc67d6888bd6f911160678616466d0f09a1321354a918166bf7ccfe271c11cfdb9306
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-base-crypto@npm:1.0.0-beta.55":
+  version: 1.0.0-beta.55
+  resolution: "@protokol/nft-base-crypto@npm:1.0.0-beta.55"
+  dependencies:
+    "@arkecosystem/crypto": ^3.0.0-next
+    "@protokol/utils": ^1.0.0-beta.37
+    bytebuffer: ^5.0.1
+  checksum: 49c68ca03dcb8388b1100928bffef8475661a71c00d16bc3b80117b12ffc376a23fb48dd2d7ea48b118a017f5cfefb8563882b32c9ff542d9379db4429a18968
   languageName: node
   linkType: hard
 
@@ -2708,6 +2719,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@protokol/nft-exchange-crypto@npm:1.0.0-beta.55":
+  version: 1.0.0-beta.55
+  resolution: "@protokol/nft-exchange-crypto@npm:1.0.0-beta.55"
+  dependencies:
+    "@arkecosystem/crypto": ^3.0.0-next
+    "@protokol/utils": ^1.0.0-beta.37
+    bytebuffer: ^5.0.1
+  checksum: efdbb41405ea9f770a79ebd9846d43d590a82a43daf9e87309a90f06ddb18afe0c5d1ec93170893e28c4c4739ad7515e1695992dee396dea8a827c8c5cf0dcf7
+  languageName: node
+  linkType: hard
+
 "@protokol/nft-exchange-transactions@npm:1.0.0-beta.52, @protokol/nft-exchange-transactions@npm:beta":
   version: 1.0.0-beta.52
   resolution: "@protokol/nft-exchange-transactions@npm:1.0.0-beta.52"
@@ -2724,7 +2746,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/utils@npm:1.0.0-beta.37":
+"@protokol/utils@npm:1.0.0-beta.37, @protokol/utils@npm:^1.0.0-beta.37":
   version: 1.0.0-beta.37
   resolution: "@protokol/utils@npm:1.0.0-beta.37"
   checksum: d8f1bf81fd36448f54c9928041f965d2bd8f5b2dadab6b08a3cec5b2d8660cf720200fefeb55c6b7425177bb9905aaec694391b6882fd83fc572e03a3f8969e2
