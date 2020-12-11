@@ -774,7 +774,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/platform-sdk-http-ky", "npm:1.2.7"],
             ["@arkecosystem/platform-sdk", "npm:1.2.7"],
             ["ky", "npm:0.25.1"],
-            ["ky-universal", "virtual:bca9aafcaeb5fefc4037384d2f741379a0f661082ebd3b57a9342d020c138ef551999da70c209d2c4e00957dd77c66352caab9804c3fbefef4a1774ae95204fc#npm:0.8.2"]
+            ["ky-universal", "virtual:5c1d15a674870dd503ceed0afb6fa377036e63e8513aa46890f5350ff27a3ba28ecab6403115e1188f82b8a1c2cbb40c5bce51f00d61010af07399036e2a80ea#npm:0.8.2"]
           ],
           "linkType": "HARD",
         }]
@@ -2847,14 +2847,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@protokol/client", [
-        ["npm:1.0.0-beta.37", {
-          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-beta.37-bca9aafcae-e2f196a8a7.zip/node_modules/@protokol/client/",
+        ["npm:1.0.0-beta.38", {
+          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-beta.38-5c1d15a674-b925c72f92.zip/node_modules/@protokol/client/",
           "packageDependencies": [
-            ["@protokol/client", "npm:1.0.0-beta.37"],
+            ["@protokol/client", "npm:1.0.0-beta.38"],
             ["@arkecosystem/client", "npm:2.0.0"],
             ["is-url-superb", "npm:5.0.0"],
             ["ky", "npm:0.25.1"],
-            ["ky-universal", "virtual:bca9aafcaeb5fefc4037384d2f741379a0f661082ebd3b57a9342d020c138ef551999da70c209d2c4e00957dd77c66352caab9804c3fbefef4a1774ae95204fc#npm:0.8.2"],
+            ["ky-universal", "virtual:5c1d15a674870dd503ceed0afb6fa377036e63e8513aa46890f5350ff27a3ba28ecab6403115e1188f82b8a1c2cbb40c5bce51f00d61010af07399036e2a80ea#npm:0.8.2"],
             ["lodash.orderby", "npm:4.6.0"],
             ["semver", "npm:7.3.4"]
           ],
@@ -2867,7 +2867,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@protokol/examples", "workspace:packages/examples"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.16"],
-            ["@protokol/client", "npm:1.0.0-beta.37"],
+            ["@protokol/client", "npm:1.0.0-beta.38"],
             ["@protokol/guardian-crypto", "npm:1.0.0-beta.37"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.55"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.55"],
@@ -3013,7 +3013,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/platform-sdk-crypto", "npm:1.2.7"],
             ["@arkecosystem/platform-sdk-http-ky", "npm:1.2.7"],
             ["@arkecosystem/platform-sdk-ipfs", "npm:1.2.7"],
-            ["@protokol/client", "npm:1.0.0-beta.37"],
+            ["@protokol/client", "npm:1.0.0-beta.38"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.55"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.55"],
             ["@types/faker", "npm:5.1.5"],
@@ -10526,10 +10526,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:bca9aafcaeb5fefc4037384d2f741379a0f661082ebd3b57a9342d020c138ef551999da70c209d2c4e00957dd77c66352caab9804c3fbefef4a1774ae95204fc#npm:0.8.2", {
-          "packageLocation": "./.yarn/$$virtual/ky-universal-virtual-2141334433/0/cache/ky-universal-npm-0.8.2-66bbf1e939-da33c771ea.zip/node_modules/ky-universal/",
+        ["virtual:5c1d15a674870dd503ceed0afb6fa377036e63e8513aa46890f5350ff27a3ba28ecab6403115e1188f82b8a1c2cbb40c5bce51f00d61010af07399036e2a80ea#npm:0.8.2", {
+          "packageLocation": "./.yarn/$$virtual/ky-universal-virtual-f93b8ff118/0/cache/ky-universal-npm-0.8.2-66bbf1e939-da33c771ea.zip/node_modules/ky-universal/",
           "packageDependencies": [
-            ["ky-universal", "virtual:bca9aafcaeb5fefc4037384d2f741379a0f661082ebd3b57a9342d020c138ef551999da70c209d2c4e00957dd77c66352caab9804c3fbefef4a1774ae95204fc#npm:0.8.2"],
+            ["ky-universal", "virtual:5c1d15a674870dd503ceed0afb6fa377036e63e8513aa46890f5350ff27a3ba28ecab6403115e1188f82b8a1c2cbb40c5bce51f00d61010af07399036e2a80ea#npm:0.8.2"],
             ["@types/ky", null],
             ["@types/web-streams-polyfill", null],
             ["abort-controller", "npm:3.0.0"],
