@@ -1,40 +1,40 @@
 // Uncomment method to execute
-
+//
 // NFT Base Transactions
-
+//
 // import { NFTRegisterCollection } from "./base/nft-register-collection";
-// NFTRegisterCollection();
-
+// void NFTRegisterCollection();
+//
 // import { NFTCreate } from "./base/nft-create";
-// NFTCreate();
-
+// void NFTCreate();
+//
 // import { NFTTransfer } from "./base/nft-transfer";
-// NFTTransfer();
-
+// void NFTTransfer();
+//
 // import { NFTBurn } from "./base/nft-burn";
-// NFTBurn();
-
+// void NFTBurn();
+//
 // NFT Exchange Transactions
-
+//
 // import { NFTAuction } from "./exchange/nft-auction";
-// NFTAuction();
-
+// void NFTAuction();
+//
 // import { NFTAuctionCancel } from "./exchange/nft-auction-cancel";
-// NFTAuctionCancel();
-
+// void NFTAuctionCancel();
+//
 // import { NFTBid } from "./exchange/nft-bid";
-// NFTBid();
-
+// void NFTBid();
+//
 // import { NFTBidCancel } from "./exchange/nft-bid-cancel";
-// NFTBidCancel();
-
+// void NFTBidCancel();
+//
 // import { NFTAcceptTrade } from "./exchange/nft-accept-trade";
-// NFTAcceptTrade();
-
+// void NFTAcceptTrade();
+//
 // Guardian transactions types
-
+//
 // import { guardianGroupPermission } from "./guardian/guardian-group-permissions";
-// guardianGroupPermission();
-
+// void guardianGroupPermission();
+//
 // import { guardianUserPermission } from "./guardian/guardian-user-permissions";
-// guardianUserPermission();
+// void guardianUserPermission();
