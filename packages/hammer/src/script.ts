@@ -30,7 +30,7 @@ import devnetPassphrases = require("./data/passphrases/protokol-devnet-passphras
 import { Request } from "@arkecosystem/platform-sdk-http-ky";
 import { File } from "@arkecosystem/platform-sdk-ipfs";
 import { ProtokolConnection } from "@protokol/client";
-import { ARKCrypto } from "@protokol/nft-base-crypto";
+import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
 import chalk from "chalk";
 import delay from "delay";
 import faker from "faker";

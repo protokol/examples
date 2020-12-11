@@ -1,19 +1,20 @@
 import { ProtokolConnection } from "@protokol/client";
-import { ARKCrypto, Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
+import { Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
+import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
 
 export const NFTAcceptTrade = async () => {
 	// Configure manager and register transaction type
-	ARKCrypto.Managers.configManager.setFromPreset("testnet");
-	ARKCrypto.Managers.configManager.setHeight(2);
-	ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAcceptTradeTransaction);
+	Managers.configManager.setFromPreset("testnet");
+	Managers.configManager.setHeight(2);
+	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAcceptTradeTransaction);
 
 	// Configure our API client
-	const client = new ProtokolConnection("https://api.protokol.com/api");
+	const client = new ProtokolConnection("http://localhost:4003/api");
 	const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
 
 	// Step 1: Retrieve the nonce of the sender wallet
-	const senderWallet = await client.api("wallets").get(ARKCrypto.Identities.Address.fromPassphrase(passphrase));
-	const senderNonce = ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
+	const senderWallet = await client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
+	const senderNonce = Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1);
 
 	// Step 2: Create the transaction
 	const transaction = new Builders.NftAcceptTradeBuilder()
