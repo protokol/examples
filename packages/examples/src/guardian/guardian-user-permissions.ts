@@ -1,14 +1,12 @@
+import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
 import { ProtokolConnection } from "@protokol/client";
 import { Builders, Transactions as GuardianTransactions } from "@protokol/guardian-crypto";
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
 
 export const guardianUserPermission = async () => {
 	// Configure manager and register transaction type
 	Managers.configManager.setFromPreset("testnet");
 	Managers.configManager.setHeight(2);
-	Transactions.TransactionRegistry.registerTransactionType(
-		GuardianTransactions.GuardianUserPermissionsTransaction,
-	);
+	Transactions.TransactionRegistry.registerTransactionType(GuardianTransactions.GuardianUserPermissionsTransaction);
 
 	// Configure our API client
 	const client = new ProtokolConnection("http://localhost:4003/api");

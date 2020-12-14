@@ -1,6 +1,6 @@
+import { Identities, Interfaces } from "@arkecosystem/crypto";
 import { BIP39 } from "@arkecosystem/platform-sdk-crypto";
 import { ProtokolConnection } from "@protokol/client";
-import { Identities, Interfaces } from "@arkecosystem/crypto";
 
 import { configurations } from "../configurations";
 import { createTransfer } from "../creation";
@@ -18,9 +18,7 @@ export class ShareCoinsScript {
 		}
 	}
 	public async splitCoins(tokens: number, passphrases: string[]) {
-		const wallet = await this.client
-			.api("wallets")
-			.get(Identities.Address.fromPassphrase(this.passphrase));
+		const wallet = await this.client.api("wallets").get(Identities.Address.fromPassphrase(this.passphrase));
 
 		let nonce = +wallet.body.data.nonce;
 		const transactions: Interfaces.ITransactionJson[] = [];

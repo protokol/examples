@@ -33,16 +33,13 @@
 	"scripts": {
 		"build": "yarn clean && tsc",
 		"build:watch": "yarn build -w",
-		"clean": "rimraf .coverage dist tmp",
-		"format": "yarn lint && yarn prettier",
-		"lint": "tslint -c tslint.json -p tslint.json 'src/**/*.ts' --fix",
-		"prettier": "prettier --write \"./*.{ts,js,json,md}\" \"./**/*.{ts,js,json,md}\""
+		"clean": "rimraf .coverage dist tmp"
 	},
 	"dependencies": {
 		"@arkecosystem/crypto": "^3.0.0-next",
-		"@arkecosystem/platform-sdk-crypto": "1.2.7",
-		"@arkecosystem/platform-sdk-http-ky": "1.2.7",
-		"@arkecosystem/platform-sdk-ipfs": "1.2.7",
+		"@arkecosystem/platform-sdk-crypto": "2.0.0",
+		"@arkecosystem/platform-sdk-http-ky": "2.0.0",
+		"@arkecosystem/platform-sdk-ipfs": "2.0.0",
 		"@protokol/client": "1.0.0-beta.38",
 		"@protokol/nft-base-crypto": "1.0.0-beta.55",
 		"@protokol/nft-exchange-crypto": "1.0.0-beta.55",

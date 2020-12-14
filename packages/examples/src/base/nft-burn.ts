@@ -1,6 +1,6 @@
+import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
 import { ProtokolConnection } from "@protokol/client";
 import { Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
 
 export const NFTBurn = async () => {
 	// Configure manager and register transaction type

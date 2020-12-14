@@ -31,10 +31,7 @@
 	"scripts": {
 		"build": "yarn clean && tsc",
 		"build:watch": "yarn build -w",
-		"clean": "rimraf .coverage dist tmp",
-		"format": "yarn lint && yarn prettier",
-		"lint": "tslint -c tslint.json -p tslint.json 'src/**/*.ts' --fix",
-		"prettier": "prettier --write \"./*.{ts,js,json,md}\" \"./**/*.{ts,js,json,md}\""
+		"clean": "rimraf .coverage dist tmp"
 	},
 	"dependencies": {
 		"@arkecosystem/crypto": "^3.0.0-next",

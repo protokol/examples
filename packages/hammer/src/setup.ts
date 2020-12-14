@@ -1,6 +1,6 @@
+import { Managers, Transactions } from "@arkecosystem/crypto";
 import { Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 import { Transactions as NFTExchangeTransactions } from "@protokol/nft-exchange-crypto";
-import { Managers, Transactions} from "@arkecosystem/crypto";
 
 import { configurations } from "./configurations";
 import exceptions from "./data/networks/exceptions.json";
@@ -18,13 +18,9 @@ export const setupScript = async () => {
 		exceptions: exceptions,
 	});
 
-	Transactions.TransactionRegistry.registerTransactionType(
-		NFTTransactions.NFTRegisterCollectionTransaction,
-	);
+	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTRegisterCollectionTransaction);
 	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTCreateTransaction);
 	Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTAuctionTransaction);
 	Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTBidTransaction);
-	Transactions.TransactionRegistry.registerTransactionType(
-		NFTExchangeTransactions.NFTAcceptTradeTransaction,
-	);
+	Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTAcceptTradeTransaction);
 };
