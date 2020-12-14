@@ -27,16 +27,11 @@ import nascarHeroCard4 = require("./data/assets/nascar-hero-card/hero-card4.json
 // passphrases
 import devnetPassphrases = require("./data/passphrases/protokol-devnet-passphrases.json");
 
-import { Request } from "@arkecosystem/platform-sdk-http-ky";
-import { File } from "@arkecosystem/platform-sdk-ipfs";
-import { ProtokolConnection } from "@protokol/client";
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
 import chalk from "chalk";
 import delay from "delay";
 import faker from "faker";
 
 import { configurations } from "./configurations";
-import { DelegateScript } from "./scripts/DelegateScript";
 import { FillScript } from "./scripts/FillScript";
 import { ShareCoinsScript } from "./scripts/ShareCoinsScript";
 import { setupScript } from "./setup";

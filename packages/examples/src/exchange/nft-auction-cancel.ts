@@ -1,11 +1,11 @@
+import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
 import { ProtokolConnection } from "@protokol/client";
 import { Builders, Transactions as NFTTransactions } from "@protokol/nft-exchange-crypto";
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
 
 export const NFTAuctionCancel = async () => {
 	// Configure manager and register transaction type
 	Managers.configManager.setFromPreset("testnet");
-    Managers.configManager.setHeight(2);
+	Managers.configManager.setHeight(2);
 	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTAuctionCancelTransaction);
 
 	// Configure our API client

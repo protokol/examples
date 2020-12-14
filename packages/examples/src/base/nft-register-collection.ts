@@ -1,14 +1,12 @@
+import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
 import { ProtokolConnection } from "@protokol/client";
 import { Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
-import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto";
 
 export const NFTRegisterCollection = async () => {
 	// Configure manager and register transaction type
 	Managers.configManager.setFromPreset("testnet");
 	Managers.configManager.setHeight(2);
-	Transactions.TransactionRegistry.registerTransactionType(
-		NFTTransactions.NFTRegisterCollectionTransaction,
-	);
+	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTRegisterCollectionTransaction);
 
 	// Configure our API client
 	const client = new ProtokolConnection("http://localhost:4003/api");

@@ -1,7 +1,6 @@
+import { Identities, Interfaces, Utils } from "@arkecosystem/crypto";
 import { ProtokolConnection } from "@protokol/client";
 import { Interfaces as NFTBaseInterfaces } from "@protokol/nft-base-crypto";
-import { Identities, Interfaces, Utils } from "@arkecosystem/crypto";
-
 import faker from "faker";
 
 import { configurations } from "../configurations";
@@ -110,9 +109,7 @@ export class FillScript {
 				transactions.push(
 					createBid(
 						{
-							bidAmount: Utils.BigNumber.make(
-								faker.random.number({ max: 1000000, min: 2 }).toString(),
-							),
+							bidAmount: Utils.BigNumber.make(faker.random.number({ max: 1000000, min: 2 }).toString()),
 							auctionId: this.auctions[i]!,
 						},
 						nonce.plus(1).toString(),
@@ -156,9 +153,7 @@ export class FillScript {
 	}
 
 	public async getNonce(passphrase: string): Promise<Utils.BigNumber> {
-		const senderWallet = await this.client
-			.api("wallets")
-			.get(Identities.Address.fromPassphrase(passphrase));
+		const senderWallet = await this.client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
 		return Utils.BigNumber.make(senderWallet.body.data.nonce);
 	}
 }

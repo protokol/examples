@@ -1,6 +1,6 @@
+import { Interfaces, Transactions } from "@arkecosystem/crypto";
 import { Builders as NFTBaseBuilders, Interfaces as NFTBaseInterfaces } from "@protokol/nft-base-crypto";
 import { Builders as NFTExchangeBuilders, Interfaces as NFTExchangeInterfaces } from "@protokol/nft-exchange-crypto";
-import { Transactions, Interfaces } from "@arkecosystem/crypto";
 
 export const createTransfer = (
 	address: string,
@@ -17,11 +17,7 @@ export const createTransfer = (
 		.toJson();
 };
 
-export const createDelegate = (
-	username: string,
-	nonce: string,
-	passphrase: string,
-): Interfaces.ITransactionJson => {
+export const createDelegate = (username: string, nonce: string, passphrase: string): Interfaces.ITransactionJson => {
 	return Transactions.BuilderFactory.delegateRegistration()
 		.usernameAsset(username)
 		.nonce(nonce)
