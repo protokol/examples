@@ -580,9 +580,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-crypto@npm:2.1.2":
-  version: 2.1.2
-  resolution: "@arkecosystem/platform-sdk-crypto@npm:2.1.2"
+"@arkecosystem/platform-sdk-crypto@npm:2.1.3":
+  version: 2.1.3
+  resolution: "@arkecosystem/platform-sdk-crypto@npm:2.1.3"
   dependencies:
     argon2-browser: ^1.15.2
     bcryptjs: ^2.4.3
@@ -594,43 +594,43 @@ __metadata:
     node-forge: ^0.10.0
     safe-buffer: ^5.2.1
     string-crypto: ^1.0.4
-  checksum: 9088b523aa088acf8d6db05a35bc1506b2999db7e6b174973fde1bf89c0087a756115f676b08f577039c033390a71b5cb407f53bbac6bfca789ba3d13fa8855c
+  checksum: 954da3a673e5a64defca6eaf8a79f44edd4426af25a2ab15c1cc13542ed578f437e9a1cbb6c5ed9924204f1db67fa684f462a9bdc00229a942c64f83895d649b
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-http-ky@npm:2.1.2":
-  version: 2.1.2
-  resolution: "@arkecosystem/platform-sdk-http-ky@npm:2.1.2"
+"@arkecosystem/platform-sdk-http-ky@npm:2.1.3":
+  version: 2.1.3
+  resolution: "@arkecosystem/platform-sdk-http-ky@npm:2.1.3"
   dependencies:
-    "@arkecosystem/platform-sdk": 2.1.2
+    "@arkecosystem/platform-sdk": 2.1.3
     ky: ^0.25.0
     ky-universal: ^0.8.2
-  checksum: ac69709d9b5a7673ac3e57baf9d1061d055288468804366a2506668b13b1d1f2b0418da36f31a3fc985cbcd676ee24f3677635cb751a186c3903c49fe560b004
+  checksum: 832b1685cc3f060e8e0cee120a3cead7b1f5c597a47ea28757cb0de32108be9b44b80149b7b29300d533b7847f9964bd396502933a8d5043fdf453edca685e85
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-intl@npm:2.1.2":
-  version: 2.1.2
-  resolution: "@arkecosystem/platform-sdk-intl@npm:2.1.2"
+"@arkecosystem/platform-sdk-intl@npm:2.1.3":
+  version: 2.1.3
+  resolution: "@arkecosystem/platform-sdk-intl@npm:2.1.3"
   dependencies:
     dayjs: ^1.9.6
     dinero.js: ^1.8.1
-  checksum: 81c10cbb68faba9ab6586c284e2d69cf925d9738982264b8eb622c44252a3a88e5900bee5f86d29257c6662219815dce1db4b3d291a6cfa7520a1308b7654f8b
+  checksum: 4e191db1975515ba005d794a63ac3dfdcd7caeaec33f27e9739e882b84afb1b57e8afa68b4e743dfaf19d2bb9d66dbfd3cb132c1446f52ff77ddebcc42073cbe
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-ipfs@npm:2.1.2":
-  version: 2.1.2
-  resolution: "@arkecosystem/platform-sdk-ipfs@npm:2.1.2"
+"@arkecosystem/platform-sdk-ipfs@npm:2.1.3":
+  version: 2.1.3
+  resolution: "@arkecosystem/platform-sdk-ipfs@npm:2.1.3"
   dependencies:
-    "@arkecosystem/platform-sdk": 2.1.2
-  checksum: 3d4549b02b35c9d9ee91bebe976efd9b9282b8f7508d115edef4f5481242d578bcc0be3dbb0d4bfc07f6c0588e6787aa4caeef749dcf408b89cfaacb9c312ddb
+    "@arkecosystem/platform-sdk": 2.1.3
+  checksum: e01d6538b7de643334c3399dcdfc53f8d3c680fa3f311487871d98aa94763d7d1c8b63d6254a3a9ca7bfa31a08e884cd89f07f3b59b08a03f6404fcc03d4b47d
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-support@npm:2.1.2":
-  version: 2.1.2
-  resolution: "@arkecosystem/platform-sdk-support@npm:2.1.2"
+"@arkecosystem/platform-sdk-support@npm:2.1.3":
+  version: 2.1.3
+  resolution: "@arkecosystem/platform-sdk-support@npm:2.1.3"
   dependencies:
     bad-words: ^3.0.3
     bignumber.js: ^9.0.1
@@ -641,16 +641,16 @@ __metadata:
     qrcode: ^1.4.4
     remarkable: ^2.0.1
     yup: ^0.29.3
-  checksum: 3ad2d3be915e59bf11bedfa518051179e2002f331d724921c120e54728df248196a4c899c1af66625b3a6a911f0158c67a39ca6f7f738457592dfa60509dd59a
+  checksum: 6dba9bed72ec3742e0719a62e7af6f8653eba63410c223495d56112c740a426bbd0631d512ed4f6e9434ed23230b7bca01dcabd0b4189e7e073b46667850896f
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk@npm:2.1.2":
-  version: 2.1.2
-  resolution: "@arkecosystem/platform-sdk@npm:2.1.2"
+"@arkecosystem/platform-sdk@npm:2.1.3":
+  version: 2.1.3
+  resolution: "@arkecosystem/platform-sdk@npm:2.1.3"
   dependencies:
-    "@arkecosystem/platform-sdk-intl": 2.1.2
-    "@arkecosystem/platform-sdk-support": 2.1.2
+    "@arkecosystem/platform-sdk-intl": 2.1.3
+    "@arkecosystem/platform-sdk-support": 2.1.3
     bad-words: ^3.0.3
     bent: ^7.3
     bignumber.js: ^9.0.1
@@ -662,7 +662,7 @@ __metadata:
     node-emoji: ^1.10.0
     type-fest: ^0.18.1
     yup: ^0.29.3
-  checksum: 0beea480dcaae42762574742b5441a83c5d94d76dafc2b7646f9e4a888d043eff2d8b7ee59976d51c527a597ab58504c73106e92ed8969063d254387e8573f9e
+  checksum: f78c27876e502a9fecd45e82e422954310cf963208e1ae3c14117c612877e47752728a31b457e51aad8721e8f56890a90806c9308ebafcac5372c39b133d5ba1
   languageName: node
   linkType: hard
 
@@ -2637,9 +2637,9 @@ __metadata:
   resolution: "@protokol/hammer@workspace:packages/hammer"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
-    "@arkecosystem/platform-sdk-crypto": 2.1.2
-    "@arkecosystem/platform-sdk-http-ky": 2.1.2
-    "@arkecosystem/platform-sdk-ipfs": 2.1.2
+    "@arkecosystem/platform-sdk-crypto": 2.1.3
+    "@arkecosystem/platform-sdk-http-ky": 2.1.3
+    "@arkecosystem/platform-sdk-ipfs": 2.1.3
     "@protokol/client": 1.0.0-beta.38
     "@protokol/nft-base-crypto": 1.0.0-beta.55
     "@protokol/nft-exchange-crypto": 1.0.0-beta.55
