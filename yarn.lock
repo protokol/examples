@@ -580,9 +580,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-crypto@npm:2.2.0":
-  version: 2.2.0
-  resolution: "@arkecosystem/platform-sdk-crypto@npm:2.2.0"
+"@arkecosystem/platform-sdk-crypto@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@arkecosystem/platform-sdk-crypto@npm:2.3.0"
   dependencies:
     argon2-browser: ^1.15.2
     bcryptjs: ^2.4.3
@@ -594,43 +594,43 @@ __metadata:
     node-forge: ^0.10.0
     safe-buffer: ^5.2.1
     string-crypto: ^1.0.4
-  checksum: c31cd5b8827a4e3aca0135ab3585d7cc52b2fb9e1dad69a3648445000e2f3aaf4edcc88f84aa8cc7e94b83ad6a09b0fb18b478478bf05118f51b84b0b4755445
+  checksum: 74cfc093217d051df17ea731338df0f573588029759c2ebbe449096941eb067f5f65971ae6da154548bf0e68dfd2dc989550ad498a9e2e2d209a8f354f07aa38
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-http-ky@npm:2.2.0":
-  version: 2.2.0
-  resolution: "@arkecosystem/platform-sdk-http-ky@npm:2.2.0"
+"@arkecosystem/platform-sdk-http-ky@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@arkecosystem/platform-sdk-http-ky@npm:2.3.0"
   dependencies:
-    "@arkecosystem/platform-sdk": 2.2.0
+    "@arkecosystem/platform-sdk": 2.3.0
     ky: ^0.25.0
     ky-universal: ^0.8.2
-  checksum: 55e84023c82e7ae7f7a9c08d0522ce396a5e00e7c27666af0d5bc384c200e88987d150ef4903fee8a4e44ea64ab19e9c0cb2e0687482c8478387fdc666f6116d
+  checksum: ec1dd64c890e82b24e07944881eb792d82f9d431dfc68d57ac4c7d368ed0b1f9d28d303514db28d6b7677be67c6bbf80eaef391dbca30727ac77d317e5421777
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-intl@npm:2.2.0":
-  version: 2.2.0
-  resolution: "@arkecosystem/platform-sdk-intl@npm:2.2.0"
+"@arkecosystem/platform-sdk-intl@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@arkecosystem/platform-sdk-intl@npm:2.3.0"
   dependencies:
     dayjs: ^1.9.6
     dinero.js: ^1.8.1
-  checksum: 8646d994b67c1c81a6ac321d8effc39480145479591616db0bc57da450d7d84cc287ded905c523be9bd56e57d4775da2a323fe3c26cf7f13d6c8556b638e113a
+  checksum: d08a0c68289cc2b3f177afbc6569272f66429b309c3a2cba72b119f988cf596dc188367e3a0cabb2f8f46b19c1766499b7c4e9796e924561bd614095e58cf4ee
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-ipfs@npm:2.2.0":
-  version: 2.2.0
-  resolution: "@arkecosystem/platform-sdk-ipfs@npm:2.2.0"
+"@arkecosystem/platform-sdk-ipfs@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@arkecosystem/platform-sdk-ipfs@npm:2.3.0"
   dependencies:
-    "@arkecosystem/platform-sdk": 2.2.0
-  checksum: e5fc3c3e54a6761999b560ae485e358e97a39b2f92dc32b690bf7cb7a504b6198fb6746c83e44001342d15e4b41a9f053ee72bfd10a048fe68aa00c5a4f72222
+    "@arkecosystem/platform-sdk": 2.3.0
+  checksum: 9d4e5af6972d129347bc8a00ed5903edc8087765204fd9207d37f63b4cf3d21968b1686a197d5accb025c3cc0bf78b013fe60e9c810fbe855bfdbb64414bda32
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-support@npm:2.2.0":
-  version: 2.2.0
-  resolution: "@arkecosystem/platform-sdk-support@npm:2.2.0"
+"@arkecosystem/platform-sdk-support@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@arkecosystem/platform-sdk-support@npm:2.3.0"
   dependencies:
     bad-words: ^3.0.3
     bignumber.js: ^9.0.1
@@ -640,17 +640,16 @@ __metadata:
     joi: ^17.3.0
     qrcode: ^1.4.4
     remarkable: ^2.0.1
-    yup: ^0.29.3
-  checksum: b9ac019df346bd13fe012f9f111a66d94168c477c1523b2f3331f7b457aee6331350ab2784c26853730be5645f3b1edfc77e6f6a7454d78bc9e56bfdf4e6ee50
+  checksum: 18fe067e9cba04be84a20c87c565dbdbcc41447dda3e978bdb0ded0e0a10d6367f24e164a42d2a147a1f59f375b4f540680699f1f33ca7f7223249c7f723bbb7
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk@npm:2.2.0":
-  version: 2.2.0
-  resolution: "@arkecosystem/platform-sdk@npm:2.2.0"
+"@arkecosystem/platform-sdk@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@arkecosystem/platform-sdk@npm:2.3.0"
   dependencies:
-    "@arkecosystem/platform-sdk-intl": 2.2.0
-    "@arkecosystem/platform-sdk-support": 2.2.0
+    "@arkecosystem/platform-sdk-intl": 2.3.0
+    "@arkecosystem/platform-sdk-support": 2.3.0
     bad-words: ^3.0.3
     bent: ^7.3
     bignumber.js: ^9.0.1
@@ -659,10 +658,10 @@ __metadata:
     censorify-it: ^3.0.2
     dayjs: ^1.9
     dot-prop: ^6.0.0
+    joi: ^17.3.0
     node-emoji: ^1.10.0
     type-fest: ^0.18.1
-    yup: ^0.29.3
-  checksum: bbf0afa173a07be5bdbc38358ad18e08b9289fd4ee33988548cb9cc11418802dc488b2f0926fc55094778d2d8339d04168781fc208fc8ae2dc8d5691cdbc0185
+  checksum: 27269e829b0d51884078a93a3d3b0b02df50cc7e1b30946dcf5d733cfd14538aaafea6f81d531f47b3b8ee24571fdc0d77b9b8e0c16d917cd5e0d305f7b1d16b
   languageName: node
   linkType: hard
 
@@ -991,15 +990,6 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 9767e46ddc1add9133a21f5d6c4452e9a62f891fe1db5d8291f62f9036f9e697bc118adad43109a8740ac15769e9489d68d134b17cfe9f3bdf06d2c50c9c6dce
-  languageName: node
-  linkType: hard
-
-"@babel/runtime@npm:^7.10.5":
-  version: 7.12.5
-  resolution: "@babel/runtime@npm:7.12.5"
-  dependencies:
-    regenerator-runtime: ^0.13.4
-  checksum: 423fb0079353db2faa0dad0cbdf0a90fbc5b511d1f77e5645d1aa0b144a144e24502bb023c12a31d7dca63b6e16ae36afa59992f0404e92e21de211051c361e3
   languageName: node
   linkType: hard
 
@@ -2637,9 +2627,9 @@ __metadata:
   resolution: "@protokol/hammer@workspace:packages/hammer"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
-    "@arkecosystem/platform-sdk-crypto": 2.2.0
-    "@arkecosystem/platform-sdk-http-ky": 2.2.0
-    "@arkecosystem/platform-sdk-ipfs": 2.2.0
+    "@arkecosystem/platform-sdk-crypto": 2.3.0
+    "@arkecosystem/platform-sdk-http-ky": 2.3.0
+    "@arkecosystem/platform-sdk-ipfs": 2.3.0
     "@protokol/client": 1.0.0-beta.38
     "@protokol/nft-base-crypto": 1.0.0-beta.55
     "@protokol/nft-exchange-crypto": 1.0.0-beta.55
@@ -6847,13 +6837,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fn-name@npm:~3.0.0":
-  version: 3.0.0
-  resolution: "fn-name@npm:3.0.0"
-  checksum: dd2190001862d3ea6d1f0788c58d083593166debfa65ff77473a3d37795548e92e5d050ca32f90781fa5c270901694c45022fc90ff2fa50f44aa302f20916589
-  languageName: node
-  linkType: hard
-
 "for-in@npm:^1.0.2":
   version: 1.0.2
   resolution: "for-in@npm:1.0.2"
@@ -9304,13 +9287,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"lodash-es@npm:^4.17.11":
-  version: 4.17.15
-  resolution: "lodash-es@npm:4.17.15"
-  checksum: ee2871b76deefd1754527e659a8c8b688f2e427e67b30709296878e18ad9cb54b4f0fc16a7161298156b4e0ebc2a37dfe501a3ea8725f195763f9de8a7ba6da6
-  languageName: node
-  linkType: hard
-
 "lodash.differencewith@npm:^4.5.0":
   version: 4.5.0
   resolution: "lodash.differencewith@npm:4.5.0"
@@ -11505,13 +11481,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"property-expr@npm:^2.0.2":
-  version: 2.0.4
-  resolution: "property-expr@npm:2.0.4"
-  checksum: fffa6ba8a21cbbf694652755fe2cf4d68bfb8c625f2de6424910edf2c7d50a3f4e7e5ac749b8fe42261cb63d12148d7612f207397d244151e2d7fb853ce7bf5b
-  languageName: node
-  linkType: hard
-
 "protobufjs@npm:~6.10.1":
   version: 6.10.2
   resolution: "protobufjs@npm:6.10.2"
@@ -11826,13 +11795,6 @@ fsevents@~2.1.2:
   version: 0.1.13
   resolution: "reflect-metadata@npm:0.1.13"
   checksum: 629101e6c8b7e0d3166fa51953f908f45b5c73dbaf1375c4f8c3ed62221b870c951343b9b031d0c49957e7262a88020f41be25731ee85b5d779f12c7cec66005
-  languageName: node
-  linkType: hard
-
-"regenerator-runtime@npm:^0.13.4":
-  version: 0.13.7
-  resolution: "regenerator-runtime@npm:0.13.7"
-  checksum: 6ef567c662088b1b292214920cbd72443059298d477f72e1a37e0a113bafbfac9057cbfe35ae617284effc4b423493326a78561bbff7b04162c7949bdb9624e8
   languageName: node
   linkType: hard
 
@@ -13021,13 +12983,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"synchronous-promise@npm:^2.0.13":
-  version: 2.0.15
-  resolution: "synchronous-promise@npm:2.0.15"
-  checksum: 3462a5aa243969dc07aeeac00d77d56fc49663441f0167d48b39468e673cb294ce18ec1848aa24cd04961a0678d374f4cd77226d8288ebd57873d24a2a20f7eb
-  languageName: node
-  linkType: hard
-
 "systeminformation@npm:^4.30.4":
   version: 4.31.0
   resolution: "systeminformation@npm:4.31.0"
@@ -13301,13 +13256,6 @@ fsevents@~2.1.2:
   version: 1.0.0
   resolution: "toidentifier@npm:1.0.0"
   checksum: 95720e8a0f98f1525f50ccbecbc2a23f0a1b4e448de03819dbbeda03adf0d2010fe64525fbc9d549765242550d341bb891672e4ac0b2cac58613cdd742324255
-  languageName: node
-  linkType: hard
-
-"toposort@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "toposort@npm:2.0.2"
-  checksum: 9e70bf92de5e65e77e89065f34b642a9ae75be5cf4896152b5a131ca66c77c4d9edf056942e988e29b534a83643f38860e148aa939cd3c489d00abbf5639f54f
   languageName: node
   linkType: hard
 
@@ -14369,21 +14317,6 @@ typescript@~4.1.2:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 096c3b40beb2804659539be1605a35c58eb0c85285f94b77b3e924f42ee265c1a40bf9f4153770039517146b469a964d51742395f35ca8135fc9f7e4982b785d
-  languageName: node
-  linkType: hard
-
-"yup@npm:^0.29.3":
-  version: 0.29.3
-  resolution: "yup@npm:0.29.3"
-  dependencies:
-    "@babel/runtime": ^7.10.5
-    fn-name: ~3.0.0
-    lodash: ^4.17.15
-    lodash-es: ^4.17.11
-    property-expr: ^2.0.2
-    synchronous-promise: ^2.0.13
-    toposort: ^2.0.2
-  checksum: bc07ab697d38169c9fad874696008ec84dab14f5e3559b539c7edb01ea49235808670ea4cb7de64009ed473fb3700e6794ed407c293cb94b2d6c4f34deb16e4b
   languageName: node
   linkType: hard
 
