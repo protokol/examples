@@ -748,12 +748,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:2.6.0", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-npm-2.6.0-058234d9de-565d4392af.zip/node_modules/@arkecosystem/platform-sdk/",
+        ["npm:2.6.1", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-npm-2.6.1-c1880b73e8-544f05a9f3.zip/node_modules/@arkecosystem/platform-sdk/",
           "packageDependencies": [
-            ["@arkecosystem/platform-sdk", "npm:2.6.0"],
-            ["@arkecosystem/platform-sdk-intl", "npm:2.6.0"],
-            ["@arkecosystem/platform-sdk-support", "npm:2.6.0"],
+            ["@arkecosystem/platform-sdk", "npm:2.6.1"],
+            ["@arkecosystem/platform-sdk-intl", "npm:2.6.1"],
+            ["@arkecosystem/platform-sdk-support", "npm:2.6.1"],
             ["bad-words", "npm:3.0.4"],
             ["bent", "npm:7.3.12"],
             ["bignumber.js", "npm:9.0.1"],
@@ -770,10 +770,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/platform-sdk-crypto", [
-        ["npm:2.6.0", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-2.6.0-55c188d2de-ceaf449828.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
+        ["npm:2.6.1", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-2.6.1-527c0b8fcf-6e6e4a47b1.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
           "packageDependencies": [
-            ["@arkecosystem/platform-sdk-crypto", "npm:2.6.0"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:2.6.1"],
             ["argon2-browser", "npm:1.15.2"],
             ["bcryptjs", "npm:2.4.3"],
             ["bcrypto", "npm:5.3.0"],
@@ -789,11 +789,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/platform-sdk-http-ky", [
-        ["npm:2.6.0", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-http-ky-npm-2.6.0-a444553918-3495fc1176.zip/node_modules/@arkecosystem/platform-sdk-http-ky/",
+        ["npm:2.6.1", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-http-ky-npm-2.6.1-0e44cab794-9d1b21673b.zip/node_modules/@arkecosystem/platform-sdk-http-ky/",
           "packageDependencies": [
-            ["@arkecosystem/platform-sdk-http-ky", "npm:2.6.0"],
-            ["@arkecosystem/platform-sdk", "npm:2.6.0"],
+            ["@arkecosystem/platform-sdk-http-ky", "npm:2.6.1"],
+            ["@arkecosystem/platform-sdk", "npm:2.6.1"],
             ["ky", "npm:0.25.1"],
             ["ky-universal", "virtual:5c1d15a674870dd503ceed0afb6fa377036e63e8513aa46890f5350ff27a3ba28ecab6403115e1188f82b8a1c2cbb40c5bce51f00d61010af07399036e2a80ea#npm:0.8.2"]
           ],
@@ -810,10 +810,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:2.6.0", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-intl-npm-2.6.0-23941cd75b-e66171250f.zip/node_modules/@arkecosystem/platform-sdk-intl/",
+        ["npm:2.6.1", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-intl-npm-2.6.1-fd61e5b8f8-921822e729.zip/node_modules/@arkecosystem/platform-sdk-intl/",
           "packageDependencies": [
-            ["@arkecosystem/platform-sdk-intl", "npm:2.6.0"],
+            ["@arkecosystem/platform-sdk-intl", "npm:2.6.1"],
             ["dayjs", "npm:1.9.7"],
             ["dinero.js", "npm:1.8.1"]
           ],
@@ -846,10 +846,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:2.6.0", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-support-npm-2.6.0-28f4832b49-94add3ee16.zip/node_modules/@arkecosystem/platform-sdk-support/",
+        ["npm:2.6.1", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-support-npm-2.6.1-1844794575-677633f811.zip/node_modules/@arkecosystem/platform-sdk-support/",
           "packageDependencies": [
-            ["@arkecosystem/platform-sdk-support", "npm:2.6.0"],
+            ["@arkecosystem/platform-sdk-support", "npm:2.6.1"],
             ["bad-words", "npm:3.0.4"],
             ["bignumber.js", "npm:9.0.1"],
             ["censorify-it", "npm:3.0.2"],
@@ -3045,8 +3045,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.16"],
-            ["@arkecosystem/platform-sdk-crypto", "npm:2.6.0"],
-            ["@arkecosystem/platform-sdk-http-ky", "npm:2.6.0"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:2.6.1"],
+            ["@arkecosystem/platform-sdk-http-ky", "npm:2.6.1"],
             ["@arkecosystem/platform-sdk-ipfs", "npm:2.3.6"],
             ["@protokol/client", "npm:1.0.0-beta.38"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.56"],
