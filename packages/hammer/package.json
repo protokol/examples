@@ -37,8 +37,8 @@
 	},
 	"dependencies": {
 		"@arkecosystem/crypto": "^3.0.0-next",
-		"@arkecosystem/platform-sdk-crypto": "2.7.2",
-		"@arkecosystem/platform-sdk-http-ky": "2.7.2",
+		"@arkecosystem/platform-sdk-crypto": "2.7.6",
+		"@arkecosystem/platform-sdk-http-ky": "2.7.6",
 		"@arkecosystem/platform-sdk-ipfs": "2.3.6",
 		"@protokol/client": "1.0.0-beta.38",
 		"@protokol/nft-base-crypto": "1.0.0-beta.56",
