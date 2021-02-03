@@ -3053,7 +3053,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.56"],
             ["@types/faker", "npm:5.1.5"],
             ["chalk", "npm:4.1.0"],
-            ["delay", "npm:4.4.0"],
+            ["delay", "npm:5.0.0"],
             ["faker", "npm:5.1.0"],
             ["rimraf", "npm:3.0.2"],
             ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=cc6730"]
@@ -6786,6 +6786,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/delay-npm-4.4.0-a8ada74c33-cb54b19a68.zip/node_modules/delay/",
           "packageDependencies": [
             ["delay", "npm:4.4.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/delay-npm-5.0.0-1d1c758b46-404b4dd8e6.zip/node_modules/delay/",
+          "packageDependencies": [
+            ["delay", "npm:5.0.0"]
           ],
           "linkType": "HARD",
         }]
