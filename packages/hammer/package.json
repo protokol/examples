@@ -44,7 +44,7 @@
 		"@protokol/nft-base-crypto": "1.0.0-beta.56",
 		"@protokol/nft-exchange-crypto": "1.0.0-beta.56",
 		"chalk": "^4.1.0",
-		"delay": "^4.4.0",
+		"delay": "^5.0.0",
 		"faker": "^5.1.0"
 	},
 	"devDependencies": {

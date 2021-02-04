@@ -2681,7 +2681,7 @@ __metadata:
     "@protokol/nft-exchange-crypto": 1.0.0-beta.56
     "@types/faker": ^5
     chalk: ^4.1.0
-    delay: ^4.4.0
+    delay: ^5.0.0
     faker: ^5.1.0
     rimraf: ^3.0.2
     typescript: ~4.1.2
@@ -5802,10 +5802,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"delay@npm:4.4.0, delay@npm:^4.3.0, delay@npm:^4.4.0":
+"delay@npm:4.4.0, delay@npm:^4.3.0":
   version: 4.4.0
   resolution: "delay@npm:4.4.0"
   checksum: cb54b19a68b8f299c601e59819b54f6c9927421556d2eed75ddc1fcffccfe030259fb4b573da41d59d3beca4591c15f7018bfd89c5845cf38dd4897c70730a07
+  languageName: node
+  linkType: hard
+
+"delay@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "delay@npm:5.0.0"
+  checksum: 404b4dd8e60f9fe869dbbd502696cdf4da2b4f3b5b4c10d3345bdec7a3af896ebbb175e16e3aeef7b2063a8ffbb446a04b97218fb276233c90c103b8676c83a0
   languageName: node
   linkType: hard
 
