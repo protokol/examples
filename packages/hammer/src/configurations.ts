@@ -2,7 +2,7 @@ import testnetPassphrases = require("./data/networks/delegates.json");
 
 export const configurations = {
 	// clientHost: "http://localhost:5003/api",
-	clientHost: "https://devnet-explorer.protokol.sh/api",
+	clientHost: "https://proto-devnet.protokol.sh/api",
 	network: "devnet",
 	networkHeight: 0,
 	passphrasesFile: testnetPassphrases,

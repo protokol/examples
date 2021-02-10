@@ -22,15 +22,15 @@ export class ShareCoinsScript {
 			.api("wallets")
 			.get(ARKCrypto.Identities.Address.fromPassphrase(this.passphrase));
 
-		let nonce = +wallet.body.data.nonce;
+		let nonce = ARKCrypto.Utils.BigNumber.make(wallet.body.data.nonce);
 		const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
 
 		for (const pass of passphrases) {
-			nonce++;
+			nonce = nonce.plus(1);
 			const transfer = createTransfer(
 				ARKCrypto.Identities.Address.fromPassphrase(pass),
 				tokens * 10 ** 8,
-				nonce.toString(),
+				nonce.toFixed(),
 				this.passphrase,
 			);
 			transactions.push(transfer);

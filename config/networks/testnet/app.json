@@ -8,7 +8,12 @@
 				"package": "@arkecosystem/core-manager"
 			},
 			{
-				"package": "@arkecosystem/core-state"
+				"package": "@arkecosystem/core-state",
+			  	"options": {
+					"walletSync": {
+					  "enabled": true
+					}
+				}
 			},
 			{
 				"package": "@arkecosystem/core-database"

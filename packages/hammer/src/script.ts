@@ -5,6 +5,7 @@ import nascarCollection = require("./data/collections/nascar-collection.json");
 import IWCCollection = require("./data/collections/iwc-collection.json");
 import nascarTeamCollection = require("./data/collections/nascar-team-collection.json");
 import nascarHeroCardsCollection = require("./data/collections/nascar-hero-card-collection.json");
+import arexCollection = require("./data/collections/arex-collection.json");
 
 import ironManAsset = require("./data/assets/marvel/iron-man.json");
 import breaitlingAsset = require("./data/assets/breitling/breitling-watch1.json");
@@ -36,8 +37,16 @@ import breitlingWatch1 = require("./data/assets/breitling/breitling-watch1.json"
 import breitlingWatch2 = require("./data/assets/breitling/breitling-watch2.json");
 import breitlingWatch3 = require("./data/assets/breitling/breitling-watch3.json");
 
+// AREX Weapons
+import alpha = require("./data/assets/arex/alpha.json");
+import delta = require("./data/assets/arex/delta.json");
+import zero1CP = require("./data/assets/arex/zero1CP.json");
+import zero1S = require("./data/assets/arex/zero1S.json");
+import zero1T = require("./data/assets/arex/zero1T.json");
+import zero1TC = require("./data/assets/arex/zero1TC.json");
+
 // passphrases
-import devnetPassphrases = require("./data/networks/delegates.json");
+import devnetPassphrases = require("./data/passphrases/protokol-testnet-passphrases.json");
 
 import { Request } from "@arkecosystem/platform-sdk-http-ky";
 import { File } from "@arkecosystem/platform-sdk-ipfs";
@@ -48,7 +57,7 @@ import delay from "delay";
 import faker from "faker";
 
 import { configurations } from "./configurations";
-import { createCollection } from "./creation";
+import { createCollection, createTransfer } from "./creation";
 import { DelegateScript } from "./scripts/DelegateScript";
 import { FillScript } from "./scripts/FillScript";
 import { ShareCoinsScript } from "./scripts/ShareCoinsScript";
@@ -58,14 +67,16 @@ export const main = async () => {
 	/** Setup the script - registering transaction types and network settings */
 	console.log(chalk.blue("Setup script"));
 	await setupScript();
-
+	//
 	// const client = new ProtokolConnection(configurations.clientHost);
 	// const senderWallet = await client
 	// 	.api("wallets")
 	// 	.get(ARKCrypto.Identities.Address.fromPassphrase("deer clean library cram brush scissors soda buyer matrix actor timber endless"));
-	// const a = createCollection(
-	// 	nascarCollection,
-	// 	ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1).toFixed(),
+	// const a = createTransfer(
+	// 	ARKCrypto.Identities.Address.fromPassphrase("give income reflect velvet derive train sudden panic quit video fancy enlist"),
+	// 	1,
+	// 	// nascarCollection,
+	// 	ARK Crypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1).toFixed(),
 	// 	"deer clean library cram brush scissors soda buyer matrix actor timber endless",
 	// );
 	// console.log(JSON.stringify(a,null,3));
@@ -73,7 +84,11 @@ export const main = async () => {
 
 	/** Transfer coins to known wallet from master wallet which you get from the arguments */
 	console.log(chalk.green("Transfer coins to known wallets"));
-	console.log(ARKCrypto.Identities.Address.fromPassphrase("deer clean library cram brush scissors soda buyer matrix actor timber endless"));
+	console.log(
+		ARKCrypto.Identities.Address.fromPassphrase(
+			"give income reflect velvet derive train sudden panic quit video fancy enlist",
+		),
+	);
 	const shareCoins = new ShareCoinsScript(process.argv.slice(2).join(" "));
 	await shareCoins.splitCoins(50000, devnetPassphrases.secrets);
 
@@ -81,7 +96,7 @@ export const main = async () => {
 
 	const scriptType = new FillScript(
 		configurations.passphrasesFile.secrets,
-		configurations.passphrasesFile.secrets[0],
+		"decide rhythm oyster lady they merry betray jelly coyote solve episode then",
 	);
 
 	console.log(chalk.green("Create FIFA collections"));
@@ -176,17 +191,7 @@ export const main = async () => {
 		configurations.passphrasesFile.secrets,
 		configurations.passphrasesFile.secrets[2],
 	);
-	// const client = new ProtokolConnection(configurations.clientHost);
-	// const senderWallet = await client
-	// 	.api("wallets")
-	// 	.get(ARKCrypto.Identities.Address.fromPassphrase("alter limit bird stereo lemon venue hour release safe cage expand ready"));
-	// const a = createCollection(
-	// 	breitlingCollection,
-	// 	ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1).toFixed(),
-	// 	"alter limit bird stereo lemon venue hour release safe cage expand ready",
-	// );
-	// console.log(JSON.stringify(a,null,3));
-	// await delay(80000);
+
 	console.log(chalk.green("Create Breitling collections"));
 	await fillScriptBreitlingCollection.createCollections(1, 1, () => breitlingCollection);
 	await delay(8000);
@@ -348,4 +353,44 @@ export const main = async () => {
 
 	console.log(chalk.green("Create Nascar Hero Cards trades"));
 	await nascarHeroCardsScriptType.createTrades();
+
+	await delay(8000);
+
+	/** AREX fill script */
+	const arexScriptType = new FillScript(
+		configurations.passphrasesFile.secrets,
+		configurations.passphrasesFile.secrets[7],
+	);
+
+	console.log(chalk.green("AREX collection"));
+	await arexScriptType.createCollections(1, 1, () => arexCollection);
+
+	await delay(8000);
+
+	console.log(chalk.green("AREX assets"));
+	await arexScriptType.createAssets(1, 40, 1, () => {
+		const arexWeapons = [alpha, delta, zero1CP, zero1S, zero1T, zero1TC];
+		const selected = arexWeapons[faker.random.number({ max: arexWeapons.length - 1, min: 0 })];
+
+		selected!.serialNumber = faker.random.uuid();
+
+		return selected;
+	});
+
+	await delay(8000);
+
+	console.log(chalk.green("AREX auctions"));
+	await arexScriptType.createAuctions(1, 3);
+
+	await delay(8000);
+
+	console.log(chalk.green("AREX bids"));
+	await arexScriptType.createBids(5, 2);
+
+	await delay(8000);
+
+	console.log(chalk.green("AREX trades"));
+	await arexScriptType.createTrades();
+
+	await delay(8000);
 };
