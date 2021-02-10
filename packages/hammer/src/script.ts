@@ -8,7 +8,6 @@ import nascarHeroCardsCollection = require("./data/collections/nascar-hero-card-
 import arexCollection = require("./data/collections/arex-collection.json");
 
 import ironManAsset = require("./data/assets/marvel/iron-man.json");
-import breaitlingAsset = require("./data/assets/breitling/breitling-watch1.json");
 import nascarAsset = require("./data/assets/nascar/driver1.json");
 import IWCAsset = require("./data/assets/iwc/iwc-watch1.json");
 
@@ -48,6 +47,7 @@ import zero1TC = require("./data/assets/arex/zero1TC.json");
 // passphrases
 import devnetPassphrases = require("./data/passphrases/protokol-testnet-passphrases.json");
 
+import { ProtokolConnection } from "@protokol/client";
 import chalk from "chalk";
 import delay from "delay";
 import faker from "faker";
@@ -59,22 +59,15 @@ import { setupScript } from "./setup";
 
 export const main = async () => {
 	/** Setup the script - registering transaction types and network settings */
+	const client = new ProtokolConnection(configurations.clientHost);
+	const peersResponse = await client.api("peers").all();
+	const peers = peersResponse.body.data;
+	if (Array.isArray(peers) && peers.length) {
+		// @ts-ignore
+		configurations.clientHost = `http://${peers[0]!.ip}:${peers[0]!.plugins["@arkecosystem/core-api"].port}/api`;
+	}
 	console.log(chalk.blue("Setup script"));
 	await setupScript();
-	//
-	// const client = new ProtokolConnection(configurations.clientHost);
-	// const senderWallet = await client
-	// 	.api("wallets")
-	// 	.get(ARKCrypto.Identities.Address.fromPassphrase("deer clean library cram brush scissors soda buyer matrix actor timber endless"));
-	// const a = createTransfer(
-	// 	ARKCrypto.Identities.Address.fromPassphrase("give income reflect velvet derive train sudden panic quit video fancy enlist"),
-	// 	1,
-	// 	// nascarCollection,
-	// 	ARK Crypto.Utils.BigNumber.make(senderWallet.body.data.nonce).plus(1).toFixed(),
-	// 	"deer clean library cram brush scissors soda buyer matrix actor timber endless",
-	// );
-	// console.log(JSON.stringify(a,null,3));
-	// await delay(80000);
 
 	/** Transfer coins to known wallet from master wallet which you get from the arguments */
 	// console.log(chalk.green("Transfer coins to known wallets"));
