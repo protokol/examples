@@ -17,16 +17,11 @@ export class FillScript {
 
 	public constructor(public readonly passphrases: string[], mainPassphrase?: string) {
 		this.client = new ProtokolConnection(configurations.clientHost);
-<<<<<<< HEAD
 		if (mainPassphrase) {
 			this.mainPassphrase = mainPassphrase;
 		} else {
 			this.mainPassphrase = passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })]!;
 		}
-=======
-		this.mainPassphrase =
-			mainPassphrase || passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })]!;
->>>>>>> develop
 	}
 
 	public async createCollections(
@@ -111,26 +106,14 @@ export class FillScript {
 	public async createBids(bidsPerAuction: number, auctionsToBid: number): Promise<void> {
 		for (let i = 0; i < auctionsToBid; i++) {
 			for (let j = 0; j < bidsPerAuction; j++) {
-<<<<<<< HEAD
 				const pass = this.passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })];
-				const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
+				const transactions: Interfaces.ITransactionJson[] = [];
 				let nonce = await this.getNonce(pass!);
 				nonce = nonce.plus(1);
 				transactions.push(
 					createBid(
 						{
-							bidAmount: ARKCrypto.Utils.BigNumber.make(
-								faker.random.number({ max: 1000000, min: 2 }).toString(),
-							),
-=======
-				const pass = this.passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })]!;
-				const transactions: Interfaces.ITransactionJson[] = [];
-				const nonce = await this.getNonce(pass);
-				transactions.push(
-					createBid(
-						{
 							bidAmount: Utils.BigNumber.make(faker.random.number({ max: 1000000, min: 2 }).toString()),
->>>>>>> develop
 							auctionId: this.auctions[i]!,
 						},
 						nonce.toFixed(),

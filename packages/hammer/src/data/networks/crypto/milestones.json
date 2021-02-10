@@ -1,5 +1,4 @@
 [
-<<<<<<< HEAD:packages/hammer/src/data/networks/crypto/milestones.json
   {
 	"height": 1,
 	"reward": "0",
@@ -7,11 +6,10 @@
 	"blocktime": 6,
 	"block": {
 	  "version": 0,
-	  "idFullSha256": true,
 	  "maxTransactions": 500,
-	  "maxPayload": 8000000
+	  "maxPayload": 6000000
 	},
-	"epoch": "2020-12-08T00:00:00.000Z",
+	"epoch": "2020-11-16T00:00:00.000Z",
 	"fees": {
 	  "staticFees": {
 		"transfer": 10000000,
@@ -27,51 +25,15 @@
 		"htlcRefund": 0
 	  }
 	},
-	"vendorFieldLength": 255,
-	"multiPaymentLimit": 256,
-	"aip11": true
+	"vendorFieldLength": 64,
+	"multiPaymentLimit": 256
   },
   {
-	"height": 0,
-	"reward": 0
-  }
-=======
-	{
-		"height": 1,
-		"reward": "0",
-		"activeDelegates": 17,
-		"blocktime": 6,
-		"block": {
-			"version": 0,
-			"maxTransactions": 500,
-			"maxPayload": 6000000
-		},
-		"epoch": "2020-11-16T00:00:00.000Z",
-		"fees": {
-			"staticFees": {
-				"transfer": 10000000,
-				"secondSignature": 500000000,
-				"delegateRegistration": 2500000000,
-				"vote": 100000000,
-				"multiSignature": 500000000,
-				"ipfs": 500000000,
-				"multiPayment": 10000000,
-				"delegateResignation": 2500000000,
-				"htlcLock": 10000000,
-				"htlcClaim": 0,
-				"htlcRefund": 0
-			}
-		},
-		"vendorFieldLength": 64,
-		"multiPaymentLimit": 256
+	"height": 2,
+	"aip11": true,
+	"block": {
+	  "idFullSha256": true
 	},
-	{
-		"height": 2,
-		"aip11": true,
-		"block": {
-			"idFullSha256": true
-		},
-		"vendorFieldLength": 255
-	}
->>>>>>> develop:packages/hammer/src/data/networks/milestones.json
+	"vendorFieldLength": 255
+  }
 ]

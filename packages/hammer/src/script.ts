@@ -57,7 +57,6 @@ import { FillScript } from "./scripts/FillScript";
 import { ShareCoinsScript } from "./scripts/ShareCoinsScript";
 import { setupScript } from "./setup";
 
-
 export const main = async () => {
 	/** Setup the script - registering transaction types and network settings */
 	console.log(chalk.blue("Setup script"));
@@ -79,11 +78,11 @@ export const main = async () => {
 
 	/** Transfer coins to known wallet from master wallet which you get from the arguments */
 	console.log(chalk.green("Transfer coins to known wallets"));
-	console.log(
-		Identities.Address.fromPassphrase(
-			"give income reflect velvet derive train sudden panic quit video fancy enlist",
-		),
-	);
+	// console.log(
+	// 	Identities.Address.fromPassphrase(
+	// 		"give income reflect velvet derive train sudden panic quit video fancy enlist",
+	// 	),
+	// );
 	const shareCoins = new ShareCoinsScript(process.argv.slice(2).join(" "));
 	await shareCoins.splitCoins(50000, devnetPassphrases.secrets);
 
