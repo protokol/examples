@@ -44,9 +44,6 @@ import zero1S = require("./data/assets/arex/zero1S.json");
 import zero1T = require("./data/assets/arex/zero1T.json");
 import zero1TC = require("./data/assets/arex/zero1TC.json");
 
-// passphrases
-import devnetPassphrases = require("./data/passphrases/protokol-testnet-passphrases.json");
-
 import { ProtokolConnection } from "@protokol/client";
 import chalk from "chalk";
 import delay from "delay";
@@ -70,16 +67,12 @@ export const main = async () => {
 	await setupScript();
 
 	/** Transfer coins to known wallet from master wallet which you get from the arguments */
-	// console.log(chalk.green("Transfer coins to known wallets"));
-	// // console.log(
-	// // 	Identities.Address.fromPassphrase(
-	// // 		"give income reflect velvet derive train sudden panic quit video fancy enlist",
-	// // 	),
-	// // );
-	// const shareCoins = new ShareCoinsScript(process.argv.slice(2).join(" "));
-	// await shareCoins.splitCoins(50000, devnetPassphrases.secrets);
-	//
-	// await delay(8000);
+	console.log(chalk.green("Transfer coins to known wallets"));
+
+	const shareCoins = new ShareCoinsScript(process.argv.slice(2).join(" "));
+	await shareCoins.splitCoins(50000, configurations.passphrasesFile.secrets);
+
+	await delay(configurations.delay);
 
 	const scriptType = new FillScript(
 		configurations.passphrasesFile.secrets,

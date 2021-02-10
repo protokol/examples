@@ -1,7 +1,7 @@
-import testnetPassphrases = require("./data/passphrases/protokol-testnet-passphrases.json");
+import passphrase = require("./data/passphrases/protokol-devnet-passphrases.json");
 
 export const configurations = {
 	clientHost: "https://proto-devnet.protokol.sh/api",
-	passphrasesFile: testnetPassphrases,
+	passphrasesFile: passphrase,
 	delay: 8000,
 };
