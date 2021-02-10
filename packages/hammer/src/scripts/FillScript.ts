@@ -24,6 +24,17 @@ export class FillScript {
 		}
 	}
 
+	public async createCollection(collection: () => NFTBaseInterfaces.NFTCollectionAsset) {
+		const nonce = await this.getNonce(this.mainPassphrase);
+		const transaction = createCollection(collection(), nonce.toFixed(), this.mainPassphrase);
+		const broadcastResponse = await this.client.api("transactions").create({ transactions: [transaction] });
+
+		console.log(JSON.stringify(broadcastResponse.body.data, null, 4));
+		for (const collectionId of broadcastResponse.body.data.accept) {
+			this.collections.push(collectionId);
+		}
+	}
+
 	public async createCollections(
 		numberOfBatches: number,
 		numberOfTransactionsPerBatch: number,
