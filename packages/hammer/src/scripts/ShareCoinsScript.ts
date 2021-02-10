@@ -1,6 +1,6 @@
+import { Identities, Interfaces } from "@arkecosystem/crypto";
 import { BIP39 } from "@arkecosystem/platform-sdk-crypto";
 import { ProtokolConnection } from "@protokol/client";
-import { ARKCrypto } from "@protokol/nft-base-crypto";
 
 import { configurations } from "../configurations";
 import { createTransfer } from "../creation";
@@ -18,17 +18,20 @@ export class ShareCoinsScript {
 		}
 	}
 	public async splitCoins(tokens: number, passphrases: string[]) {
-		const wallet = await this.client
-			.api("wallets")
-			.get(ARKCrypto.Identities.Address.fromPassphrase(this.passphrase));
+		const wallet = await this.client.api("wallets").get(Identities.Address.fromPassphrase(this.passphrase));
 
+<<<<<<< HEAD
 		let nonce = ARKCrypto.Utils.BigNumber.make(wallet.body.data.nonce);
 		const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
+=======
+		let nonce = +wallet.body.data.nonce;
+		const transactions: Interfaces.ITransactionJson[] = [];
+>>>>>>> develop
 
 		for (const pass of passphrases) {
 			nonce = nonce.plus(1);
 			const transfer = createTransfer(
-				ARKCrypto.Identities.Address.fromPassphrase(pass),
+				Identities.Address.fromPassphrase(pass),
 				tokens * 10 ** 8,
 				nonce.toFixed(),
 				this.passphrase,

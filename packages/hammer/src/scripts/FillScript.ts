@@ -1,5 +1,6 @@
+import { Identities, Interfaces, Utils } from "@arkecosystem/crypto";
 import { ProtokolConnection } from "@protokol/client";
-import { ARKCrypto, Interfaces as NFTBaseInterfaces } from "@protokol/nft-base-crypto";
+import { Interfaces as NFTBaseInterfaces } from "@protokol/nft-base-crypto";
 import faker from "faker";
 
 import { configurations } from "../configurations";
@@ -16,11 +17,16 @@ export class FillScript {
 
 	public constructor(public readonly passphrases: string[], mainPassphrase?: string) {
 		this.client = new ProtokolConnection(configurations.clientHost);
+<<<<<<< HEAD
 		if (mainPassphrase) {
 			this.mainPassphrase = mainPassphrase;
 		} else {
 			this.mainPassphrase = passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })]!;
 		}
+=======
+		this.mainPassphrase =
+			mainPassphrase || passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })]!;
+>>>>>>> develop
 	}
 
 	public async createCollections(
@@ -30,7 +36,7 @@ export class FillScript {
 	): Promise<void> {
 		let nonce = await this.getNonce(this.mainPassphrase);
 		for (let i = 0; i < numberOfBatches; i++) {
-			const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
+			const transactions: Interfaces.ITransactionJson[] = [];
 			for (let i = 1; i < numberOfTransactionsPerBatch + 1; i++) {
 				nonce = nonce.plus(1);
 				transactions.push(createCollection(collection(), nonce.toFixed(), this.mainPassphrase));
@@ -52,7 +58,7 @@ export class FillScript {
 		let nonce = await this.getNonce(this.mainPassphrase);
 		for (let j = 0; j < collectionsUsed; j++) {
 			for (let i = 0; i < batchs; i++) {
-				const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
+				const transactions: Interfaces.ITransactionJson[] = [];
 				for (let i = 1; i < transactionsPerBatch + 1; i++) {
 					nonce = nonce.plus(1);
 					transactions.push(
@@ -79,13 +85,13 @@ export class FillScript {
 		let nonce = await this.getNonce(this.mainPassphrase);
 		const clonedAssets = [...this.assets];
 		for (let i = 0; i < auctions; i++) {
-			const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
+			const transactions: Interfaces.ITransactionJson[] = [];
 			nonce = nonce.plus(1);
 			transactions.push(
 				createAuction(
 					{
 						nftIds: clonedAssets.splice(0, assetsPerAuction),
-						startAmount: ARKCrypto.Utils.BigNumber.make("1"),
+						startAmount: Utils.BigNumber.make("1"),
 						expiration: {
 							blockHeight: 10000000000,
 						},
@@ -105,6 +111,7 @@ export class FillScript {
 	public async createBids(bidsPerAuction: number, auctionsToBid: number): Promise<void> {
 		for (let i = 0; i < auctionsToBid; i++) {
 			for (let j = 0; j < bidsPerAuction; j++) {
+<<<<<<< HEAD
 				const pass = this.passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })];
 				const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
 				let nonce = await this.getNonce(pass!);
@@ -115,6 +122,15 @@ export class FillScript {
 							bidAmount: ARKCrypto.Utils.BigNumber.make(
 								faker.random.number({ max: 1000000, min: 2 }).toString(),
 							),
+=======
+				const pass = this.passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })]!;
+				const transactions: Interfaces.ITransactionJson[] = [];
+				const nonce = await this.getNonce(pass);
+				transactions.push(
+					createBid(
+						{
+							bidAmount: Utils.BigNumber.make(faker.random.number({ max: 1000000, min: 2 }).toString()),
+>>>>>>> develop
 							auctionId: this.auctions[i]!,
 						},
 						nonce.toFixed(),
@@ -139,7 +155,7 @@ export class FillScript {
 	public async createTrades(): Promise<void> {
 		let nonce = await this.getNonce(this.mainPassphrase);
 		for (const [key, value] of this.auctionBids) {
-			const transactions: ARKCrypto.Interfaces.ITransactionJson[] = [];
+			const transactions: Interfaces.ITransactionJson[] = [];
 			nonce = nonce.plus(1);
 			transactions.push(
 				createTrade(
@@ -157,10 +173,8 @@ export class FillScript {
 		}
 	}
 
-	public async getNonce(passphrase: string): Promise<ARKCrypto.Utils.BigNumber> {
-		const senderWallet = await this.client
-			.api("wallets")
-			.get(ARKCrypto.Identities.Address.fromPassphrase(passphrase));
-		return ARKCrypto.Utils.BigNumber.make(senderWallet.body.data.nonce);
+	public async getNonce(passphrase: string): Promise<Utils.BigNumber> {
+		const senderWallet = await this.client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
+		return Utils.BigNumber.make(senderWallet.body.data.nonce);
 	}
 }

@@ -1,5 +1,5 @@
+import { Identities, Interfaces } from "@arkecosystem/crypto";
 import { ProtokolConnection } from "@protokol/client";
-import { ARKCrypto } from "@protokol/nft-base-crypto";
 
 import { configurations } from "../configurations";
 import { createDelegate, resignDelegate } from "../creation";
@@ -10,9 +10,7 @@ export class DelegateScript {
 	public constructor(public readonly passphrase: string) {}
 
 	public async createDelegate(delegateName: string) {
-		const wallet = await this.client
-			.api("wallets")
-			.get(ARKCrypto.Identities.Address.fromPassphrase(this.passphrase));
+		const wallet = await this.client.api("wallets").get(Identities.Address.fromPassphrase(this.passphrase));
 
 		const nonce = +wallet.body.data.nonce + 1;
 
@@ -26,9 +24,7 @@ export class DelegateScript {
 	}
 
 	public async resignDelegate() {
-		const wallet = await this.client
-			.api("wallets")
-			.get(ARKCrypto.Identities.Address.fromPassphrase(this.passphrase));
+		const wallet = await this.client.api("wallets").get(Identities.Address.fromPassphrase(this.passphrase));
 
 		const nonce = +wallet.body.data.nonce + 1;
 

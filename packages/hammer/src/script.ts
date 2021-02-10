@@ -48,20 +48,15 @@ import zero1TC = require("./data/assets/arex/zero1TC.json");
 // passphrases
 import devnetPassphrases = require("./data/passphrases/protokol-testnet-passphrases.json");
 
-import { Request } from "@arkecosystem/platform-sdk-http-ky";
-import { File } from "@arkecosystem/platform-sdk-ipfs";
-import { ProtokolConnection } from "@protokol/client";
-import { ARKCrypto } from "@protokol/nft-base-crypto";
 import chalk from "chalk";
 import delay from "delay";
 import faker from "faker";
 
 import { configurations } from "./configurations";
-import { createCollection, createTransfer } from "./creation";
-import { DelegateScript } from "./scripts/DelegateScript";
 import { FillScript } from "./scripts/FillScript";
 import { ShareCoinsScript } from "./scripts/ShareCoinsScript";
 import { setupScript } from "./setup";
+
 
 export const main = async () => {
 	/** Setup the script - registering transaction types and network settings */
@@ -85,7 +80,7 @@ export const main = async () => {
 	/** Transfer coins to known wallet from master wallet which you get from the arguments */
 	console.log(chalk.green("Transfer coins to known wallets"));
 	console.log(
-		ARKCrypto.Identities.Address.fromPassphrase(
+		Identities.Address.fromPassphrase(
 			"give income reflect velvet derive train sudden panic quit video fancy enlist",
 		),
 	);

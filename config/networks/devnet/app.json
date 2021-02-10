@@ -5,9 +5,6 @@
 				"package": "@arkecosystem/core-logger-pino"
 			},
 			{
-				"package": "@arkecosystem/core-manager"
-			},
-			{
 				"package": "@arkecosystem/core-state"
 			},
 			{
@@ -96,7 +93,10 @@
 				"package": "@protokol/guardian-transactions"
 			},
 			{
-				"package": "@arkecosystem/core-p2p"
+				"package": "@arkecosystem/core-p2p",
+				"options": {
+					"minimumNetworkReach": 3
+				}
 			},
 			{
 				"package": "@arkecosystem/core-blockchain"

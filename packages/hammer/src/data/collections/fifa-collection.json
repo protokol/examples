@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "FIFA-20-PLAYERS",
   "description": "FIFA 2020 Players",
   "maximumSupply": 10000,
@@ -274,6 +275,34 @@
 		  }
 		}
 	  }
+=======
+	"name": "FIFA-20-PLAYERS",
+	"description": "FIFA 2020 Players",
+	"maximumSupply": 10000,
+	"jsonSchema": {
+		"properties": {
+			"name": {
+				"type": "string"
+			},
+			"pac": {
+				"type": "number"
+			},
+			"sho": {
+				"type": "number"
+			},
+			"pas": {
+				"type": "number"
+			},
+			"dri": {
+				"type": "number"
+			},
+			"def": {
+				"type": "number"
+			},
+			"phy": {
+				"type": "number"
+			}
+		}
+>>>>>>> develop
 	}
-  }
 }

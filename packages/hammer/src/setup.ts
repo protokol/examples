@@ -1,4 +1,5 @@
-import { ARKCrypto, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
+import { Managers, Transactions } from "@arkecosystem/crypto";
+import { Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 import { Transactions as NFTExchangeTransactions } from "@protokol/nft-exchange-crypto";
 
 import { configurations } from "./configurations";
@@ -7,23 +8,19 @@ import milestones from "./data/networks/crypto/milestones.json";
 import configs from "./data/networks/crypto/network.json";
 
 export const setupScript = async () => {
-	ARKCrypto.Managers.configManager.setFromPreset(configurations.network as "testnet" | "devnet" | "mainnet");
-	ARKCrypto.Managers.configManager.setHeight(configurations.networkHeight);
+	Managers.configManager.setFromPreset(configurations.network as "testnet" | "devnet" | "mainnet");
+	Managers.configManager.setHeight(configurations.networkHeight);
 
-	ARKCrypto.Managers.configManager.setConfig({
+	Managers.configManager.setConfig({
 		network: configs,
 		milestones: milestones,
-		genesisBlock: ARKCrypto.Managers.configManager.getPreset("devnet").genesisBlock,
+		genesisBlock: Managers.configManager.getPreset("devnet").genesisBlock,
 		exceptions: exceptions,
 	});
 
-	ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(
-		NFTTransactions.NFTRegisterCollectionTransaction,
-	);
-	ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTCreateTransaction);
-	ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTAuctionTransaction);
-	ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTBidTransaction);
-	ARKCrypto.Transactions.TransactionRegistry.registerTransactionType(
-		NFTExchangeTransactions.NFTAcceptTradeTransaction,
-	);
+	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTRegisterCollectionTransaction);
+	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTCreateTransaction);
+	Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTAuctionTransaction);
+	Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTBidTransaction);
+	Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTAcceptTradeTransaction);
 };

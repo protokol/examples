@@ -33,20 +33,18 @@
 	"scripts": {
 		"build": "yarn clean && tsc",
 		"build:watch": "yarn build -w",
-		"clean": "rimraf .coverage dist tmp",
-		"format": "yarn lint && yarn prettier",
-		"lint": "tslint -c tslint.json -p tslint.json 'src/**/*.ts' --fix",
-		"prettier": "prettier --write \"./*.{ts,js,json,md}\" \"./**/*.{ts,js,json,md}\""
+		"clean": "rimraf .coverage dist tmp"
 	},
 	"dependencies": {
-		"@arkecosystem/platform-sdk-crypto": "1.2.7",
-		"@arkecosystem/platform-sdk-http-ky": "1.2.7",
-		"@arkecosystem/platform-sdk-ipfs": "1.2.7",
-		"@protokol/client": "1.0.0-beta.36",
-		"@protokol/nft-base-crypto": "1.0.0-beta.51",
-		"@protokol/nft-exchange-crypto": "1.0.0-beta.51",
+		"@arkecosystem/crypto": "^3.0.0-next",
+		"@arkecosystem/platform-sdk-crypto": "2.8.12",
+		"@arkecosystem/platform-sdk-http-ky": "2.8.12",
+		"@arkecosystem/platform-sdk-ipfs": "2.3.6",
+		"@protokol/client": "1.0.0-beta.38",
+		"@protokol/nft-base-crypto": "1.0.0-beta.56",
+		"@protokol/nft-exchange-crypto": "1.0.0-beta.56",
 		"chalk": "^4.1.0",
-		"delay": "^4.4.0",
+		"delay": "^5.0.0",
 		"faker": "^5.1.0"
 	},
 	"devDependencies": {
