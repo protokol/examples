@@ -67,6 +67,7 @@ export class FillScript {
 						),
 					);
 				}
+				console.log(transactions);
 
 				const broadcastResponse = await this.client.api("transactions").create({ transactions: transactions });
 				console.log(JSON.stringify(broadcastResponse.body.data, null, 4));
@@ -120,8 +121,9 @@ export class FillScript {
 						pass!,
 					),
 				);
-
+				console.log(transactions);
 				const broadcastResponse = await this.client.api("transactions").create({ transactions: transactions });
+				console.log(broadcastResponse.body.data);
 				console.log(JSON.stringify(broadcastResponse.body.data, null, 4));
 				for (const bidId of broadcastResponse.body.data.accept) {
 					let entry = this.auctionBids.get(this.auctions[i]!);

@@ -77,20 +77,20 @@ export const main = async () => {
 	// await delay(80000);
 
 	/** Transfer coins to known wallet from master wallet which you get from the arguments */
-	console.log(chalk.green("Transfer coins to known wallets"));
-	// console.log(
-	// 	Identities.Address.fromPassphrase(
-	// 		"give income reflect velvet derive train sudden panic quit video fancy enlist",
-	// 	),
-	// );
-	const shareCoins = new ShareCoinsScript(process.argv.slice(2).join(" "));
-	await shareCoins.splitCoins(50000, devnetPassphrases.secrets);
-
-	await delay(8000);
+	// console.log(chalk.green("Transfer coins to known wallets"));
+	// // console.log(
+	// // 	Identities.Address.fromPassphrase(
+	// // 		"give income reflect velvet derive train sudden panic quit video fancy enlist",
+	// // 	),
+	// // );
+	// const shareCoins = new ShareCoinsScript(process.argv.slice(2).join(" "));
+	// await shareCoins.splitCoins(50000, devnetPassphrases.secrets);
+	//
+	// await delay(8000);
 
 	const scriptType = new FillScript(
 		configurations.passphrasesFile.secrets,
-		"decide rhythm oyster lady they merry betray jelly coyote solve episode then",
+		configurations.passphrasesFile.secrets[0],
 	);
 
 	console.log(chalk.green("Create FIFA collections"));
