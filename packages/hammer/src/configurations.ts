@@ -3,4 +3,5 @@ import testnetPassphrases = require("./data/passphrases/protokol-testnet-passphr
 export const configurations = {
 	clientHost: "https://proto-devnet.protokol.sh/api",
 	passphrasesFile: testnetPassphrases,
+	delay: 8000,
 };
