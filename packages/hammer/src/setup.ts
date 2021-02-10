@@ -1,9 +1,9 @@
 import { Managers, Transactions } from "@arkecosystem/crypto";
+import { ProtokolConnection } from "@protokol/client";
 import { Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 import { Transactions as NFTExchangeTransactions } from "@protokol/nft-exchange-crypto";
 
 import { configurations } from "./configurations";
-import { ProtokolConnection } from "@protokol/client";
 
 export const setupScript = async () => {
 	const client = new ProtokolConnection(configurations.clientHost);

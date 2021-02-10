@@ -27,7 +27,7 @@ export class ShareCoinsScript {
 			nonce = nonce.plus(1);
 			const transfer = createTransfer(
 				Identities.Address.fromPassphrase(pass),
-				tokens * 10 ** 8,
+				tokens * 10e8,
 				nonce.toFixed(),
 				this.passphrase,
 			);
