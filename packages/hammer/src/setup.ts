@@ -17,10 +17,14 @@ export const setupScript = async () => {
 	});
 	Managers.configManager.setHeight(2);
 
-
 	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTRegisterCollectionTransaction);
 	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTCreateTransaction);
+	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTBurnTransaction);
+	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTTransferTransaction);
+
 	Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTAuctionTransaction);
+	Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTAuctionCancelTransaction);
 	Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTBidTransaction);
+	Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTBidCancelTransaction);
 	Transactions.TransactionRegistry.registerTransactionType(NFTExchangeTransactions.NFTAcceptTradeTransaction);
 };
