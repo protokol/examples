@@ -37,12 +37,12 @@
 	},
 	"dependencies": {
 		"@arkecosystem/crypto": "^3.0.0-next",
-		"@arkecosystem/platform-sdk-crypto": "2.8.12",
-		"@arkecosystem/platform-sdk-http-ky": "2.8.12",
+		"@arkecosystem/platform-sdk-crypto": "2.8.24",
+		"@arkecosystem/platform-sdk-http-ky": "2.8.24",
 		"@arkecosystem/platform-sdk-ipfs": "2.3.6",
 		"@protokol/client": "1.0.0-beta.38",
-		"@protokol/nft-base-crypto": "1.0.0-beta.56",
-		"@protokol/nft-exchange-crypto": "1.0.0-beta.56",
+		"@protokol/nft-base-crypto": "1.0.0-beta.57",
+		"@protokol/nft-exchange-crypto": "1.0.0-beta.57",
 		"chalk": "^4.1.0",
 		"delay": "^5.0.0",
 		"faker": "^5.1.0"
