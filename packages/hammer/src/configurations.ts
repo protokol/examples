@@ -1,4 +1,4 @@
-import passphrases = require("./data/passphrases/protokol-devnet-passphrases.json");
+import passphrases = require("./data/networks/delegates.json");
 
 export const configurations = {
 	clientHost: "https://proto-devnet.protokol.sh/api",
