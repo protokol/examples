@@ -27,11 +27,14 @@
 		"relay:devnet": "cross-env CORE_PATH_CONFIG=./config/networks/devnet yarn ark relay:run --network=devnet",
 		"local:devnet": "cross-env CORE_PATH_CONFIG=./config/networks/devnet ark core:run --networkStart --env=test --network=devnet",
 		"core:testnet": "cross-env CORE_PATH_CONFIG=./config/networks/testnet yarn ark core:run --env=test --network=testnet",
-		"forger:testnet": "cross-env CORE_PATH_CONFIG=./config/networks/testnet yarn ark forger:run --env=test --network=testnet",
+		"relay:mainnet": "cross-env CORE_PATH_CONFIG=./config/networks/mainnet yarn ark relay:run --network=mainnet",
 		"relay:testnet": "cross-env CORE_PATH_CONFIG=./config/networks/testnet yarn ark relay:run --env=test --network=testnet",
+		"forger:mainnet": "cross-env CORE_PATH_CONFIG=./config/networks/mainnet yarn ark forger:run --network=mainnet",
+		"forger:testnet": "cross-env CORE_PATH_CONFIG=./config/networks/testnet yarn ark forger:run --env=test --network=testnet",
 		"manager:testnet": "cross-env CORE_PATH_CONFIG=./config/networks/testnet yarn ark manager:run --env=test --network=testnet",
-		"manager:devnet": "cross-env CORE_PATH_CONFIG=./config/networks/devnet yarn ark manager:run --env=test --network=devnet",
-		"full:testnet": "cross-env CORE_PATH_CONFIG=./config/networks/testnet ark core:run --networkStart --env=test --network=testnet"
+		"full:testnet": "cross-env CORE_PATH_CONFIG=./config/networks/testnet ark core:run --networkStart --env=test --network=testnet",
+		"full:devnet": "cross-env CORE_PATH_CONFIG=./packages/hammer/src/data/networks ark core:run --networkStart --env=test --network=devnet",
+		"manager:devnet": "cross-env CORE_PATH_CONFIG=./config/networks/devnet yarn ark manager:run --env=test --network=devnet"
 	},
 	"dependencies": {
 		"@arkecosystem/core": "^3.0.0-next",

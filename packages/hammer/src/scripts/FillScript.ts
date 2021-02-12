@@ -1,10 +1,11 @@
-import { Identities, Interfaces, Utils } from "@arkecosystem/crypto";
+import { Interfaces, Utils } from "@arkecosystem/crypto";
 import { ProtokolConnection } from "@protokol/client";
 import { Interfaces as NFTBaseInterfaces } from "@protokol/nft-base-crypto";
 import faker from "faker";
 
 import { configurations } from "../configurations";
 import { createAsset, createAuction, createBid, createCollection, createTrade } from "../creation";
+import { getNextNonce, getNonce } from "./nonces";
 
 export class FillScript {
 	public client: ProtokolConnection;
@@ -18,7 +19,18 @@ export class FillScript {
 	public constructor(public readonly passphrases: string[], mainPassphrase?: string) {
 		this.client = new ProtokolConnection(configurations.clientHost);
 		this.mainPassphrase =
-			mainPassphrase || passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })]!;
+			mainPassphrase || this.passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })]!;
+	}
+
+	public async createCollection(collection: () => NFTBaseInterfaces.NFTCollectionAsset) {
+		const nonce = await getNextNonce(this.client, this.mainPassphrase);
+		const transaction = createCollection(collection(), nonce.toFixed(), this.mainPassphrase);
+		const broadcastResponse = await this.client.api("transactions").create({ transactions: [transaction] });
+
+		console.log(JSON.stringify(broadcastResponse.body.data, null, 4));
+		for (const collectionId of broadcastResponse.body.data.accept) {
+			this.collections.push(collectionId);
+		}
 	}
 
 	public async createCollections(
@@ -26,7 +38,7 @@ export class FillScript {
 		numberOfTransactionsPerBatch: number,
 		collection: () => NFTBaseInterfaces.NFTCollectionAsset,
 	): Promise<void> {
-		let nonce = await this.getNonce(this.mainPassphrase);
+		let nonce = await getNonce(this.client, this.mainPassphrase);
 		for (let i = 0; i < numberOfBatches; i++) {
 			const transactions: Interfaces.ITransactionJson[] = [];
 			for (let i = 1; i < numberOfTransactionsPerBatch + 1; i++) {
@@ -47,7 +59,7 @@ export class FillScript {
 		collectionsUsed: number,
 		attributes: () => any,
 	): Promise<void> {
-		let nonce = await this.getNonce(this.mainPassphrase);
+		let nonce = await getNonce(this.client, this.mainPassphrase);
 		for (let j = 0; j < collectionsUsed; j++) {
 			for (let i = 0; i < batchs; i++) {
 				const transactions: Interfaces.ITransactionJson[] = [];
@@ -74,7 +86,7 @@ export class FillScript {
 		}
 	}
 	public async createAuctions(assetsPerAuction: number, auctions: number): Promise<void> {
-		let nonce = await this.getNonce(this.mainPassphrase);
+		let nonce = await getNonce(this.client, this.mainPassphrase);
 		const clonedAssets = [...this.assets];
 		for (let i = 0; i < auctions; i++) {
 			const transactions: Interfaces.ITransactionJson[] = [];
@@ -103,20 +115,19 @@ export class FillScript {
 	public async createBids(bidsPerAuction: number, auctionsToBid: number): Promise<void> {
 		for (let i = 0; i < auctionsToBid; i++) {
 			for (let j = 0; j < bidsPerAuction; j++) {
-				const pass = this.passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })]!;
+				const pass = this.passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })];
 				const transactions: Interfaces.ITransactionJson[] = [];
-				const nonce = await this.getNonce(pass);
+				const nonce = await getNextNonce(this.client, this.mainPassphrase);
 				transactions.push(
 					createBid(
 						{
 							bidAmount: Utils.BigNumber.make(faker.random.number({ max: 1000000, min: 2 }).toString()),
 							auctionId: this.auctions[i]!,
 						},
-						nonce.plus(1).toString(),
-						pass,
+						nonce.toFixed(),
+						pass!,
 					),
 				);
-
 				const broadcastResponse = await this.client.api("transactions").create({ transactions: transactions });
 				console.log(JSON.stringify(broadcastResponse.body.data, null, 4));
 				for (const bidId of broadcastResponse.body.data.accept) {
@@ -132,7 +143,7 @@ export class FillScript {
 	}
 
 	public async createTrades(): Promise<void> {
-		let nonce = await this.getNonce(this.mainPassphrase);
+		let nonce = await getNonce(this.client, this.mainPassphrase);
 		for (const [key, value] of this.auctionBids) {
 			const transactions: Interfaces.ITransactionJson[] = [];
 			nonce = nonce.plus(1);
@@ -150,10 +161,5 @@ export class FillScript {
 			const broadcastResponse = await this.client.api("transactions").create({ transactions: transactions });
 			console.log(JSON.stringify(broadcastResponse.body.data, null, 4));
 		}
-	}
-
-	public async getNonce(passphrase: string): Promise<Utils.BigNumber> {
-		const senderWallet = await this.client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
-		return Utils.BigNumber.make(senderWallet.body.data.nonce);
 	}
 }
