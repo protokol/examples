@@ -468,9 +468,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-crypto@npm:2.8.12":
-  version: 2.8.12
-  resolution: "@arkecosystem/platform-sdk-crypto@npm:2.8.12"
+"@arkecosystem/platform-sdk-crypto@npm:2.8.24":
+  version: 2.8.24
+  resolution: "@arkecosystem/platform-sdk-crypto@npm:2.8.24"
   dependencies:
     argon2-browser: ^1.15.2
     bcryptjs: ^2.4.3
@@ -482,7 +482,7 @@ __metadata:
     node-forge: ^0.10.0
     safe-buffer: ^5.2.1
     string-crypto: ^1.0.4
-  checksum: 0f87a88e8d6f96d30082a4c311332339f8889b6ee27b16567710b86e30fac316bba268fa70b606555ad125ef0cdd306b82f5af24e3c335d38663704527f4b762
+  checksum: 1e080e9ceb9af808deacb5b573a05669443b7707300169e139dd066a49b15eeed3c62d7e2e0414d8f6d6c8ad8f963bb423ede540d76d83444042666a9a38c3e0
   languageName: node
   linkType: hard
 
@@ -510,14 +510,14 @@ __metadata:
   linkType: hard
 
 "@babel/core@npm:^7.1.0, @babel/core@npm:^7.7.5":
-  version: 7.12.13
-  resolution: "@babel/core@npm:7.12.13"
+  version: 7.12.16
+  resolution: "@babel/core@npm:7.12.16"
   dependencies:
     "@babel/code-frame": ^7.12.13
-    "@babel/generator": ^7.12.13
+    "@babel/generator": ^7.12.15
     "@babel/helper-module-transforms": ^7.12.13
     "@babel/helpers": ^7.12.13
-    "@babel/parser": ^7.12.13
+    "@babel/parser": ^7.12.16
     "@babel/template": ^7.12.13
     "@babel/traverse": ^7.12.13
     "@babel/types": ^7.12.13
@@ -528,11 +528,11 @@ __metadata:
     lodash: ^4.17.19
     semver: ^5.4.1
     source-map: ^0.5.0
-  checksum: c8cb5712616c6f3c9c593cb8f9a084b33481c656b3dd74eafb6f095de7d5699125131c88cf2ebc4c2ed7887c4ad8d65a43efdc6c0a2edd9c269b2793fdb593d3
+  checksum: 87b621eb25d1c96adb95a4f019659d856aa6c4a45ee3ad234fb8066b1ff40ef9ae0052dcdba549ae92d1505207f1c53203b3e410bdadddedaecd1e45fb1172f7
   languageName: node
   linkType: hard
 
-"@babel/generator@npm:^7.12.13":
+"@babel/generator@npm:^7.12.13, @babel/generator@npm:^7.12.15":
   version: 7.12.15
   resolution: "@babel/generator@npm:7.12.15"
   dependencies:
@@ -564,11 +564,11 @@ __metadata:
   linkType: hard
 
 "@babel/helper-member-expression-to-functions@npm:^7.12.13":
-  version: 7.12.13
-  resolution: "@babel/helper-member-expression-to-functions@npm:7.12.13"
+  version: 7.12.16
+  resolution: "@babel/helper-member-expression-to-functions@npm:7.12.16"
   dependencies:
     "@babel/types": ^7.12.13
-  checksum: 64827b3c56d21e4b118c02ebe36ff6b18917f0dfa03d40580a1e0d01f8d205636c6762e930b7a8be9fffa5d4cd5d5042779e19bb3d22aefea7673fec815e3bb4
+  checksum: d4c86c2686343013a4cb1e67085293ec18cd9b5797d8bd97df51250ff55ea9cf111a62dc721c346ada33c05315cbd69f7ab880b1d5d513e9858e000b70d86845
   languageName: node
   linkType: hard
 
@@ -673,12 +673,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.1.0, @babel/parser@npm:^7.12.13":
-  version: 7.12.15
-  resolution: "@babel/parser@npm:7.12.15"
+"@babel/parser@npm:^7.1.0, @babel/parser@npm:^7.12.13, @babel/parser@npm:^7.12.16":
+  version: 7.12.16
+  resolution: "@babel/parser@npm:7.12.16"
   bin:
     parser: ./bin/babel-parser.js
-  checksum: 0e8b7fc396f8137a820bbc132be17f7b0df25393f9cc13ddcea0e0a9d3a131f5d51db2c1fe5ac8387c70b8635f3ce633d9ba84c3ad6790892f97aa0761ca69ce
+  checksum: 437970f6cfbe5ffbd1bcb316c3550e5ecd0003a525bf16f3c15ceb4105a6a3db22389c84c37a6d2b266e222dc92a05c25cf268bbeb937b496d9a48b8232c273f
   languageName: node
   linkType: hard
 
@@ -1928,19 +1928,19 @@ __metadata:
   linkType: hard
 
 "@npmcli/git@npm:^2.0.1":
-  version: 2.0.4
-  resolution: "@npmcli/git@npm:2.0.4"
+  version: 2.0.6
+  resolution: "@npmcli/git@npm:2.0.6"
   dependencies:
     "@npmcli/promise-spawn": ^1.1.0
     lru-cache: ^6.0.0
     mkdirp: ^1.0.3
     npm-pick-manifest: ^6.0.0
     promise-inflight: ^1.0.1
-    promise-retry: ^1.1.1
+    promise-retry: ^2.0.1
     semver: ^7.3.2
     unique-filename: ^1.1.1
     which: ^2.0.2
-  checksum: 86d9805973902453a05ea1b3bc81fd2bf9e71264709ce3d5ccae3cba5bf58bd6234a13d78508d12e10d27ed993e0510ba883122ef2ed0e8128982437972b4002
+  checksum: 1ff0a52fe234e70bd29ca861fa557f6db760d43f8e3a4dc3530c64cdc7b1ece5650c326c934ede641198b3383055cae33be4ae12e70bce12bb86c266e639b826
   languageName: node
   linkType: hard
 
@@ -1957,16 +1957,16 @@ __metadata:
   linkType: hard
 
 "@npmcli/move-file@npm:^1.0.1":
-  version: 1.1.1
-  resolution: "@npmcli/move-file@npm:1.1.1"
+  version: 1.1.2
+  resolution: "@npmcli/move-file@npm:1.1.2"
   dependencies:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
-  checksum: 8a6e0c2f16b57c70f72a75c800cb8f1f50efe213a289dca67a7bc58f4c4097108bd7ac3986bf331d5a0174bd17e078a822a992c170857780e1d765ad9293fc48
+  checksum: d178d86a0a96e5aa12e6d70c00d50eb3bb9a58c0cf1c36e1d7f240acb4ae3f14642c6314659c438ea409a509f08c2a62e29c9346a033e554c3f6921cdb293219
   languageName: node
   linkType: hard
 
-"@npmcli/node-gyp@npm:^1.0.1":
+"@npmcli/node-gyp@npm:^1.0.2":
   version: 1.0.2
   resolution: "@npmcli/node-gyp@npm:1.0.2"
   checksum: 8f073b4a24d27393fc3e86e02e3b435fcf460c56b797d204e5b90869d8fd60a93a9755501ec5b8bcc757f7201c4e5d6952e4e61edc633f65f072f96b06143f6a
@@ -1983,16 +1983,16 @@ __metadata:
   linkType: hard
 
 "@npmcli/run-script@npm:^1.8.2":
-  version: 1.8.2
-  resolution: "@npmcli/run-script@npm:1.8.2"
+  version: 1.8.3
+  resolution: "@npmcli/run-script@npm:1.8.3"
   dependencies:
-    "@npmcli/node-gyp": ^1.0.1
+    "@npmcli/node-gyp": ^1.0.2
     "@npmcli/promise-spawn": ^1.3.2
     infer-owner: ^1.0.4
     node-gyp: ^7.1.0
     puka: ^1.0.1
     read-package-json-fast: ^2.0.1
-  checksum: 11d14058ee409fed4e0f8788d1aa4b27ca75ce8672188da9aa6595ead8ba62269e2add8ce9acf84e79f245016fdab2a291f66fd0c0e261e923c5f05784f059ca
+  checksum: 88df7f6487fb32802b17a29015f13b479f9550b75cc83644ae9c3e03f1d8d0a8a0be31c002d0f71a4352f72c333d5e8cad6059e31a759854dc84ec971d42293a
   languageName: node
   linkType: hard
 
@@ -2326,19 +2326,19 @@ __metadata:
   linkType: soft
 
 "@protokol/guardian-api@npm:beta":
-  version: 1.0.0-beta.38
-  resolution: "@protokol/guardian-api@npm:1.0.0-beta.38"
+  version: 1.0.0-beta.39
+  resolution: "@protokol/guardian-api@npm:1.0.0-beta.39"
   dependencies:
     "@arkecosystem/core-api": ^3.0.0-next
     "@arkecosystem/core-kernel": ^3.0.0-next
     "@arkecosystem/crypto": ^3.0.0-next
     "@hapi/boom": ^9.1.0
     "@hapi/hapi": ^20.0.2
-    "@protokol/guardian-crypto": 1.0.0-beta.38
-    "@protokol/guardian-transactions": 1.0.0-beta.38
+    "@protokol/guardian-crypto": 1.0.0-beta.39
+    "@protokol/guardian-transactions": 1.0.0-beta.39
     joi: ^17.3.0
     latest-version: ^5.1.0
-  checksum: 63dbac81bc84557b3be001035f590491471f47f75a6c10d4b4fec0f2166c00cf9f23a49e37288c414489db05432e9c13daad50e275e2a6f07b70e8fab58c78c1
+  checksum: 53cdfd3a6493fdd0d0916697d47c6adf5df53baaea0506d2c088d334633f629541a0cf4d5822d691574d1c53f1581622c53633ca25d2bb5fcf12f334301a5530
   languageName: node
   linkType: hard
 
@@ -2353,28 +2353,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/guardian-crypto@npm:1.0.0-beta.38":
-  version: 1.0.0-beta.38
-  resolution: "@protokol/guardian-crypto@npm:1.0.0-beta.38"
+"@protokol/guardian-crypto@npm:1.0.0-beta.39":
+  version: 1.0.0-beta.39
+  resolution: "@protokol/guardian-crypto@npm:1.0.0-beta.39"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
     "@protokol/utils": ^1.0.0-beta.37
     bytebuffer: ^5.0.1
-  checksum: e5dab5aa08dfd2a7f4c25be9682ff2d81f4b7b2c04d3501acce721eef2235c4ef0216ae09495c4eb9e53bc9e6765d0d9be7bd5f8f5ff160d48573f3ea412cb32
+  checksum: 8d1d6d8be72ee74561a74d6de7fc04c5b45ec75f9454fd5a14c19386e28ab740d71f6277a9fa617490545f0aeda8f5ad006ad47f22123cbebea03511b4068d2d
   languageName: node
   linkType: hard
 
-"@protokol/guardian-transactions@npm:1.0.0-beta.38, @protokol/guardian-transactions@npm:beta":
-  version: 1.0.0-beta.38
-  resolution: "@protokol/guardian-transactions@npm:1.0.0-beta.38"
+"@protokol/guardian-transactions@npm:1.0.0-beta.39, @protokol/guardian-transactions@npm:beta":
+  version: 1.0.0-beta.39
+  resolution: "@protokol/guardian-transactions@npm:1.0.0-beta.39"
   dependencies:
     "@arkecosystem/core-database": ^3.0.0-next
     "@arkecosystem/core-kernel": ^3.0.0-next
     "@arkecosystem/core-state": ^3.0.0-next
     "@arkecosystem/core-transactions": ^3.0.0-next
     "@arkecosystem/crypto": ^3.0.0-next
-    "@protokol/guardian-crypto": 1.0.0-beta.38
-  checksum: 8468a6531290903e9ae24ad87ef837d7e7a68d86f55203eaf30a84b9452d3cc66dd6f9c061df435b568771d17a981a9ab48894a6abc73df243a54f31cead7c48
+    "@protokol/guardian-crypto": 1.0.0-beta.39
+  checksum: 5bc2732f2e57a77d7a0469ec10fd9234381796bc54ab34f8679607f6fa222cd08ba35ae4780ca327e44dd032a44a5239899c0d07109645fcbebf7a9ca70096f0
   languageName: node
   linkType: hard
 
@@ -2383,10 +2383,10 @@ __metadata:
   resolution: "@protokol/hammer@workspace:packages/hammer"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
-    "@arkecosystem/platform-sdk-crypto": 2.8.12
+    "@arkecosystem/platform-sdk-crypto": 2.8.24
     "@protokol/client": 1.0.0-beta.38
-    "@protokol/nft-base-crypto": 1.0.0-beta.56
-    "@protokol/nft-exchange-crypto": 1.0.0-beta.56
+    "@protokol/nft-base-crypto": 1.0.0-beta.57
+    "@protokol/nft-exchange-crypto": 1.0.0-beta.57
     "@types/faker": ^5
     chalk: ^4.1.0
     delay: ^5.0.0
@@ -2397,19 +2397,19 @@ __metadata:
   linkType: soft
 
 "@protokol/nft-base-api@npm:beta":
-  version: 1.0.0-beta.56
-  resolution: "@protokol/nft-base-api@npm:1.0.0-beta.56"
+  version: 1.0.0-beta.57
+  resolution: "@protokol/nft-base-api@npm:1.0.0-beta.57"
   dependencies:
     "@arkecosystem/core-api": ^3.0.0-next
     "@arkecosystem/core-kernel": ^3.0.0-next
     "@arkecosystem/crypto": ^3.0.0-next
     "@hapi/boom": ^9.1.0
     "@hapi/hapi": ^20.0.2
-    "@protokol/nft-base-crypto": 1.0.0-beta.56
-    "@protokol/nft-base-transactions": 1.0.0-beta.56
+    "@protokol/nft-base-crypto": 1.0.0-beta.57
+    "@protokol/nft-base-transactions": 1.0.0-beta.57
     joi: ^17.3.0
     latest-version: ^5.1.0
-  checksum: ee451548f34ee82a295a90fc2f230c1a80380b70bf6f7799d61220ce16cd0c512191a700da4a732e80ca9cc8509f42b3195f8c2b6d57f1c97d97979dcce68e83
+  checksum: 7f7a9768d1cbbdf55d0e8830805f7a6755e3c6302b7c0c1347fbd00b6a6148aa3f4b2857992f1b430faebda7218a6829221ece7d3bdb0307c783b913fd76f895
   languageName: node
   linkType: hard
 
@@ -2424,46 +2424,45 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/nft-base-crypto@npm:1.0.0-beta.56":
-  version: 1.0.0-beta.56
-  resolution: "@protokol/nft-base-crypto@npm:1.0.0-beta.56"
+"@protokol/nft-base-crypto@npm:1.0.0-beta.57":
+  version: 1.0.0-beta.57
+  resolution: "@protokol/nft-base-crypto@npm:1.0.0-beta.57"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
     "@protokol/utils": ^1.0.0-beta.37
     bytebuffer: ^5.0.1
-  checksum: 9451018791ad9da4a650010b4bbf392fc7aa6a86056d013a89572a92427bffb43d0f0d773f9f27c259f5ad2a799c16e793757f5bf6f301ef801f01570884eceb
+  checksum: 1393f087b1323c06a691c161b058c41d76a7ad03231ee000c6de22f33a74dfe4c71f786fcf961d50160e134df0b160e8f6b39e8e563d696a2cd40af551bef7cc
   languageName: node
   linkType: hard
 
-"@protokol/nft-base-transactions@npm:1.0.0-beta.56, @protokol/nft-base-transactions@npm:beta":
-  version: 1.0.0-beta.56
-  resolution: "@protokol/nft-base-transactions@npm:1.0.0-beta.56"
+"@protokol/nft-base-transactions@npm:1.0.0-beta.57, @protokol/nft-base-transactions@npm:beta":
+  version: 1.0.0-beta.57
+  resolution: "@protokol/nft-base-transactions@npm:1.0.0-beta.57"
   dependencies:
     "@arkecosystem/core-database": ^3.0.0-next
     "@arkecosystem/core-kernel": ^3.0.0-next
     "@arkecosystem/core-state": ^3.0.0-next
     "@arkecosystem/core-transactions": ^3.0.0-next
     "@arkecosystem/crypto": ^3.0.0-next
-    "@protokol/nft-base-crypto": 1.0.0-beta.56
+    "@protokol/nft-base-crypto": 1.0.0-beta.57
     ajv: 6.12.6
-    delay: 4.4.0
-  checksum: 1f3d56c2f8b1ef36d933f81ff48ef89271127626c15fc130eda95101b9085dbda3f27eff2b2c00821d59d45ee7b2cc30d2cb722d200aa1432a8cdfb0f97e0152
+  checksum: d59ad5bce46dacc8aebd42f6b289c4ba5079a514ae64f74ba48b5854f90cdf827b0749a9444774d46855c20968dd84d878223593ef84a737f0f5838be3b628a3
   languageName: node
   linkType: hard
 
 "@protokol/nft-exchange-api@npm:beta":
-  version: 1.0.0-beta.56
-  resolution: "@protokol/nft-exchange-api@npm:1.0.0-beta.56"
+  version: 1.0.0-beta.57
+  resolution: "@protokol/nft-exchange-api@npm:1.0.0-beta.57"
   dependencies:
     "@arkecosystem/core-api": ^3.0.0-next
     "@arkecosystem/core-kernel": ^3.0.0-next
     "@hapi/boom": ^9.1.0
     "@hapi/hapi": ^20.0.2
-    "@protokol/nft-exchange-crypto": 1.0.0-beta.56
-    "@protokol/nft-exchange-transactions": 1.0.0-beta.56
+    "@protokol/nft-exchange-crypto": 1.0.0-beta.57
+    "@protokol/nft-exchange-transactions": 1.0.0-beta.57
     joi: ^17.3.0
     latest-version: ^5.1.0
-  checksum: cbeb36e404d62be4c5d871bb1b41748a0a637cddaaa653d4c50a2dc2c5feebef07923458b0189bfce959181aa19caab6095bf7d192fc622262736d7b4ff9aace
+  checksum: 590fff1cfb66e683e34fd4dc896f16ea444f57c1cda27f68dd6867879c8e650f14ff6fc3b0c774362ab625a323f4f73b4a0a263b08a632fec78e23b49e13cd19
   languageName: node
   linkType: hard
 
@@ -2478,30 +2477,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/nft-exchange-crypto@npm:1.0.0-beta.56":
-  version: 1.0.0-beta.56
-  resolution: "@protokol/nft-exchange-crypto@npm:1.0.0-beta.56"
+"@protokol/nft-exchange-crypto@npm:1.0.0-beta.57":
+  version: 1.0.0-beta.57
+  resolution: "@protokol/nft-exchange-crypto@npm:1.0.0-beta.57"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
     "@protokol/utils": ^1.0.0-beta.37
     bytebuffer: ^5.0.1
-  checksum: 2d43a6dff36ffb59fbd8d26937a12f6d078a02b54ca04ca54408ab65ca1f39b90b778c3119130599521d0b12ab7adf4a19873f804404d06a8f99281bddd47c94
+  checksum: 8d991bf654104a4bfae684205d7a9b7b5e7ebcd1c44869140743598d4ba7aaaa93c08a902cf17742c6c500469f83843f995017d01202672d317378aeb6c37f92
   languageName: node
   linkType: hard
 
-"@protokol/nft-exchange-transactions@npm:1.0.0-beta.56, @protokol/nft-exchange-transactions@npm:beta":
-  version: 1.0.0-beta.56
-  resolution: "@protokol/nft-exchange-transactions@npm:1.0.0-beta.56"
+"@protokol/nft-exchange-transactions@npm:1.0.0-beta.57, @protokol/nft-exchange-transactions@npm:beta":
+  version: 1.0.0-beta.57
+  resolution: "@protokol/nft-exchange-transactions@npm:1.0.0-beta.57"
   dependencies:
     "@arkecosystem/core-database": ^3.0.0-next
     "@arkecosystem/core-kernel": ^3.0.0-next
     "@arkecosystem/core-state": ^3.0.0-next
     "@arkecosystem/core-transactions": ^3.0.0-next
     "@arkecosystem/crypto": ^3.0.0-next
-    "@protokol/nft-base-crypto": 1.0.0-beta.56
-    "@protokol/nft-base-transactions": 1.0.0-beta.56
-    "@protokol/nft-exchange-crypto": 1.0.0-beta.56
-  checksum: 8d3a126742a9798b6fa72c513ab4aa955fc4ccc06d526cf947088917dead5c508f26dff1720b34f602eb42132f557ce9c1493f3e94147b72a1b809e377e6674a
+    "@protokol/nft-base-crypto": 1.0.0-beta.57
+    "@protokol/nft-base-transactions": 1.0.0-beta.57
+    "@protokol/nft-exchange-crypto": 1.0.0-beta.57
+  checksum: 83bdc4f0852ba6333675139c8c50b4bc394d97b90cbcb84537e11a65033a8722f29b34567c01ae68ec6225c69e3e7931cd4421aa5a3032d43d7a34ff5df644a7
   languageName: node
   linkType: hard
 
@@ -2751,11 +2750,11 @@ __metadata:
   linkType: hard
 
 "@types/graceful-fs@npm:^4.1.2":
-  version: 4.1.4
-  resolution: "@types/graceful-fs@npm:4.1.4"
+  version: 4.1.5
+  resolution: "@types/graceful-fs@npm:4.1.5"
   dependencies:
     "@types/node": "*"
-  checksum: acffaa4f4b11776f6894a906d3cd0498d45be2ad1315fe44c2ac8208339a2456967cd65835863bf40f8d522f6614f25e0f6a952375f03d428d5e35d5e7104068
+  checksum: ab79ec306d51775542b94bd768162e85fe2a0d47bd2f6033e2aad65bfcae399614ee7662a1370091fc508a8b639e3de0abf6b7232c9fb52047f207ba114ff390
   languageName: node
   linkType: hard
 
@@ -2888,9 +2887,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^14.14.10, @types/node@npm:^14.6.0, @types/node@npm:latest":
-  version: 14.14.25
-  resolution: "@types/node@npm:14.14.25"
-  checksum: 64c42730f4169e49ec378870622ef06c5d820b31340e224cc1b45bf06c8b0cfa28daa587b4ae2b8ea1f712ef049bae4d9c92925b157ba9ba7cde3b22ff552513
+  version: 14.14.27
+  resolution: "@types/node@npm:14.14.27"
+  checksum: efc78cf6e698e09925a2542bbea932dfe092408f4ce39b8f260b71df502221d76c925fd3227bc1f7427edd9cfb6f8c81c68a56b9ab690f08425e7e6e177e61e0
   languageName: node
   linkType: hard
 
@@ -3410,14 +3409,14 @@ __metadata:
   linkType: hard
 
 "ajv@npm:^7.0.2":
-  version: 7.0.4
-  resolution: "ajv@npm:7.0.4"
+  version: 7.1.0
+  resolution: "ajv@npm:7.1.0"
   dependencies:
     fast-deep-equal: ^3.1.1
     json-schema-traverse: ^1.0.0
     require-from-string: ^2.0.2
     uri-js: ^4.2.2
-  checksum: 959acf9a337746a0cc0fb954a94d8146734ff72796a0adf06c97f33412626c0dc5cf71f14558b6c0e352b2c19eda32bf5e2ef36ab6d5a8b06f6ee0eab850813f
+  checksum: 7cbc1177e9a2e89c56fa90b2f4ffadad2ecbf0e6f5163fcbb957878d0a5eaf390bcd23c7c39849c4b76815fe8339623e82362d0b262da84f9186a2bcea6229f7
   languageName: node
   linkType: hard
 
@@ -5289,13 +5288,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"delay@npm:4.4.0":
-  version: 4.4.0
-  resolution: "delay@npm:4.4.0"
-  checksum: cb54b19a68b8f299c601e59819b54f6c9927421556d2eed75ddc1fcffccfe030259fb4b573da41d59d3beca4591c15f7018bfd89c5845cf38dd4897c70730a07
-  languageName: node
-  linkType: hard
-
 "delay@npm:^4.3.0":
   version: 4.4.1
   resolution: "delay@npm:4.4.1"
@@ -5600,13 +5592,6 @@ __metadata:
     editions: ^2.3.0
     typechecker: ^7.0.0
   checksum: 0a08e4a50021c26da66e18717e84ababb3266610153ecc96e80d765d4cdd2bbee52af30ab677292784ca075af426638c1962b2e4d7e94ffbbc7301039aee1f24
-  languageName: node
-  linkType: hard
-
-"err-code@npm:^1.0.0":
-  version: 1.1.2
-  resolution: "err-code@npm:1.1.2"
-  checksum: 9e6bcdc90de83b1f30e312a7c7db38e6c50cbea0771e8b9f7301506e09df543ce29b4ed147ec528c1c072fb5561be7651b902b085338237682c8d0ac496e759c
   languageName: node
   linkType: hard
 
@@ -6148,9 +6133,9 @@ __metadata:
   linkType: hard
 
 "faker@npm:^5.1.0":
-  version: 5.3.1
-  resolution: "faker@npm:5.3.1"
-  checksum: 40f3e92fe392f4269d5891b85ab787e1049fd2dfceb51e703a8142dc1a02aeb823b1beef986f0222eb17eac3968474cdc90a9d6128440b5b14be4df20391d731
+  version: 5.4.0
+  resolution: "faker@npm:5.4.0"
+  checksum: f29deef14c3e91ac4f67b8dd02d0d5147d42ef44e9a6051f8aa5a0b63083d42302af9679a3de7d92bb7c36ef8e2b1b31e3b36813e678fc0483026e3c30d6cbe5
   languageName: node
   linkType: hard
 
@@ -7411,7 +7396,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"is-core-module@npm:^2.1.0":
+"is-core-module@npm:^2.2.0":
   version: 2.2.0
   resolution: "is-core-module@npm:2.2.0"
   dependencies:
@@ -9074,8 +9059,8 @@ fsevents@~2.1.2:
   linkType: hard
 
 "make-fetch-happen@npm:^8.0.9":
-  version: 8.0.13
-  resolution: "make-fetch-happen@npm:8.0.13"
+  version: 8.0.14
+  resolution: "make-fetch-happen@npm:8.0.14"
   dependencies:
     agentkeepalive: ^4.1.3
     cacache: ^15.0.5
@@ -9089,10 +9074,10 @@ fsevents@~2.1.2:
     minipass-fetch: ^1.3.2
     minipass-flush: ^1.0.5
     minipass-pipeline: ^1.2.4
-    promise-retry: ^1.1.1
+    promise-retry: ^2.0.1
     socks-proxy-agent: ^5.0.0
     ssri: ^8.0.0
-  checksum: c738713b89f63c946a28c6e86ce75ca537db74f5f31f5790acb04d8fc0d5f11847916e906653fbfdf79d319fe5450fca2b2b52a5505375d6abd26c4fcd548c69
+  checksum: 0847aca9a33544ffe153346343756edfb8065ee6497675c50e99a8b8252bbce4a574b5a2d008e8004de5f1c235205e9c7f2889adc68a8d2019691b4b66f223f4
   languageName: node
   linkType: hard
 
@@ -11035,16 +11020,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"promise-retry@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "promise-retry@npm:1.1.1"
-  dependencies:
-    err-code: ^1.0.0
-    retry: ^0.10.0
-  checksum: a2ed89ee42c0e0c6ba4f15d312b3eeb3a24993a7ef7af537b9abdd685702900bed89df64b7d77197fbfae0911c76d1098604c0c1e3be5375f5c515b54aab1cb3
-  languageName: node
-  linkType: hard
-
 "promise-retry@npm:^2.0.1":
   version: 2.0.1
   resolution: "promise-retry@npm:2.0.1"
@@ -11582,22 +11557,22 @@ fsevents@~2.1.2:
   linkType: hard
 
 "resolve@^1.1.6, resolve@^1.10.0, resolve@^1.12.0, resolve@^1.18.1":
-  version: 1.19.0
-  resolution: "resolve@npm:1.19.0"
+  version: 1.20.0
+  resolution: "resolve@npm:1.20.0"
   dependencies:
-    is-core-module: ^2.1.0
+    is-core-module: ^2.2.0
     path-parse: ^1.0.6
-  checksum: 8b23c7fde1224898ffb9fec2a2295a44d1564981343bdbf5fd3769465658f6a6f6647bb7ea66dfb3c1291ca86046b0233be2edfcd8ca05b38886521e8869677c
+  checksum: 0f5206d454b30e74d9b2d575b5f8aedf443c4d8b90b84cdf79474ade29bb459075220da3127b682896872a16022ed65cc4db09e0f23849654144d3d75c65cd1b
   languageName: node
   linkType: hard
 
 "resolve@patch:resolve@^1.1.6#builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#builtin<compat/resolve>, resolve@patch:resolve@^1.18.1#builtin<compat/resolve>":
-  version: 1.19.0
-  resolution: "resolve@patch:resolve@npm%3A1.19.0#builtin<compat/resolve>::version=1.19.0&hash=3388aa"
+  version: 1.20.0
+  resolution: "resolve@patch:resolve@npm%3A1.20.0#builtin<compat/resolve>::version=1.20.0&hash=3388aa"
   dependencies:
-    is-core-module: ^2.1.0
+    is-core-module: ^2.2.0
     path-parse: ^1.0.6
-  checksum: 188d5167e8578a9af8d194faf382b8f3526aad5145391c24ecdc6246c6fc82c10fc66d6352267f8e93c5977c503d61803169c91b9e2ee36dd2de759915c9b673
+  checksum: c4a515b76026806b5b26513fc7bdb80458c532bc91c02ef45ac928d1025585f93bec0b904be39c02131118a37ff7e3f9258f1526850b025d2ec0948bb5fd03d0
   languageName: node
   linkType: hard
 
@@ -11643,13 +11618,6 @@ fsevents@~2.1.2:
   version: 0.1.15
   resolution: "ret@npm:0.1.15"
   checksum: 749c2fcae7071f5ecea4f8a18e35a79a8e8a58e522a16d843ecb9dfe9e647a76d92ae85c22690b02f87d3ab78b6b1f73341efc2fabbf59ed54dcfd9b1bdff883
-  languageName: node
-  linkType: hard
-
-"retry@npm:^0.10.0":
-  version: 0.10.1
-  resolution: "retry@npm:0.10.1"
-  checksum: 431b8b2e7551736512e18b9727b28f020ba9c3beab317eb769b84bdffd040bf55cbaa7a70f63984329ed003d9bfdef42fa589fce849fbdcb5f79f1ab8d68ee47
   languageName: node
   linkType: hard
 
@@ -12573,11 +12541,11 @@ fsevents@~2.1.2:
   linkType: hard
 
 "systeminformation@npm:^4.30.4":
-  version: 4.34.9
-  resolution: "systeminformation@npm:4.34.9"
+  version: 4.34.10
+  resolution: "systeminformation@npm:4.34.10"
   bin:
     systeminformation: lib/cli.js
-  checksum: f2712028d5806a005421d6451c728824ca4b19456741720206e7bb92a9e2dabcc73356c71f6d7d5882fa2a0b31f5d66f3b8f27958c614526d7a541138448d055
+  checksum: 90e45c1495c07658fc5b2fb482e7bb8c39c3eec7ad5e3ab6d0d2bb9472b032568774057de3a44e7df2d8df0e81bd968b6e73a41a587cb94148e56c17886bface
   languageName: node
   linkType: hard
 
@@ -13159,22 +13127,22 @@ fsevents@~2.1.2:
   linkType: hard
 
 "typescript@patch:typescript@~4.1.2#builtin<compat/typescript>":
-  version: 4.1.4
-  resolution: "typescript@patch:typescript@npm%3A4.1.4#builtin<compat/typescript>::version=4.1.4&hash=cc6730"
+  version: 4.1.5
+  resolution: "typescript@patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: d913f9d92f15437627d35ec24bb28740c5f550843a0442977cb61be0973aa760d618b33f4426205ccff920442ed38256b7d4b48731cfb7084ce0977c07e35404
+  checksum: 58cc7786be0f8485c124944883b1384287532e4867ec37f1fb5cb2811dbc10f7a9decccad89097f924043285f3515bfd8223c61dbb4f88af00b2d8dc2ef73207
   languageName: node
   linkType: hard
 
 typescript@~4.1.2:
-  version: 4.1.4
-  resolution: "typescript@npm:4.1.4"
+  version: 4.1.5
+  resolution: "typescript@npm:4.1.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 2da55c253179d360bbc846436c42a5cbbffba99dfed69593450143b1c7f46fe43eab145b84a80f51d8e6d1be6dd4a6a0885e78495a42fc34c4a768595131e148
+  checksum: 29157c84426ac94ce97aac836264f303a26bd9fb30865650229e3406a36ca2e89735ef4b8878075ba1b95fa4d3ff9810057b64888700c28e20b4034a6db4da83
   languageName: node
   linkType: hard
 
