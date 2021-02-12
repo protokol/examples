@@ -8,6 +8,13 @@ import { configurations } from "./configurations";
 export const setupScript = async () => {
 	const client = new ProtokolConnection(configurations.clientHost);
 	const configs = await client.api("node").crypto();
+	const {
+		body: {
+			data: {
+				block: { height },
+			},
+		},
+	} = await client.get("blockchain");
 
 	Managers.configManager.setConfig({
 		network: configs.body.data.network,
@@ -15,7 +22,7 @@ export const setupScript = async () => {
 		genesisBlock: Managers.configManager.getPreset("devnet").genesisBlock,
 		exceptions: configs.body.data.exceptions,
 	});
-	Managers.configManager.setHeight(2);
+	Managers.configManager.setHeight(height);
 
 	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTRegisterCollectionTransaction);
 	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTCreateTransaction);

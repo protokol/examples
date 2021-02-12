@@ -54,6 +54,8 @@ import { FillScript } from "./scripts/FillScript";
 import { ShareCoinsScript } from "./scripts/ShareCoinsScript";
 import { setupScript } from "./setup";
 
+const { passphrasesFile, delayTime } = configurations;
+
 export const main = async () => {
 	/** Setup the script - registering transaction types and network settings */
 	const client = new ProtokolConnection(configurations.clientHost);
@@ -70,14 +72,11 @@ export const main = async () => {
 	console.log(chalk.green("Transfer coins to known wallets"));
 
 	const shareCoins = new ShareCoinsScript(process.argv.slice(2).join(" "));
-	await shareCoins.splitCoins(50000, configurations.passphrasesFile.secrets);
+	await shareCoins.splitCoins(50000, passphrasesFile.secrets);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
-	const scriptType = new FillScript(
-		configurations.passphrasesFile.secrets,
-		configurations.passphrasesFile.secrets[0],
-	);
+	const scriptType = new FillScript(passphrasesFile.secrets, passphrasesFile.secrets[0]);
 
 	console.log(chalk.green("Create FIFA collections"));
 	/**
@@ -88,7 +87,7 @@ export const main = async () => {
 	 */
 	await scriptType.createCollections(1, 1, () => fifaCollection);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create FIFA assets"));
 	/**
@@ -103,7 +102,7 @@ export const main = async () => {
 		];
 	});
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create FIFA auctions"));
 	/**
@@ -114,7 +113,7 @@ export const main = async () => {
 	 * */
 	await scriptType.createAuctions(4, 10);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create FIFA bids"));
 	/**
@@ -125,7 +124,7 @@ export const main = async () => {
 	 * */
 	await scriptType.createBids(15, 10);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create FIFA trades"));
 	/**
@@ -133,145 +132,130 @@ export const main = async () => {
 	 * */
 	await scriptType.createTrades();
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	/** Marvel collection fill script */
-	const fillScriptMarvelCollection = new FillScript(
-		configurations.passphrasesFile.secrets,
-		configurations.passphrasesFile.secrets[1],
-	);
+	const fillScriptMarvelCollection = new FillScript(passphrasesFile.secrets, passphrasesFile.secrets[1]);
 
 	console.log(chalk.green("Create Marvel collections"));
 	await fillScriptMarvelCollection.createCollections(1, 1, () => marvelCollection);
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Iron Man assets"));
 	await fillScriptMarvelCollection.createAssets(2, 40, 1, () => ironManAsset);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Marvel auctions"));
 	await fillScriptMarvelCollection.createAuctions(2, 10);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Marvel bids"));
 	await fillScriptMarvelCollection.createBids(5, 4);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Marvel trades"));
 	await fillScriptMarvelCollection.createTrades();
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	/** Breitling collection fill script */
 
-	const fillScriptBreitlingCollection = new FillScript(
-		configurations.passphrasesFile.secrets,
-		configurations.passphrasesFile.secrets[2],
-	);
+	const fillScriptBreitlingCollection = new FillScript(passphrasesFile.secrets, passphrasesFile.secrets[2]);
 
 	console.log(chalk.green("Create Breitling collections"));
 	await fillScriptBreitlingCollection.createCollections(1, 1, () => breitlingCollection);
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Breitling watch assets"));
 	await fillScriptBreitlingCollection.createAssets(2, 40, 1, () => {
 		return [breitlingWatch1, breitlingWatch2, breitlingWatch3][faker.random.number({ max: 2, min: 0 })];
 	});
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Breitling auctions"));
 	await fillScriptBreitlingCollection.createAuctions(2, 12);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Breitling bids"));
 	await fillScriptBreitlingCollection.createBids(15, 5);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Breitling trades"));
 	await fillScriptBreitlingCollection.createTrades();
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	/** Nascar collection fill script */
 
-	const fillScriptNascarCollection = new FillScript(
-		configurations.passphrasesFile.secrets,
-		configurations.passphrasesFile.secrets[3],
-	);
+	const fillScriptNascarCollection = new FillScript(passphrasesFile.secrets, passphrasesFile.secrets[3]);
 
 	console.log(chalk.green("Create Nascar collections"));
 	await fillScriptNascarCollection.createCollections(1, 1, () => nascarCollection);
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar assets"));
 	await fillScriptNascarCollection.createAssets(2, 40, 1, () => nascarAsset);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar auctions"));
 	await fillScriptNascarCollection.createAuctions(2, 15);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar bids"));
 	await fillScriptNascarCollection.createBids(15, 5);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar trades"));
 	await fillScriptNascarCollection.createTrades();
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	/** IWC collection fill script */
 
-	const fillScriptIWCCollection = new FillScript(
-		configurations.passphrasesFile.secrets,
-		configurations.passphrasesFile.secrets[4],
-	);
+	const fillScriptIWCCollection = new FillScript(passphrasesFile.secrets, passphrasesFile.secrets[4]);
 
 	console.log(chalk.green("Create IWC collections"));
 	await fillScriptIWCCollection.createCollections(1, 1, () => IWCCollection);
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create IWC assets"));
 	await fillScriptIWCCollection.createAssets(2, 40, 1, () => IWCAsset);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create IWC auctions"));
 	await fillScriptIWCCollection.createAuctions(2, 13);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create IWC bids"));
 	await fillScriptIWCCollection.createBids(15, 8);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create IWC trades"));
 	await fillScriptIWCCollection.createTrades();
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	/** Nascar team fill script */
-	const nascarTeamScriptType = new FillScript(
-		configurations.passphrasesFile.secrets,
-		configurations.passphrasesFile.secrets[5],
-	);
+	const nascarTeamScriptType = new FillScript(passphrasesFile.secrets, passphrasesFile.secrets[5]);
 
 	console.log(chalk.green("Create Nascar Team collection"));
 	await nascarTeamScriptType.createCollections(1, 1, () => {
 		return nascarTeamCollection;
 	});
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar Team assets"));
 	await nascarTeamScriptType.createAssets(3, 40, 1, () => {
@@ -280,33 +264,30 @@ export const main = async () => {
 		];
 	});
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar Team auctions"));
 	await nascarTeamScriptType.createAuctions(2, 17);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar Team bids"));
 	await nascarTeamScriptType.createBids(13, 10);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar Team trades"));
 	await nascarTeamScriptType.createTrades();
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	/** Nascar Hero Cards fill script */
-	const nascarHeroCardsScriptType = new FillScript(
-		configurations.passphrasesFile.secrets,
-		configurations.passphrasesFile.secrets[6],
-	);
+	const nascarHeroCardsScriptType = new FillScript(passphrasesFile.secrets, passphrasesFile.secrets[6]);
 
 	console.log(chalk.green("Create Nascar Hero Cards collection"));
 	await nascarHeroCardsScriptType.createCollections(1, 1, () => nascarHeroCardsCollection);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar Hero Cards assets"));
 	await nascarHeroCardsScriptType.createAssets(3, 40, 1, () => {
@@ -319,33 +300,30 @@ export const main = async () => {
 		return heroCard;
 	});
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar Hero Cards auctions"));
 	await nascarHeroCardsScriptType.createAuctions(2, 5);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar Hero Cards bids"));
 	await nascarHeroCardsScriptType.createBids(3, 3);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("Create Nascar Hero Cards trades"));
 	await nascarHeroCardsScriptType.createTrades();
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	/** AREX fill script */
-	const arexScriptType = new FillScript(
-		configurations.passphrasesFile.secrets,
-		configurations.passphrasesFile.secrets[7],
-	);
+	const arexScriptType = new FillScript(passphrasesFile.secrets, passphrasesFile.secrets[7]);
 
 	console.log(chalk.green("AREX collection"));
 	await arexScriptType.createCollections(1, 1, () => arexCollection);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("AREX assets"));
 	await arexScriptType.createAssets(1, 40, 1, () => {
@@ -357,20 +335,20 @@ export const main = async () => {
 		return selected;
 	});
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("AREX auctions"));
 	await arexScriptType.createAuctions(1, 3);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("AREX bids"));
 	await arexScriptType.createBids(5, 2);
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 
 	console.log(chalk.green("AREX trades"));
 	await arexScriptType.createTrades();
 
-	await delay(configurations.delay);
+	await delay(delayTime);
 };
