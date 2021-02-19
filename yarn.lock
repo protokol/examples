@@ -2504,6 +2504,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@protokol/sets@workspace:packages/sets":
+  version: 0.0.0-use.local
+  resolution: "@protokol/sets@workspace:packages/sets"
+  dependencies:
+    "@types/node": ^14.14.30
+  languageName: unknown
+  linkType: soft
+
 "@protokol/utils@npm:^1.0.0-beta.37":
   version: 1.0.0-beta.38
   resolution: "@protokol/utils@npm:1.0.0-beta.38"
@@ -2911,6 +2919,13 @@ __metadata:
   version: 13.13.41
   resolution: "@types/node@npm:13.13.41"
   checksum: 12d385e54cb3bfd7814a954f177b0d9e7a641bfac0e7898fa77f2db104b6a77f4366005436464f28990b5c212900febd551044067568e32619e4d98cae8ccfa4
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^14.14.30":
+  version: 14.14.30
+  resolution: "@types/node@npm:14.14.30"
+  checksum: 9283bf3233cb1508a06df34d078107b014bf737efd14f656769608e9b4190d118c045ff6172ab04fc1e2c61ff10712df92ac0403542886e063f5500b5f654538
   languageName: node
   linkType: hard
 

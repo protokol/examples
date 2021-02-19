@@ -29,6 +29,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@protokol/hammer",
         "reference": "workspace:packages/hammer"
+      },
+      {
+        "name": "@protokol/sets",
+        "reference": "workspace:packages/sets"
       }
     ],
     "enableTopLevelFallback": true,
@@ -36,7 +40,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [
       ["@protokol/examples", ["workspace:packages/examples"]],
       ["@protokol/examples-repo", ["workspace:."]],
-      ["@protokol/hammer", ["workspace:packages/hammer"]]
+      ["@protokol/hammer", ["workspace:packages/hammer"]],
+      ["@protokol/sets", ["workspace:packages/sets"]]
     ],
     "fallbackPool": [
     ],
@@ -2867,6 +2872,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@protokol/sets", [
+        ["workspace:packages/sets", {
+          "packageLocation": "./packages/sets/",
+          "packageDependencies": [
+            ["@protokol/sets", "workspace:packages/sets"],
+            ["@types/node", "npm:14.14.30"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@protokol/utils", [
         ["npm:1.0.0-beta.38", {
           "packageLocation": "./.yarn/cache/@protokol-utils-npm-1.0.0-beta.38-cfb6f977f4-9bb524aac7.zip/node_modules/@protokol/utils/",
@@ -3343,6 +3358,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-14.14.27-d50eb1c0f8-efc78cf6e6.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:14.14.27"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:14.14.30", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.30-7a780b8a80-9283bf3233.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:14.14.30"]
           ],
           "linkType": "HARD",
         }],
