@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "name": "@protokol/sets",
   "description": "Ajv schemas for usage across Protokol NFT ecosystem",
   "homepage": "https://docs.protokol.com/",

@@ -1,4 +1,4 @@
 import * as assets from "./assets";
-import FifaCollection from "./collection.json";
+import collection from "./collection.json";
 
-export default { FifaCollection, assets };
+export { assets, collection };

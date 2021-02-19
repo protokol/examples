@@ -4,4 +4,4 @@ import gauntBrothersTeam from "./gaunt-brothers-team.json";
 import germainTeam from "./germain-team.json";
 import goFas from "./go-fas.json";
 
-export default { chipGanassiTeam, frontRowMotosportsTeam, gauntBrothersTeam, germainTeam, goFas };
+export { chipGanassiTeam, frontRowMotosportsTeam, gauntBrothersTeam, germainTeam, goFas };

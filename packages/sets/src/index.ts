@@ -6,4 +6,4 @@ import * as Marvel from "./marvel";
 import * as NascarHeroCard from "./nascar-hero-card";
 import * as NascarTeam from "./nascar-team";
 
-export default { AREX, Breitling, Fifa, Iwc, Marvel, NascarHeroCard, NascarTeam };
+export { AREX, Breitling, Fifa, Iwc, Marvel, NascarHeroCard, NascarTeam };

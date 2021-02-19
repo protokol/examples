@@ -5,4 +5,4 @@ import zero1S from "./zero1S.json";
 import zero1T from "./zero1T.json";
 import zero1TC from "./zero1TC.json";
 
-export default { alpha, delta, zero1CP, zero1S, zero1T, zero1TC };
+export { alpha, delta, zero1CP, zero1S, zero1T, zero1TC };

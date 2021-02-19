@@ -1,4 +1,4 @@
 import * as assets from "./assets";
-import Collection from "./collection.json";
+import collection from "./collection.json";
 
-export default { Collection, assets };
+export { assets, collection };
