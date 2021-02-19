@@ -1,0 +1,42 @@
+{
+	"private": true,
+	"name": "@protokol/sets",
+	"description": "Ajv schemas for usage across Protokol NFT ecosystem",
+	"homepage": "https://docs.protokol.com/",
+	"bugs": {
+		"url": "https://github.com/protokol/examples/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/protokol/examples.git"
+	},
+	"keywords": [
+		"protokol",
+		"sdk",
+		"nft",
+		"test",
+		"script",
+	  	"ajv",
+	],
+	"contributors": [
+		"Žan Kovač <zan@protokol.com",
+	],
+	"license": "CC-BY-NC-SA-4.0",
+	"files": [
+		"/dist"
+	],
+	"main": "dist/index",
+	"types": "dist/index",
+	"scripts": {
+		"build": "yarn clean && tsc",
+		"build:watch": "yarn build -w",
+		"clean": "rimraf .coverage dist tmp"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+	},
+	"engines": {
+		"node": ">=10.x"
+	}
+}
