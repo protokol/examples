@@ -1,5 +1,4 @@
 {
-  "private": false,
   "name": "@protokol/sets",
   "description": "Ajv schemas for usage across Protokol NFT ecosystem",
   "homepage": "https://docs.protokol.com/",
@@ -37,6 +36,8 @@
     "node": ">=10.x"
   },
   "devDependencies": {
+    "@arkecosystem/crypto": "^3.0.0-next",
+    "@protokol/nft-base-crypto": "^1.0.0-beta",
     "@sindresorhus/tsconfig": "^0.8.0",
     "@types/eslint": "^7.2.6",
     "@types/jest": "^26.0.20",

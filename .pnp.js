@@ -2885,6 +2885,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/sets/",
           "packageDependencies": [
             ["@protokol/sets", "workspace:packages/sets"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.20"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.57"],
             ["@sindresorhus/tsconfig", "npm:0.8.0"],
             ["@types/eslint", "npm:7.2.6"],
             ["@types/jest", "npm:26.0.20"],

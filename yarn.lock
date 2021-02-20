@@ -2433,7 +2433,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/nft-base-crypto@npm:1.0.0-beta.57":
+"@protokol/nft-base-crypto@npm:1.0.0-beta.57, @protokol/nft-base-crypto@npm:^1.0.0-beta":
   version: 1.0.0-beta.57
   resolution: "@protokol/nft-base-crypto@npm:1.0.0-beta.57"
   dependencies:
@@ -2517,6 +2517,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protokol/sets@workspace:packages/sets"
   dependencies:
+    "@arkecosystem/crypto": ^3.0.0-next
+    "@protokol/nft-base-crypto": ^1.0.0-beta
     "@sindresorhus/tsconfig": ^0.8.0
     "@types/eslint": ^7.2.6
     "@types/jest": ^26.0.20

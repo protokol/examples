@@ -9,7 +9,7 @@ module.exports = {
 	testMatch: ["**/*.test.ts"],
 	collectCoverage: true,
 	coverageDirectory: "<rootDir>/.coverage",
-	collectCoverageFrom: ["src/**/{!(index|enums|defaults|interfaces),}.ts"],
+	collectCoverageFrom: ["src/**/{!(index|defaults),}.ts"],
 	coverageReporters: ["json", "lcov", "text", "clover", "html"],
 	coverageThreshold: {
 		global: {
