@@ -32,8 +32,6 @@
 	"clean": "rimraf .coverage dist tmp",
 	"test": "jest",
 	"test:watch": "jest --watchAll",
-	"coverage:report": "codecov",
-	"test:coverage": "jest --coverage",
 	"publish:beta": "yarn build && yarn npm publish --tag beta --access public --tolerate-republish"
   },
   "engines": {
