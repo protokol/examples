@@ -37,8 +37,6 @@ describe("Test Protokol Sets", () => {
 			expect(nftRegisterCollection.build().verified).toBeTrue();
 			expect(nftRegisterCollection.verify()).toBeTrue();
 
-			const collectionId = nftRegisterCollection.getStruct().id;
-
 			for (const asset of Object.keys(dataSet.assets)) {
 				const nftCreate = new Builders.NFTCreateBuilder()
 					.NFTCreateToken({
