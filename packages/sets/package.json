@@ -27,12 +27,12 @@
   "main": "dist/index",
   "types": "dist/index",
   "scripts": {
-	"build": "yarn clean && tsc",
-	"build:watch": "yarn build -w",
-	"clean": "rimraf .coverage dist tmp",
-	"test": "jest",
-	"test:watch": "jest --watchAll",
-	"publish:beta": "yarn build && yarn npm publish --tag beta --access public --tolerate-republish"
+    "build": "yarn clean && tsc",
+    "build:watch": "yarn build -w",
+    "clean": "rimraf .coverage dist tmp",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "publish:beta": "yarn build && yarn npm publish --tag beta --access public --tolerate-republish"
   },
   "engines": {
     "node": ">=10.x"
@@ -54,6 +54,6 @@
     "typescript": "^4.1.5"
   },
   "publishConfig": {
-	"access": "public"
+    "access": "public"
   }
 }
