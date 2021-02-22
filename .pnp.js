@@ -361,6 +361,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/core-kernel", "npm:3.0.0-next.21"],
             ["@arkecosystem/core-magistrate-crypto", "npm:3.0.0-next.21"],
             ["@arkecosystem/core-magistrate-transactions", "npm:3.0.0-next.21"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.21"],
             ["@hapi/boom", "npm:9.1.1"],
             ["@hapi/hapi", "npm:20.1.0"],
             ["joi", "npm:17.4.0"]
@@ -423,6 +424,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hapi-auth-bearer-token", "virtual:713dbbf60c6febf748b748fa365286f171142651bf5a3c19671e82fbd2f0183e2b0cfa6b6ea262c9eacc0337366f2f975531f9c5def819e13fb3207ec69122ef#npm:6.2.1"],
             ["joi", "npm:17.4.0"],
             ["latest-version", "npm:5.1.0"],
+            ["lodash", "npm:4.17.21"],
             ["lodash.clonedeep", "npm:4.5.0"],
             ["public-ip", "npm:4.0.3"],
             ["require-from-string", "npm:2.0.2"],
@@ -480,6 +482,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/crypto", "npm:3.0.0-next.21"],
             ["bytebuffer", "npm:5.0.1"],
             ["fs-extra", "npm:8.1.0"],
+            ["joi", "npm:17.4.0"],
             ["msgpack-lite", "npm:0.1.26"],
             ["ora", "npm:4.1.1"],
             ["pg-query-stream", "npm:3.4.2"],

@@ -445,7 +445,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/crypto@npm:^3.0.0-next, @arkecosystem/crypto@npm:^3.0.0-next.21":
+"@arkecosystem/crypto@npm:^3.0.0-next, @arkecosystem/crypto@npm:^3.0.0-next.21, @arkecosystem/crypto@npm:next":
   version: 3.0.0-next.21
   resolution: "@arkecosystem/crypto@npm:3.0.0-next.21"
   dependencies:
@@ -8465,7 +8465,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"joi@npm:^17.3.0":
+"joi@npm:^17.3.0, joi@npm:latest":
   version: 17.4.0
   resolution: "joi@npm:17.4.0"
   dependencies:
@@ -9077,7 +9077,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"lodash@npm:4, lodash@npm:4.x, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20":
+"lodash@npm:4, lodash@npm:4.x, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:latest":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 4983720b9abca930a4a46f18db163d7dad8dd00dbed6db0cc7b499b33b717cce69f80928b27bbb1ff2cbd3b19d251ee90669a8b5ea466072ca81c2ebe91e7468
