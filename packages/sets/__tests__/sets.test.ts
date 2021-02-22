@@ -6,7 +6,7 @@ import { Builders, Transactions as NFTTransactions } from "@protokol/nft-base-cr
 import * as Data from "../src";
 
 describe("Test Protokol Sets", () => {
-	it("should loop thru data and verify that all data is exported correctly", () => {
+	it("should loop through data and verify that all data is exported correctly", () => {
 		expect(Data).not.toBeUndefined();
 
 		for (const set of Object.keys(Data)) {
@@ -19,7 +19,7 @@ describe("Test Protokol Sets", () => {
 		}
 	});
 
-	it("should loop thru data and verify if it compiles with crypto package", () => {
+	it("should loop through data and verify if it compiles with crypto package", () => {
 		Managers.configManager.setFromPreset("testnet");
 		Managers.configManager.setHeight(2);
 
