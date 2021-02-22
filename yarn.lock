@@ -445,7 +445,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/crypto@npm:^3.0.0-next, @arkecosystem/crypto@npm:^3.0.0-next.21":
+"@arkecosystem/crypto@npm:^3.0.0-next, @arkecosystem/crypto@npm:^3.0.0-next.21, @arkecosystem/crypto@npm:next":
   version: 3.0.0-next.21
   resolution: "@arkecosystem/crypto@npm:3.0.0-next.21"
   dependencies:
@@ -2438,7 +2438,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/nft-base-crypto@npm:1.0.0-beta.57":
+"@protokol/nft-base-crypto@npm:1.0.0-beta.57, @protokol/nft-base-crypto@npm:^1.0.0-beta":
   version: 1.0.0-beta.57
   resolution: "@protokol/nft-base-crypto@npm:1.0.0-beta.57"
   dependencies:
@@ -2517,6 +2517,27 @@ __metadata:
   checksum: 83bdc4f0852ba6333675139c8c50b4bc394d97b90cbcb84537e11a65033a8722f29b34567c01ae68ec6225c69e3e7931cd4421aa5a3032d43d7a34ff5df644a7
   languageName: node
   linkType: hard
+
+"@protokol/sets@workspace:packages/sets":
+  version: 0.0.0-use.local
+  resolution: "@protokol/sets@workspace:packages/sets"
+  dependencies:
+    "@arkecosystem/crypto": ^3.0.0-next
+    "@protokol/nft-base-crypto": ^1.0.0-beta
+    "@sindresorhus/tsconfig": ^0.8.0
+    "@types/eslint": ^7.2.6
+    "@types/jest": ^26.0.20
+    "@types/node": ^14.14.30
+    "@types/rimraf": ^3.0.0
+    ajv: ^6.12.6
+    eslint: ^7.20.0
+    jest: ^26.6.3
+    jest-extended: ^0.11.5
+    rimraf: ^3.0.2
+    ts-jest: ^26.5.1
+    typescript: ^4.1.5
+  languageName: unknown
+  linkType: soft
 
 "@protokol/utils@npm:^1.0.0-beta.37":
   version: 1.0.0-beta.38
@@ -2844,7 +2865,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:26.x, @types/jest@npm:^26.0.10, @types/jest@npm:^26.0.16":
+"@types/jest@npm:26.x, @types/jest@npm:^26.0.10, @types/jest@npm:^26.0.16, @types/jest@npm:^26.0.20":
   version: 26.0.20
   resolution: "@types/jest@npm:26.0.20"
   dependencies:
@@ -2900,7 +2921,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^14.14.10, @types/node@npm:^14.6.0, @types/node@npm:latest":
+"@types/node@npm:*, @types/node@npm:^14.14.10, @types/node@npm:^14.14.30, @types/node@npm:^14.6.0, @types/node@npm:latest":
   version: 14.14.31
   resolution: "@types/node@npm:14.14.31"
   checksum: 635dc8a0898a923621e02ca179e17baa39fdfa44f0096fcc1b7046c9b32317e74a99956a7b45ca0e8069874f51f4e7873a418239a318a4b6e7936f6510ac5992
@@ -3410,7 +3431,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:6.12.6, ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.3, ajv@npm:^6.12.4":
+"ajv@npm:6.12.6, ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.3, ajv@npm:^6.12.4, ajv@npm:^6.12.6":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
   dependencies:
@@ -8444,7 +8465,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"joi@npm:^17.3.0":
+"joi@npm:^17.3.0, joi@npm:latest":
   version: 17.4.0
   resolution: "joi@npm:17.4.0"
   dependencies:
@@ -9056,7 +9077,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"lodash@npm:4, lodash@npm:4.x, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20":
+"lodash@npm:4, lodash@npm:4.x, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:latest":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 4983720b9abca930a4a46f18db163d7dad8dd00dbed6db0cc7b499b33b717cce69f80928b27bbb1ff2cbd3b19d251ee90669a8b5ea466072ca81c2ebe91e7468
@@ -13010,6 +13031,30 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"ts-jest@npm:^26.5.1, ts-jest@npm:~26.5.0":
+  version: 26.5.1
+  resolution: "ts-jest@npm:26.5.1"
+  dependencies:
+    "@types/jest": 26.x
+    bs-logger: 0.x
+    buffer-from: 1.x
+    fast-json-stable-stringify: 2.x
+    jest-util: ^26.1.0
+    json5: 2.x
+    lodash: 4.x
+    make-error: 1.x
+    mkdirp: 1.x
+    semver: 7.x
+    yargs-parser: 20.x
+  peerDependencies:
+    jest: ">=26 <27"
+    typescript: ">=3.8 <5.0"
+  bin:
+    ts-jest: cli.js
+  checksum: f054d4ef42740981688ebd5f314a864a8027ee2e02d2df4bfa7579148da59dda089224f2ea30ee16d9e919ec29fb50c5da953a6bd4573b6599c3aad46a2dd6cb
+  languageName: node
+  linkType: hard
+
 "ts-jest@npm:~26.4.4":
   version: 26.4.4
   resolution: "ts-jest@npm:26.4.4"
@@ -13031,30 +13076,6 @@ fsevents@~2.1.2:
   bin:
     ts-jest: cli.js
   checksum: bee46b789c13a9f195c80fbb201362c6c2e5150abb5aeb3699c4ccc17b9bc9c4b229e06230c5a23bf8f17bfd05311c33a4ea33a7641683e8a4bec21529f4da77
-  languageName: node
-  linkType: hard
-
-"ts-jest@npm:~26.5.0":
-  version: 26.5.1
-  resolution: "ts-jest@npm:26.5.1"
-  dependencies:
-    "@types/jest": 26.x
-    bs-logger: 0.x
-    buffer-from: 1.x
-    fast-json-stable-stringify: 2.x
-    jest-util: ^26.1.0
-    json5: 2.x
-    lodash: 4.x
-    make-error: 1.x
-    mkdirp: 1.x
-    semver: 7.x
-    yargs-parser: 20.x
-  peerDependencies:
-    jest: ">=26 <27"
-    typescript: ">=3.8 <5.0"
-  bin:
-    ts-jest: cli.js
-  checksum: f054d4ef42740981688ebd5f314a864a8027ee2e02d2df4bfa7579148da59dda089224f2ea30ee16d9e919ec29fb50c5da953a6bd4573b6599c3aad46a2dd6cb
   languageName: node
   linkType: hard
 
@@ -13282,23 +13303,23 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@~4.1.2#builtin<compat/typescript>":
-  version: 4.1.5
-  resolution: "typescript@patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 58cc7786be0f8485c124944883b1384287532e4867ec37f1fb5cb2811dbc10f7a9decccad89097f924043285f3515bfd8223c61dbb4f88af00b2d8dc2ef73207
-  languageName: node
-  linkType: hard
-
-typescript@~4.1.2:
+"typescript@^4.1.5, typescript@~4.1.2":
   version: 4.1.5
   resolution: "typescript@npm:4.1.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 29157c84426ac94ce97aac836264f303a26bd9fb30865650229e3406a36ca2e89735ef4b8878075ba1b95fa4d3ff9810057b64888700c28e20b4034a6db4da83
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.1.5#builtin<compat/typescript>, typescript@patch:typescript@~4.1.2#builtin<compat/typescript>":
+  version: 4.1.5
+  resolution: "typescript@patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 58cc7786be0f8485c124944883b1384287532e4867ec37f1fb5cb2811dbc10f7a9decccad89097f924043285f3515bfd8223c61dbb4f88af00b2d8dc2ef73207
   languageName: node
   linkType: hard
 

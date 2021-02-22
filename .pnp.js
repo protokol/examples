@@ -29,6 +29,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@protokol/hammer",
         "reference": "workspace:packages/hammer"
+      },
+      {
+        "name": "@protokol/sets",
+        "reference": "workspace:packages/sets"
       }
     ],
     "enableTopLevelFallback": true,
@@ -36,7 +40,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [
       ["@protokol/examples", ["workspace:packages/examples"]],
       ["@protokol/examples-repo", ["workspace:."]],
-      ["@protokol/hammer", ["workspace:packages/hammer"]]
+      ["@protokol/hammer", ["workspace:packages/hammer"]],
+      ["@protokol/sets", ["workspace:packages/sets"]]
     ],
     "fallbackPool": [
     ],
@@ -356,6 +361,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/core-kernel", "npm:3.0.0-next.21"],
             ["@arkecosystem/core-magistrate-crypto", "npm:3.0.0-next.21"],
             ["@arkecosystem/core-magistrate-transactions", "npm:3.0.0-next.21"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.21"],
             ["@hapi/boom", "npm:9.1.1"],
             ["@hapi/hapi", "npm:20.1.0"],
             ["joi", "npm:17.4.0"]
@@ -418,6 +424,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hapi-auth-bearer-token", "virtual:713dbbf60c6febf748b748fa365286f171142651bf5a3c19671e82fbd2f0183e2b0cfa6b6ea262c9eacc0337366f2f975531f9c5def819e13fb3207ec69122ef#npm:6.2.1"],
             ["joi", "npm:17.4.0"],
             ["latest-version", "npm:5.1.0"],
+            ["lodash", "npm:4.17.21"],
             ["lodash.clonedeep", "npm:4.5.0"],
             ["public-ip", "npm:4.0.3"],
             ["require-from-string", "npm:2.0.2"],
@@ -475,6 +482,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/crypto", "npm:3.0.0-next.21"],
             ["bytebuffer", "npm:5.0.1"],
             ["fs-extra", "npm:8.1.0"],
+            ["joi", "npm:17.4.0"],
             ["msgpack-lite", "npm:0.1.26"],
             ["ora", "npm:4.1.1"],
             ["pg-query-stream", "npm:3.4.2"],
@@ -2878,6 +2886,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.57"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["@protokol/sets", [
+        ["workspace:packages/sets", {
+          "packageLocation": "./packages/sets/",
+          "packageDependencies": [
+            ["@protokol/sets", "workspace:packages/sets"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.21"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.57"],
+            ["@sindresorhus/tsconfig", "npm:0.8.0"],
+            ["@types/eslint", "npm:7.2.6"],
+            ["@types/jest", "npm:26.0.20"],
+            ["@types/node", "npm:14.14.31"],
+            ["@types/rimraf", "npm:3.0.0"],
+            ["ajv", "npm:6.12.6"],
+            ["eslint", "npm:7.20.0"],
+            ["jest", "npm:26.6.3"],
+            ["jest-extended", "npm:0.11.5"],
+            ["rimraf", "npm:3.0.2"],
+            ["ts-jest", "virtual:809c7274f53ba856fcf8aa55adedcccbd1b6c1584f03b915769364f6742d3e1dca7042b2bbe0a885cb4515cc134af8bc2701c8d7510a4479bd9d486b48a8c0ee#npm:26.5.1"],
+            ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["@protokol/utils", [
