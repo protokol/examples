@@ -614,10 +614,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/platform-sdk-crypto", [
-        ["npm:2.8.54", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-2.8.54-e2795a1694-80a93939a3.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
+        ["npm:3.0.31", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-3.0.31-9466b0c4ec-7493d04120.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
           "packageDependencies": [
-            ["@arkecosystem/platform-sdk-crypto", "npm:2.8.54"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:3.0.31"],
             ["argon2-browser", "npm:1.15.3"],
             ["bcryptjs", "npm:2.4.3"],
             ["bcrypto", "npm:5.4.0"],
@@ -627,7 +627,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["keytar", "npm:7.4.0"],
             ["node-forge", "npm:0.10.0"],
             ["safe-buffer", "npm:5.2.1"],
-            ["string-crypto", "npm:1.0.4"]
+            ["string-crypto", "npm:2.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -2752,7 +2752,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.21"],
-            ["@arkecosystem/platform-sdk-crypto", "npm:2.8.54"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:3.0.31"],
             ["@protokol/client", "npm:1.0.0-beta.38"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.57"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.57"],
@@ -3889,15 +3889,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/acorn-walk-npm-7.2.0-5f8b515308-7b52d5d639.zip/node_modules/acorn-walk/",
           "packageDependencies": [
             ["acorn-walk", "npm:7.2.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["aes-js", [
-        ["npm:3.1.2", {
-          "packageLocation": "./.yarn/cache/aes-js-npm-3.1.2-d7549a23a2-ab4633f405.zip/node_modules/aes-js/",
-          "packageDependencies": [
-            ["aes-js", "npm:3.1.2"]
           ],
           "linkType": "HARD",
         }]
@@ -11221,7 +11212,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ngrok", [
         ["npm:3.4.0", {
-          "packageLocation": "./.yarn/unplugged/ngrok-npm-3.4.0-b3c3175e0b/node_modules/ngrok/",
+          "packageLocation": "./.yarn/cache/ngrok-npm-3.4.0-b3c3175e0b-7edb48c174.zip/node_modules/ngrok/",
           "packageDependencies": [
             ["ngrok", "npm:3.4.0"],
             ["@types/node", "npm:8.10.66"],
@@ -12840,7 +12831,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["protobufjs", [
         ["npm:6.10.2", {
-          "packageLocation": "./.yarn/unplugged/protobufjs-npm-6.10.2-f0f2cab7fe/node_modules/protobufjs/",
+          "packageLocation": "./.yarn/cache/protobufjs-npm-6.10.2-f0f2cab7fe-09d6292362.zip/node_modules/protobufjs/",
           "packageDependencies": [
             ["protobufjs", "npm:6.10.2"],
             ["@protobufjs/aspromise", "npm:1.1.2"],
@@ -14284,12 +14275,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["string-crypto", [
-        ["npm:1.0.4", {
-          "packageLocation": "./.yarn/cache/string-crypto-npm-1.0.4-dda784909f-5d72d16b5b.zip/node_modules/string-crypto/",
+        ["npm:2.0.1", {
+          "packageLocation": "./.yarn/cache/string-crypto-npm-2.0.1-0dcc2d61e9-d1f9e65c39.zip/node_modules/string-crypto/",
           "packageDependencies": [
-            ["string-crypto", "npm:1.0.4"],
-            ["aes-js", "npm:3.1.2"],
-            ["pbkdf2", "npm:3.1.1"]
+            ["string-crypto", "npm:2.0.1"]
           ],
           "linkType": "HARD",
         }]
