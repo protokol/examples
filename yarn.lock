@@ -473,9 +473,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-crypto@npm:2.8.54":
-  version: 2.8.54
-  resolution: "@arkecosystem/platform-sdk-crypto@npm:2.8.54"
+"@arkecosystem/platform-sdk-crypto@npm:3.0.31":
+  version: 3.0.31
+  resolution: "@arkecosystem/platform-sdk-crypto@npm:3.0.31"
   dependencies:
     argon2-browser: ^1.15.2
     bcryptjs: ^2.4.3
@@ -486,8 +486,8 @@ __metadata:
     keytar: ^7.1.0
     node-forge: ^0.10.0
     safe-buffer: ^5.2.1
-    string-crypto: ^1.0.4
-  checksum: 80a93939a3020e81afa022212eeb246a6b6dadd8b52be52c337f691dcfa836f3d2ca24469732eef41e395d8cee6b2167b92b3e0ee7789a4785fad78044b7a74d
+    string-crypto: ^2.0.1
+  checksum: 7493d04120738dab9e910c35aae06e7d925856e060f8162ab9c2ec74bfd19f018e2b78785cb6e4f328c9207dc1f62f181edbded616a179300243c1833f882259
   languageName: node
   linkType: hard
 
@@ -2386,7 +2386,7 @@ __metadata:
   resolution: "@protokol/hammer@workspace:packages/hammer"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
-    "@arkecosystem/platform-sdk-crypto": 2.8.54
+    "@arkecosystem/platform-sdk-crypto": 3.0.31
     "@protokol/client": 1.0.0-beta.38
     "@protokol/nft-base-crypto": 1.0.0-beta.57
     "@protokol/nft-exchange-crypto": 1.0.0-beta.57
@@ -3324,13 +3324,6 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 2bde98c28c1be9a08e41e581179b776b43396c9486ce52b2b9848d73c53df38c516b7edba4bacdc84cabc9d7a3299f3b46ef240ae261c38dbf8ddd89f635bd32
-  languageName: node
-  linkType: hard
-
-"aes-js@npm:^3.1.2":
-  version: 3.1.2
-  resolution: "aes-js@npm:3.1.2"
-  checksum: ab4633f4054e3d32d69af61bb941e47e188629c7e038d898600f3bd55674739c043b0811225fe4b58c00224f9a027a432f65e5c88681d2e49cbaa5d51f6ea941
   languageName: node
   linkType: hard
 
@@ -10733,7 +10726,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"pbkdf2@npm:^3.0.9, pbkdf2@npm:^3.1.1":
+"pbkdf2@npm:^3.0.9":
   version: 3.1.1
   resolution: "pbkdf2@npm:3.1.1"
   dependencies:
@@ -12469,13 +12462,10 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"string-crypto@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "string-crypto@npm:1.0.4"
-  dependencies:
-    aes-js: ^3.1.2
-    pbkdf2: ^3.1.1
-  checksum: 5d72d16b5b46f0df9f269b2cc2dd38c8ad72c538ab3de70e626ba1335b6c66f5572f34da8ddc736f41907b93cd2a1e0ce3ad871be847377f9e37eb0413fd2853
+"string-crypto@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "string-crypto@npm:2.0.1"
+  checksum: d1f9e65c395ac495862775c6a64d418760a17a2ab6441c19c6158c1a5406e95e764eebc91b433dd5780c710ae51ef1ce18ff3ec13e36a3ba1de9cc4aefe3e3e9
   languageName: node
   linkType: hard
 
