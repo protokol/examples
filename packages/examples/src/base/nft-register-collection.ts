@@ -2,7 +2,7 @@ import { Identities, Managers, Transactions, Utils } from "@arkecosystem/crypto"
 import { ProtokolConnection } from "@protokol/client";
 import { Builders, Transactions as NFTTransactions } from "@protokol/nft-base-crypto";
 
-export const NFTRegisterCollection = async () => {
+export const NFTRegisterCollection = async (): Promise<void> => {
 	// Configure manager and register transaction type
 	Managers.configManager.setFromPreset("testnet");
 	Managers.configManager.setHeight(2);
@@ -19,31 +19,44 @@ export const NFTRegisterCollection = async () => {
 	// Step 2: Create the transaction
 	const transaction = new Builders.NFTRegisterCollectionBuilder()
 		.NFTRegisterCollectionAsset({
-			name: "FIFA-20-PLAYERS",
-			description: "FIFA 2020 Players",
-			maximumSupply: 100,
+			name: "Nascar Hero Cards",
+			description: "Nascar Hero Cards collection",
+			maximumSupply: 10000,
 			jsonSchema: {
+				type: "object",
+				additionalProperties: false,
+				required: ["ipfsHashImageFront", "issuedDate", "issuedLocation", "signed"],
 				properties: {
-					name: {
+					ipfsHashImageFront: {
 						type: "string",
+						maxLength: 120,
+						minLength: 1,
 					},
-					pac: {
-						type: "number",
+					ipfsHashImageBack: {
+						type: "string",
+						maxLength: 120,
+						minLength: 1,
 					},
-					sho: {
-						type: "number",
+					issuedDate: {
+						format: "date",
 					},
-					pas: {
-						type: "number",
+					issuedLocation: {
+						type: "string",
+						maxLength: 255,
+						minLength: 1,
 					},
-					dri: {
-						type: "number",
+					signed: {
+						type: "boolean",
 					},
-					def: {
-						type: "number",
-					},
-					phy: {
-						type: "number",
+					tags: {
+						type: "array",
+						maxItems: 12,
+						minItems: 1,
+						additionalItems: false,
+						uniqueItems: true,
+						items: {
+							type: "string",
+						},
 					},
 				},
 			},
