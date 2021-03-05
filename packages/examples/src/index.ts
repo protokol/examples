@@ -5,6 +5,9 @@
 // import { NFTRegisterCollection } from "./base/nft-register-collection";
 // void NFTRegisterCollection();
 //
+// import { NFTRegisterCollectionMeta } from "./base/nft-register-collection-meta";
+// void NFTRegisterCollectionMeta();
+//
 // import { NFTCreate } from "./base/nft-create";
 // void NFTCreate();
 //
