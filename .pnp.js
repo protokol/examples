@@ -2914,7 +2914,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.20"],
             ["@types/node", "npm:14.14.31"],
             ["@types/rimraf", "npm:3.0.0"],
-            ["ajv", "npm:6.12.6"],
+            ["ajv", "npm:7.1.1"],
             ["eslint", "npm:7.21.0"],
             ["jest", "npm:26.6.3"],
             ["jest-extended", "npm:0.11.5"],

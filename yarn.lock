@@ -2524,7 +2524,7 @@ __metadata:
     "@types/jest": ^26.0.20
     "@types/node": ^14.14.30
     "@types/rimraf": ^3.0.0
-    ajv: ^6.12.6
+    ajv: ^7.0.0
     eslint: ^7.20.0
     jest: ^26.6.3
     jest-extended: ^0.11.5
@@ -3426,7 +3426,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:6.12.6, ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.3, ajv@npm:^6.12.4, ajv@npm:^6.12.6":
+"ajv@npm:6.12.6, ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.3, ajv@npm:^6.12.4":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
   dependencies:
@@ -3438,7 +3438,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^7.0.2":
+"ajv@npm:^7.0.0, ajv@npm:^7.0.2":
   version: 7.1.1
   resolution: "ajv@npm:7.1.1"
   dependencies:
