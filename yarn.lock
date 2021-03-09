@@ -2329,6 +2329,7 @@ __metadata:
     "@arkecosystem/crypto": ^3.0.0-next
     "@protokol/client": 1.0.0-beta.38
     "@protokol/guardian-crypto": 1.0.0-beta.39
+    "@protokol/nameservice-crypto": ^1.0.0-beta.0
     "@protokol/nft-base-crypto": 1.0.0-beta.58
     "@protokol/nft-exchange-crypto": 1.0.0-beta.58
     "@sindresorhus/tsconfig": ^0.8.0
@@ -2426,6 +2427,17 @@ __metadata:
     typescript: ~4.2.3
   languageName: unknown
   linkType: soft
+
+"@protokol/nameservice-crypto@npm:^1.0.0-beta.0":
+  version: 1.0.0-beta.0
+  resolution: "@protokol/nameservice-crypto@npm:1.0.0-beta.0"
+  dependencies:
+    "@arkecosystem/crypto": ^3.0.0-next
+    "@protokol/utils": ^1.0.0-beta.38
+    bytebuffer: ^5.0.1
+  checksum: 31d528ca8ddac3f79320d6a67e7db3137d9f35983b41e7269871d930cd77ef5be40709050fafccea4773b3c75c443ade84abfec485d478eba432932c6c678873
+  languageName: node
+  linkType: hard
 
 "@protokol/nft-base-api@npm:beta":
   version: 1.0.0-beta.58
@@ -2534,7 +2546,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@protokol/utils@npm:^1.0.0-beta.37":
+"@protokol/utils@npm:^1.0.0-beta.37, @protokol/utils@npm:^1.0.0-beta.38":
   version: 1.0.0-beta.38
   resolution: "@protokol/utils@npm:1.0.0-beta.38"
   checksum: 9bb524aac72ccaf6efb4d8c220ab7a39216f02ab2695a87a7ff3d033be3c1eda31822c88738f2d91db9fcbc71f998d3b669790e9cbc010f4cedddbb939a4bc9a
