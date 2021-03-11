@@ -473,9 +473,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-crypto@npm:3.0.41":
-  version: 3.0.41
-  resolution: "@arkecosystem/platform-sdk-crypto@npm:3.0.41"
+"@arkecosystem/platform-sdk-crypto@npm:3.1.18":
+  version: 3.1.18
+  resolution: "@arkecosystem/platform-sdk-crypto@npm:3.1.18"
   dependencies:
     argon2-browser: ^1.15.2
     bcryptjs: ^2.4.3
@@ -483,11 +483,15 @@ __metadata:
     bip32: ^2.0.6
     bip38: ^3.1.1
     bip39: ^3.0.3
+    bstring: ^0.3.9
+    create-xpub: ~2.1.0
+    hdkey: ^2.0.1
     keytar: ^7.1.0
     node-forge: ^0.10.0
     safe-buffer: ^5.2.1
     string-crypto: ^2.0.1
-  checksum: 425b936d2332e0c71661c2e8d5cc0c18da82023e4dec5cce9cfd54831b4f1d3ad09d2f5c8d8141c315af6754c144182ab7d18556937bf1131c4cb595ccf61a4a
+    uuid: ^8.3.2
+  checksum: 3b58b429482ff990fa16ca202845e47f388627d8d397c541a86918100c1df96aabc70f04190ad8445df79c507c33158f02b7b7f2cfdbd404af2421c0171d1c17
   languageName: node
   linkType: hard
 
@@ -2414,7 +2418,7 @@ __metadata:
   resolution: "@protokol/hammer@workspace:packages/hammer"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
-    "@arkecosystem/platform-sdk-crypto": 3.0.41
+    "@arkecosystem/platform-sdk-crypto": 3.1.18
     "@protokol/client": 1.0.0-beta.38
     "@protokol/nft-base-crypto": 1.0.0-beta.58
     "@protokol/nft-exchange-crypto": 1.0.0-beta.58
@@ -4232,7 +4236,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bs58check@npm:<3.0.0, bs58check@npm:^2.1.1":
+"bs58check@npm:<3.0.0, bs58check@npm:^2.1.1, bs58check@npm:^2.1.2":
   version: 2.1.2
   resolution: "bs58check@npm:2.1.2"
   dependencies:
@@ -5075,6 +5079,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"create-xpub@npm:~2.1.0":
+  version: 2.1.0
+  resolution: "create-xpub@npm:2.1.0"
+  dependencies:
+    bs58check: ^2.1.2
+    hash.js: ^1.1.7
+    ow: ^0.8.0
+  checksum: 84733a5c90764b6cade3e6987cc74953b279bacccdf2a521a573ddc3a52ff37d7af263f6fc5c0da4deb6be2b4a4791a1de0aa1015bc8f8d1c2f2439cf8a751c0
+  languageName: node
+  linkType: hard
+
 "cron@npm:^1.7.2":
   version: 1.8.2
   resolution: "cron@npm:1.8.2"
@@ -5634,7 +5649,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"elliptic@npm:^6.4.0":
+"elliptic@npm:^6.4.0, elliptic@npm:^6.5.2":
   version: 6.5.4
   resolution: "elliptic@npm:6.5.4"
   dependencies:
@@ -7123,13 +7138,24 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"hash.js@npm:^1.0.0, hash.js@npm:^1.0.3":
+"hash.js@npm:^1.0.0, hash.js@npm:^1.0.3, hash.js@npm:^1.1.7":
   version: 1.1.7
   resolution: "hash.js@npm:1.1.7"
   dependencies:
     inherits: ^2.0.3
     minimalistic-assert: ^1.0.1
   checksum: fceb7fb87e224f4b399212f902d3a34c3ed8512560868b56dde92f617fac9c66b501e583bab2996ed7493be5ab3385e05a69d2209fa6a9144391b22e1c2d245b
+  languageName: node
+  linkType: hard
+
+"hdkey@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "hdkey@npm:2.0.1"
+  dependencies:
+    bs58check: ^2.1.2
+    safe-buffer: ^5.1.1
+    secp256k1: ^4.0.0
+  checksum: ddf2d16515e460902bfcbe43da312afbcb97fdbbf356a34c465440cf19a467aad05575da9f6dd621f78093164bab59809e6255fdf02630d75fa7aa15bba3058f
   languageName: node
   linkType: hard
 
@@ -9906,6 +9932,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"node-gyp-build@npm:^4.2.0":
+  version: 4.2.3
+  resolution: "node-gyp-build@npm:4.2.3"
+  bin:
+    node-gyp-build: bin.js
+    node-gyp-build-optional: optional.js
+    node-gyp-build-test: build-test.js
+  checksum: 8512c25498b1605dbe9d2605cac7f8996d18c35097b3079b232674b0f3b8f1559be6f531ec3a00a94f90a0a69ccc452edb62f8f6dfff8caa3abe4b729cc21b06
+  languageName: node
+  linkType: hard
+
 "node-gyp@npm:^7.1.0, node-gyp@npm:latest":
   version: 7.1.2
   resolution: "node-gyp@npm:7.1.2"
@@ -10484,6 +10521,13 @@ fsevents@~2.1.2:
     "@otplib/preset-default": ^12.0.1
     "@otplib/preset-v11": ^12.0.1
   checksum: afb790659af994513c320e2d4b673f2f36a7a9e5c6eeb69f8ecfbe68337964989cdb3c139aa8e8b276b364b3a4019f692a213ad26a75edb34b747a61d1fa273d
+  languageName: node
+  linkType: hard
+
+"ow@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "ow@npm:0.8.0"
+  checksum: 62edba7af0beaf1c84957d1f062b252da1e6015b441e3dc68e9677bdd7d15d9faa0b06d9136036b5f356068a19b406cade0748dc4202a53c76625730db7c29ad
   languageName: node
   linkType: hard
 
@@ -11983,6 +12027,18 @@ fsevents@~2.1.2:
   version: 2.1.0
   resolution: "scryptsy@npm:2.1.0"
   checksum: 9fd847955caa9d13a6d58a0360ba8fb31f8e7e7da9250b4c09c67db784a0f6dda757bc837313b0860c0e35f84a56ba068394c682dd4fba81c5899d82832aa7d6
+  languageName: node
+  linkType: hard
+
+"secp256k1@npm:^4.0.0":
+  version: 4.0.2
+  resolution: "secp256k1@npm:4.0.2"
+  dependencies:
+    elliptic: ^6.5.2
+    node-addon-api: ^2.0.0
+    node-gyp: latest
+    node-gyp-build: ^4.2.0
+  checksum: 5bf0e0aa119602c96fb26c87b4707d314e6e85d5b6aca8b6286e781b3c573775cabd68e4e6d90dcabe915a4795743e2f208dcc556e7c11b1a89b19dc5c64434e
   languageName: node
   linkType: hard
 
@@ -13522,7 +13578,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"uuid@npm:^8.0.0, uuid@npm:^8.3.0":
+"uuid@npm:^8.0.0, uuid@npm:^8.3.0, uuid@npm:^8.3.2":
   version: 8.3.2
   resolution: "uuid@npm:8.3.2"
   bin:
