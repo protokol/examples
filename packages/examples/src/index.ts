@@ -41,3 +41,6 @@
 //
 // import { guardianUserPermission } from "./guardian/guardian-user-permissions";
 // void guardianUserPermission();
+//
+// import { Nameservice } from "./nameservice/nameservice";
+// void Nameservice();

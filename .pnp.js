@@ -2667,6 +2667,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/crypto", "npm:3.0.0-next.22"],
             ["@protokol/client", "npm:1.0.0-beta.38"],
             ["@protokol/guardian-crypto", "npm:1.0.0-beta.39"],
+            ["@protokol/nameservice-crypto", "npm:1.0.0-beta.0"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.58"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.58"],
             ["@sindresorhus/tsconfig", "npm:0.8.0"],
@@ -2808,6 +2809,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["@protokol/nameservice-crypto", [
+        ["npm:1.0.0-beta.0", {
+          "packageLocation": "./.yarn/cache/@protokol-nameservice-crypto-npm-1.0.0-beta.0-d8ebfdb478-31d528ca8d.zip/node_modules/@protokol/nameservice-crypto/",
+          "packageDependencies": [
+            ["@protokol/nameservice-crypto", "npm:1.0.0-beta.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.22"],
+            ["@protokol/utils", "npm:1.0.0-beta.38"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@protokol/nft-base-api", [
@@ -11304,7 +11317,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ngrok", [
         ["npm:3.4.0", {
-          "packageLocation": "./.yarn/cache/ngrok-npm-3.4.0-b3c3175e0b-7edb48c174.zip/node_modules/ngrok/",
+          "packageLocation": "./.yarn/unplugged/ngrok-npm-3.4.0-b3c3175e0b/node_modules/ngrok/",
           "packageDependencies": [
             ["ngrok", "npm:3.4.0"],
             ["@types/node", "npm:8.10.66"],
@@ -12932,7 +12945,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["protobufjs", [
         ["npm:6.10.2", {
-          "packageLocation": "./.yarn/cache/protobufjs-npm-6.10.2-f0f2cab7fe-09d6292362.zip/node_modules/protobufjs/",
+          "packageLocation": "./.yarn/unplugged/protobufjs-npm-6.10.2-f0f2cab7fe/node_modules/protobufjs/",
           "packageDependencies": [
             ["protobufjs", "npm:6.10.2"],
             ["@protobufjs/aspromise", "npm:1.1.2"],
