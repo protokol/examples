@@ -614,20 +614,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/platform-sdk-crypto", [
-        ["npm:3.0.41", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-3.0.41-ed11b66833-425b936d23.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
+        ["npm:3.1.18", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-3.1.18-257505c3af-3b58b42948.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
           "packageDependencies": [
-            ["@arkecosystem/platform-sdk-crypto", "npm:3.0.41"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:3.1.18"],
             ["argon2-browser", "npm:1.15.3"],
             ["bcryptjs", "npm:2.4.3"],
             ["bcrypto", "npm:5.4.0"],
             ["bip32", "npm:2.0.6"],
             ["bip38", "npm:3.1.1"],
             ["bip39", "npm:3.0.3"],
+            ["bstring", "npm:0.3.9"],
+            ["create-xpub", "npm:2.1.0"],
+            ["hdkey", "npm:2.0.1"],
             ["keytar", "npm:7.4.0"],
             ["node-forge", "npm:0.10.0"],
             ["safe-buffer", "npm:5.2.1"],
-            ["string-crypto", "npm:2.0.1"]
+            ["string-crypto", "npm:2.0.1"],
+            ["uuid", "npm:8.3.2"]
           ],
           "linkType": "HARD",
         }]
@@ -2797,7 +2801,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.22"],
-            ["@arkecosystem/platform-sdk-crypto", "npm:3.0.41"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:3.1.18"],
             ["@protokol/client", "npm:1.0.0-beta.38"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.58"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.58"],
@@ -5915,6 +5919,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["create-xpub", [
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/create-xpub-npm-2.1.0-255fd75d73-84733a5c90.zip/node_modules/create-xpub/",
+          "packageDependencies": [
+            ["create-xpub", "npm:2.1.0"],
+            ["bs58check", "npm:2.1.2"],
+            ["hash.js", "npm:1.1.7"],
+            ["ow", "npm:0.8.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["cron", [
         ["npm:1.8.2", {
           "packageLocation": "./.yarn/cache/cron-npm-1.8.2-e208a565b6-58189a955b.zip/node_modules/cron/",
@@ -8323,6 +8339,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hash.js", "npm:1.1.7"],
             ["inherits", "npm:2.0.4"],
             ["minimalistic-assert", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["hdkey", [
+        ["npm:2.0.1", {
+          "packageLocation": "./.yarn/cache/hdkey-npm-2.0.1-2def4c58eb-ddf2d16515.zip/node_modules/hdkey/",
+          "packageDependencies": [
+            ["hdkey", "npm:2.0.1"],
+            ["bs58check", "npm:2.1.2"],
+            ["safe-buffer", "npm:5.2.1"],
+            ["secp256k1", "npm:4.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -11455,6 +11483,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["node-gyp-build", [
+        ["npm:4.2.3", {
+          "packageLocation": "./.yarn/cache/node-gyp-build-npm-4.2.3-051c80c95f-8512c25498.zip/node_modules/node-gyp-build/",
+          "packageDependencies": [
+            ["node-gyp-build", "npm:4.2.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["node-int64", [
         ["npm:0.4.0", {
           "packageLocation": "./.yarn/cache/node-int64-npm-0.4.0-0dc04ec3b2-8fce4b82d4.zip/node_modules/node-int64/",
@@ -12037,6 +12074,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@otplib/core", "npm:12.0.1"],
             ["@otplib/preset-default", "npm:12.0.1"],
             ["@otplib/preset-v11", "npm:12.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ow", [
+        ["npm:0.8.0", {
+          "packageLocation": "./.yarn/cache/ow-npm-0.8.0-6c00864b77-62edba7af0.zip/node_modules/ow/",
+          "packageDependencies": [
+            ["ow", "npm:0.8.0"]
           ],
           "linkType": "HARD",
         }]
@@ -13778,6 +13824,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/scryptsy-npm-2.1.0-7d7fbe38f3-9fd847955c.zip/node_modules/scryptsy/",
           "packageDependencies": [
             ["scryptsy", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["secp256k1", [
+        ["npm:4.0.2", {
+          "packageLocation": "./.yarn/unplugged/secp256k1-npm-4.0.2-80b0224eff/node_modules/secp256k1/",
+          "packageDependencies": [
+            ["secp256k1", "npm:4.0.2"],
+            ["elliptic", "npm:6.5.4"],
+            ["node-addon-api", "npm:2.0.2"],
+            ["node-gyp", "npm:7.1.2"],
+            ["node-gyp-build", "npm:4.2.3"]
           ],
           "linkType": "HARD",
         }]
