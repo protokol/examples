@@ -38,7 +38,7 @@
 	"dependencies": {
 		"@arkecosystem/crypto": "^3.0.0-next",
 		"@arkecosystem/platform-sdk-crypto": "3.1.20",
-		"@protokol/client": "1.0.0-beta.38",
+		"@protokol/client": "1.0.0-beta.39",
 		"@protokol/nft-base-crypto": "1.0.0-beta.59",
 		"@protokol/nft-exchange-crypto": "1.0.0-beta.59",
 		"chalk": "^4.1.0",

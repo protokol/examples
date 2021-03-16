@@ -2661,6 +2661,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:7.3.4"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.39", {
+          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-beta.39-85f03a1800-7ac537959f.zip/node_modules/@protokol/client/",
+          "packageDependencies": [
+            ["@protokol/client", "npm:1.0.0-beta.39"],
+            ["@arkecosystem/client", "npm:2.0.0"],
+            ["is-url-superb", "npm:5.0.0"],
+            ["ky", "npm:0.25.1"],
+            ["ky-universal", "virtual:5c1d15a674870dd503ceed0afb6fa377036e63e8513aa46890f5350ff27a3ba28ecab6403115e1188f82b8a1c2cbb40c5bce51f00d61010af07399036e2a80ea#npm:0.8.2"],
+            ["lodash.orderby", "npm:4.6.0"],
+            ["semver", "npm:7.3.4"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@protokol/examples", [
@@ -2802,7 +2815,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.22"],
             ["@arkecosystem/platform-sdk-crypto", "npm:3.1.20"],
-            ["@protokol/client", "npm:1.0.0-beta.38"],
+            ["@protokol/client", "npm:1.0.0-beta.39"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.59"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.59"],
             ["@types/faker", "npm:5.1.7"],
