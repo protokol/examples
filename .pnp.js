@@ -2964,7 +2964,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.20"],
             ["@types/node", "npm:14.14.31"],
             ["@types/rimraf", "npm:3.0.0"],
-            ["ajv", "npm:6.12.6"],
+            ["ajv", "npm:7.2.4"],
             ["eslint", "npm:7.21.0"],
             ["jest", "npm:26.6.3"],
             ["jest-extended", "npm:0.11.5"],
@@ -4066,6 +4066,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ajv-npm-7.1.1-2207905505-fe4e138529.zip/node_modules/ajv/",
           "packageDependencies": [
             ["ajv", "npm:7.1.1"],
+            ["fast-deep-equal", "npm:3.1.3"],
+            ["json-schema-traverse", "npm:1.0.0"],
+            ["require-from-string", "npm:2.0.2"],
+            ["uri-js", "npm:4.4.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:7.2.4", {
+          "packageLocation": "./.yarn/cache/ajv-npm-7.2.4-095b45009d-17be02b9a6.zip/node_modules/ajv/",
+          "packageDependencies": [
+            ["ajv", "npm:7.2.4"],
             ["fast-deep-equal", "npm:3.1.3"],
             ["json-schema-traverse", "npm:1.0.0"],
             ["require-from-string", "npm:2.0.2"],
