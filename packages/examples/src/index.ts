@@ -44,3 +44,13 @@
 //
 // import { Nameservice } from "./nameservice/nameservice";
 // void Nameservice();
+
+// Nascar
+// import { CoreyRegisterCollectionMeta } from "./nascar/corey-register-collection-meta";
+// void CoreyRegisterCollectionMeta();
+
+// import { JosephyRegisterCollectionMeta } from "./nascar/josephy-register-collection-meta";
+// void JosephyRegisterCollectionMeta();
+
+// import { JimmieRegisterCollectionMeta } from "./nascar/jimmie-register-collection-meta";
+// void JimmieRegisterCollectionMeta();
