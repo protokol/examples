@@ -2785,7 +2785,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/client", "npm:1.0.0-beta.39"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.60"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.60"],
-            ["@types/faker", "npm:5.5.1"],
+            ["@types/faker", "npm:5.5.3"],
             ["chalk", "npm:4.1.0"],
             ["delay", "npm:5.0.0"],
             ["faker", "npm:5.5.3"],
@@ -3189,10 +3189,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/faker", [
-        ["npm:5.5.1", {
-          "packageLocation": "./.yarn/cache/@types-faker-npm-5.5.1-30169cf566-c939edb04c.zip/node_modules/@types/faker/",
+        ["npm:5.5.3", {
+          "packageLocation": "./.yarn/cache/@types-faker-npm-5.5.3-f950fabd1e-400a10db2a.zip/node_modules/@types/faker/",
           "packageDependencies": [
-            ["@types/faker", "npm:5.5.1"]
+            ["@types/faker", "npm:5.5.3"]
           ],
           "linkType": "HARD",
         }]
@@ -11327,7 +11327,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ngrok", [
         ["npm:3.4.1", {
-          "packageLocation": "./.yarn/unplugged/ngrok-npm-3.4.1-fed079aa1a/node_modules/ngrok/",
+          "packageLocation": "./.yarn/cache/ngrok-npm-3.4.1-fed079aa1a-aecf3201a0.zip/node_modules/ngrok/",
           "packageDependencies": [
             ["ngrok", "npm:3.4.1"],
             ["@types/node", "npm:8.10.66"],
@@ -12951,7 +12951,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["protobufjs", [
         ["npm:6.10.2", {
-          "packageLocation": "./.yarn/unplugged/protobufjs-npm-6.10.2-f0f2cab7fe/node_modules/protobufjs/",
+          "packageLocation": "./.yarn/cache/protobufjs-npm-6.10.2-f0f2cab7fe-09d6292362.zip/node_modules/protobufjs/",
           "packageDependencies": [
             ["protobufjs", "npm:6.10.2"],
             ["@protobufjs/aspromise", "npm:1.1.2"],
