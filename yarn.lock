@@ -473,9 +473,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-crypto@npm:4.2.26":
-  version: 4.2.26
-  resolution: "@arkecosystem/platform-sdk-crypto@npm:4.2.26"
+"@arkecosystem/platform-sdk-crypto@npm:5.0.1":
+  version: 5.0.1
+  resolution: "@arkecosystem/platform-sdk-crypto@npm:5.0.1"
   dependencies:
     argon2-browser: ^1.15.2
     bcryptjs: ^2.4.3
@@ -491,7 +491,7 @@ __metadata:
     safe-buffer: ^5.2.1
     string-crypto: ^2.0.1
     uuid: ^8.3.2
-  checksum: b3737dfd7022841b0d4114a526ab036452f471a2ce8974bc3b8752c9fe35b167fb833557666cf38c750f1451bcbd43df9f8d6ab63a2837d5b0d47c3809ab0926
+  checksum: 436d35493665a81cfefad6112c5afa40bffb22e9b5ecf091475743f14c01a4c4c35c9b352181d8e7cba18aee8dc18afca9adcd469ac54cdaa3bbe3add8ff2ea5
   languageName: node
   linkType: hard
 
@@ -2402,7 +2402,7 @@ __metadata:
   resolution: "@protokol/hammer@workspace:packages/hammer"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
-    "@arkecosystem/platform-sdk-crypto": 4.2.26
+    "@arkecosystem/platform-sdk-crypto": 5.0.1
     "@protokol/client": 1.0.0-beta.39
     "@protokol/nft-base-crypto": 1.0.0-beta.60
     "@protokol/nft-exchange-crypto": 1.0.0-beta.60
