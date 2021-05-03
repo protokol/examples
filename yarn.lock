@@ -473,25 +473,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-crypto@npm:5.0.1":
-  version: 5.0.1
-  resolution: "@arkecosystem/platform-sdk-crypto@npm:5.0.1"
+"@arkecosystem/platform-sdk-crypto@npm:6.0.8":
+  version: 6.0.8
+  resolution: "@arkecosystem/platform-sdk-crypto@npm:6.0.8"
   dependencies:
-    argon2-browser: ^1.15.2
+    argon2-browser: ^1.15.4
     bcryptjs: ^2.4.3
-    bcrypto: ^5.3.0
+    bcrypto: ^5.4.0
     bip32: ^2.0.6
     bip38: ^3.1.1
-    bip39: ^3.0.3
+    bip39: ^3.0.4
     bstring: ^0.3.9
     create-xpub: ~2.1.0
     hdkey: ^2.0.1
-    keytar: ^7.1.0
+    keytar: ^7.7.0
     node-forge: ^0.10.0
     safe-buffer: ^5.2.1
     string-crypto: ^2.0.1
     uuid: ^8.3.2
-  checksum: 436d35493665a81cfefad6112c5afa40bffb22e9b5ecf091475743f14c01a4c4c35c9b352181d8e7cba18aee8dc18afca9adcd469ac54cdaa3bbe3add8ff2ea5
+  checksum: eca0bb4f60729bdb40a5486e1a9cc45cc6c5f8f10389bf31b7fbc1193c20168305faa5f3ac59c1b25ad471256cdc5731290f8f695142b96b3ab60bcd74c2dc60
   languageName: node
   linkType: hard
 
@@ -2402,7 +2402,7 @@ __metadata:
   resolution: "@protokol/hammer@workspace:packages/hammer"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
-    "@arkecosystem/platform-sdk-crypto": 5.0.1
+    "@arkecosystem/platform-sdk-crypto": 6.0.8
     "@protokol/client": 1.0.0-beta.39
     "@protokol/nft-base-crypto": 1.0.0-beta.60
     "@protokol/nft-exchange-crypto": 1.0.0-beta.60
@@ -3598,7 +3598,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"argon2-browser@npm:^1.15.2":
+"argon2-browser@npm:^1.15.4":
   version: 1.15.4
   resolution: "argon2-browser@npm:1.15.4"
   checksum: 03b6c3938b3fdc253eb3c9f1ac7f47c4f03f52ba828f93828899a075219dc54fefe5874ce4e43ec0bc45486ca107a877b9022d9ec45b20fc79e601a28257b10a
@@ -3940,7 +3940,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bcrypto@npm:^5.3.0":
+"bcrypto@npm:^5.3.0, bcrypto@npm:^5.4.0":
   version: 5.4.0
   resolution: "bcrypto@npm:5.4.0"
   dependencies:
@@ -4034,7 +4034,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bip39@npm:^3.0.2, bip39@npm:^3.0.3":
+"bip39@npm:^3.0.2":
   version: 3.0.3
   resolution: "bip39@npm:3.0.3"
   dependencies:
@@ -4043,6 +4043,18 @@ __metadata:
     pbkdf2: ^3.0.9
     randombytes: ^2.0.1
   checksum: 948443cd3713921ea1a5a5d15b52cd62280d0c30fc4a5cee3df261567808cde5e11622c0d34bccee8fadefdffa7db4244682a5567be6b9f70e195948b9d23bf8
+  languageName: node
+  linkType: hard
+
+"bip39@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "bip39@npm:3.0.4"
+  dependencies:
+    "@types/node": 11.11.6
+    create-hash: ^1.1.0
+    pbkdf2: ^3.0.9
+    randombytes: ^2.0.1
+  checksum: 24359ef61f68a1abf6c6662aa49561673a42ffa024cab02eacd5e35fd09f999b3ef60d43ad89271fa193a23d88340c95d40894792c8e22439bd3b82f5e9905c4
   languageName: node
   linkType: hard
 
@@ -8794,14 +8806,14 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"keytar@npm:^7.1.0":
-  version: 7.6.0
-  resolution: "keytar@npm:7.6.0"
+"keytar@npm:^7.7.0":
+  version: 7.7.0
+  resolution: "keytar@npm:7.7.0"
   dependencies:
     node-addon-api: ^3.0.0
     node-gyp: latest
     prebuild-install: ^6.0.0
-  checksum: 15c749ed09d799eff85b7ab50cc2c13b4167cbf17c03cdabcaee93bef9cd3506308e4c7416e85f9466dbc5f41aabb7e09b197a643c5e03a251b1671796b56875
+  checksum: 1523f64c2137132171395cd2de53f7740c316e6c488aa7a4b7a01b87fc65dc2c55989f5ae8879ec720797cc5b2519a7482fe9d236ddbaed50eab214ae2c1ce62
   languageName: node
   linkType: hard
 

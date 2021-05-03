@@ -611,20 +611,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/platform-sdk-crypto", [
-        ["npm:5.0.1", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-5.0.1-498aef8950-436d354936.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
+        ["npm:6.0.8", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-6.0.8-323493d51c-eca0bb4f60.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
           "packageDependencies": [
-            ["@arkecosystem/platform-sdk-crypto", "npm:5.0.1"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:6.0.8"],
             ["argon2-browser", "npm:1.15.4"],
             ["bcryptjs", "npm:2.4.3"],
             ["bcrypto", "npm:5.4.0"],
             ["bip32", "npm:2.0.6"],
             ["bip38", "npm:3.1.1"],
-            ["bip39", "npm:3.0.3"],
+            ["bip39", "npm:3.0.4"],
             ["bstring", "npm:0.3.9"],
             ["create-xpub", "npm:2.1.0"],
             ["hdkey", "npm:2.0.1"],
-            ["keytar", "npm:7.6.0"],
+            ["keytar", "npm:7.7.0"],
             ["node-forge", "npm:0.10.0"],
             ["safe-buffer", "npm:5.2.1"],
             ["string-crypto", "npm:2.0.1"],
@@ -2781,7 +2781,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.23"],
-            ["@arkecosystem/platform-sdk-crypto", "npm:5.0.1"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:6.0.8"],
             ["@protokol/client", "npm:1.0.0-beta.39"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.60"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.60"],
@@ -4750,6 +4750,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/bip39-npm-3.0.3-75d672a562-948443cd37.zip/node_modules/bip39/",
           "packageDependencies": [
             ["bip39", "npm:3.0.3"],
+            ["@types/node", "npm:11.11.6"],
+            ["create-hash", "npm:1.2.0"],
+            ["pbkdf2", "npm:3.1.2"],
+            ["randombytes", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:3.0.4", {
+          "packageLocation": "./.yarn/cache/bip39-npm-3.0.4-7c69c9182f-24359ef61f.zip/node_modules/bip39/",
+          "packageDependencies": [
+            ["bip39", "npm:3.0.4"],
             ["@types/node", "npm:11.11.6"],
             ["create-hash", "npm:1.2.0"],
             ["pbkdf2", "npm:3.1.2"],
@@ -10124,10 +10135,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["keytar", [
-        ["npm:7.6.0", {
-          "packageLocation": "./.yarn/unplugged/keytar-npm-7.6.0-6190f1b685/node_modules/keytar/",
+        ["npm:7.7.0", {
+          "packageLocation": "./.yarn/unplugged/keytar-npm-7.7.0-36791f0b03/node_modules/keytar/",
           "packageDependencies": [
-            ["keytar", "npm:7.6.0"],
+            ["keytar", "npm:7.7.0"],
             ["node-addon-api", "npm:3.1.0"],
             ["node-gyp", "npm:8.0.0"],
             ["prebuild-install", "npm:6.1.1"]
