@@ -473,9 +473,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-crypto@npm:6.0.34":
-  version: 6.0.34
-  resolution: "@arkecosystem/platform-sdk-crypto@npm:6.0.34"
+"@arkecosystem/platform-sdk-crypto@npm:6.1.8":
+  version: 6.1.8
+  resolution: "@arkecosystem/platform-sdk-crypto@npm:6.1.8"
   dependencies:
     argon2-browser: ^1.15.4
     bcryptjs: ^2.4.3
@@ -491,7 +491,7 @@ __metadata:
     safe-buffer: ^5.2.1
     string-crypto: ^2.0.1
     uuid: ^8.3.2
-  checksum: 69e540acdce20f08f8f416abe0cb8f58688ff710e9f03e8153664ad0842f51666ebd68d6f128c14a1b078bf0fb17fb798e821052b615cb24e20a5ca9ae5d2c5d
+  checksum: 6b37d0b305fc2a4e35e7483c966116ee78f50434acec171a50afc060db062e2ba060a045194fa0248640a025eab6e056bea7f920b7a9f3c7984538aff5be4e21
   languageName: node
   linkType: hard
 
@@ -2261,6 +2261,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@protokol/client@npm:1.0.0-beta.40":
+  version: 1.0.0-beta.40
+  resolution: "@protokol/client@npm:1.0.0-beta.40"
+  dependencies:
+    "@arkecosystem/client": 2.0.0
+    is-url-superb: ^5.0.0
+    ky: ^0.25.0
+    ky-universal: ^0.8.2
+    lodash.orderby: ^4.6.0
+    semver: ^7.3.2
+  checksum: 6c1d7ad2d09de99f038c0ead63b1780597a89b169d40cce5a2833d61fe47fff80027552cd4be22d3ba58711380586af022572263f4f658db0ef056289155be20
+  languageName: node
+  linkType: hard
+
 "@protokol/examples-repo@workspace:.":
   version: 0.0.0-use.local
   resolution: "@protokol/examples-repo@workspace:."
@@ -2402,10 +2416,10 @@ __metadata:
   resolution: "@protokol/hammer@workspace:packages/hammer"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
-    "@arkecosystem/platform-sdk-crypto": 6.0.34
-    "@protokol/client": 1.0.0-beta.39
-    "@protokol/nft-base-crypto": 1.0.0-beta.60
-    "@protokol/nft-exchange-crypto": 1.0.0-beta.60
+    "@arkecosystem/platform-sdk-crypto": 6.1.8
+    "@protokol/client": 1.0.0-beta.40
+    "@protokol/nft-base-crypto": 1.0.0-beta.61
+    "@protokol/nft-exchange-crypto": 1.0.0-beta.61
     "@types/faker": ^5.5.1
     chalk: ^4.1.0
     delay: ^5.0.0
@@ -2454,6 +2468,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@protokol/nft-base-crypto@npm:1.0.0-beta.61":
+  version: 1.0.0-beta.61
+  resolution: "@protokol/nft-base-crypto@npm:1.0.0-beta.61"
+  dependencies:
+    "@arkecosystem/crypto": ^3.0.0-next
+    "@protokol/utils": ^1.0.0-beta.38
+    bytebuffer: ^5.0.1
+  checksum: 21ced31cc6f557bb42ad7bf4234c42bb2e8c18bb44ddf83c9ade37a6c04c75273aac7529ac59c5a329c208a3ce49bcb22005b5e5b6f608c0ef3ef67b5f25f297
+  languageName: node
+  linkType: hard
+
 "@protokol/nft-base-transactions@npm:1.0.0-beta.60, @protokol/nft-base-transactions@npm:beta":
   version: 1.0.0-beta.60
   resolution: "@protokol/nft-base-transactions@npm:1.0.0-beta.60"
@@ -2493,6 +2518,17 @@ __metadata:
     "@protokol/utils": ^1.0.0-beta.37
     bytebuffer: ^5.0.1
   checksum: 95ecfc64644ff23b9c41659b2eac85aefcaab53228538b363a8830cbcccb9ea3d82d318cf156f7dbdf4713e49f3e54c8ecf6184476de47bcacfce71d03a57173
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-exchange-crypto@npm:1.0.0-beta.61":
+  version: 1.0.0-beta.61
+  resolution: "@protokol/nft-exchange-crypto@npm:1.0.0-beta.61"
+  dependencies:
+    "@arkecosystem/crypto": ^3.0.0-next
+    "@protokol/utils": ^1.0.0-beta.38
+    bytebuffer: ^5.0.1
+  checksum: acaf62e29e2f363573a4356127bd492d701842a68dc11f205cf745ffe3f435b6e10f68c16c4b43446dfb81171c722948de4e31fe4bca383143627a0fa032bb54
   languageName: node
   linkType: hard
 
