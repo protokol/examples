@@ -611,10 +611,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/platform-sdk-crypto", [
-        ["npm:6.0.34", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-6.0.34-e4e585c556-69e540acdc.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
+        ["npm:6.1.8", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-6.1.8-1ebd6c4d85-6b37d0b305.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
           "packageDependencies": [
-            ["@arkecosystem/platform-sdk-crypto", "npm:6.0.34"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:6.1.8"],
             ["argon2-browser", "npm:1.15.4"],
             ["bcryptjs", "npm:2.4.3"],
             ["bcrypto", "npm:5.4.0"],
@@ -2653,6 +2653,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:7.3.5"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.40", {
+          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-beta.40-1b80897943-6c1d7ad2d0.zip/node_modules/@protokol/client/",
+          "packageDependencies": [
+            ["@protokol/client", "npm:1.0.0-beta.40"],
+            ["@arkecosystem/client", "npm:2.0.0"],
+            ["is-url-superb", "npm:5.0.0"],
+            ["ky", "npm:0.25.1"],
+            ["ky-universal", "virtual:85f03a1800c61877e0c7b0760d9b97c3dc1f328d499ff938092867e752265393746040db7567c3dd13184e6e264e117c1f8e1b5cfdbcb8bfe44c0031c6064aa4#npm:0.8.2"],
+            ["lodash.orderby", "npm:4.6.0"],
+            ["semver", "npm:7.3.5"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@protokol/examples", [
@@ -2781,10 +2794,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.23"],
-            ["@arkecosystem/platform-sdk-crypto", "npm:6.0.34"],
-            ["@protokol/client", "npm:1.0.0-beta.39"],
-            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.60"],
-            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.60"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:6.1.8"],
+            ["@protokol/client", "npm:1.0.0-beta.40"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.61"],
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.61"],
             ["@types/faker", "npm:5.5.3"],
             ["chalk", "npm:4.1.0"],
             ["delay", "npm:5.0.0"],
@@ -2835,6 +2848,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bytebuffer", "npm:5.0.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.61", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-base-crypto-npm-1.0.0-beta.61-159036efb1-21ced31cc6.zip/node_modules/@protokol/nft-base-crypto/",
+          "packageDependencies": [
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.61"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.23"],
+            ["@protokol/utils", "npm:1.0.0-beta.38"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@protokol/nft-base-transactions", [
@@ -2875,6 +2898,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@protokol-nft-exchange-crypto-npm-1.0.0-beta.60-4f3979dfd3-95ecfc6464.zip/node_modules/@protokol/nft-exchange-crypto/",
           "packageDependencies": [
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.60"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.23"],
+            ["@protokol/utils", "npm:1.0.0-beta.38"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.61", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-exchange-crypto-npm-1.0.0-beta.61-45d5dd29fe-acaf62e29e.zip/node_modules/@protokol/nft-exchange-crypto/",
+          "packageDependencies": [
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.61"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.23"],
             ["@protokol/utils", "npm:1.0.0-beta.38"],
             ["bytebuffer", "npm:5.0.1"]
