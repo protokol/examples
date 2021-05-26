@@ -611,10 +611,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/platform-sdk-crypto", [
-        ["npm:8.0.4", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-8.0.4-dd2b740cab-3faa049525.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
+        ["npm:8.1.23", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-8.1.23-a7eda9a3df-b0b6a30acf.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
           "packageDependencies": [
-            ["@arkecosystem/platform-sdk-crypto", "npm:8.0.4"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:8.1.23"],
             ["argon2-browser", "npm:1.15.4"],
             ["bcryptjs", "npm:2.4.3"],
             ["bcrypto", "npm:5.4.0"],
@@ -2654,10 +2654,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:1.0.0-beta.40", {
-          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-beta.40-1b80897943-6c1d7ad2d0.zip/node_modules/@protokol/client/",
+        ["npm:1.0.0-beta.41", {
+          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-beta.41-49053330d9-a755d9bd9d.zip/node_modules/@protokol/client/",
           "packageDependencies": [
-            ["@protokol/client", "npm:1.0.0-beta.40"],
+            ["@protokol/client", "npm:1.0.0-beta.41"],
             ["@arkecosystem/client", "npm:2.0.0"],
             ["is-url-superb", "npm:5.0.0"],
             ["ky", "npm:0.25.1"],
@@ -2794,8 +2794,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.23"],
-            ["@arkecosystem/platform-sdk-crypto", "npm:8.0.4"],
-            ["@protokol/client", "npm:1.0.0-beta.40"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:8.1.23"],
+            ["@protokol/client", "npm:1.0.0-beta.41"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.61"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.61"],
             ["@types/faker", "npm:5.5.3"],

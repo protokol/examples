@@ -473,9 +473,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/platform-sdk-crypto@npm:8.0.4":
-  version: 8.0.4
-  resolution: "@arkecosystem/platform-sdk-crypto@npm:8.0.4"
+"@arkecosystem/platform-sdk-crypto@npm:8.1.23":
+  version: 8.1.23
+  resolution: "@arkecosystem/platform-sdk-crypto@npm:8.1.23"
   dependencies:
     argon2-browser: ^1.15.4
     bcryptjs: ^2.4.3
@@ -491,7 +491,7 @@ __metadata:
     safe-buffer: ^5.2.1
     string-crypto: ^2.0.1
     uuid: ^8.3.2
-  checksum: 3faa0495254d7680f0b7ca5d3668de1cce5fc3c18d14fc3da54cf319631ff40631588c051f645915ac79b0e8bb09fdc2cf0bede8130d2d452e12abcc87e8ad59
+  checksum: b0b6a30acfc6194f16710ceaa9515d4afeebf6ddff51f7f7f4229462496946c9328874f234e51870ab6a3e3a5ca64665bd00818979a105a85552fb57eb2ec74a
   languageName: node
   linkType: hard
 
@@ -2261,9 +2261,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/client@npm:1.0.0-beta.40":
-  version: 1.0.0-beta.40
-  resolution: "@protokol/client@npm:1.0.0-beta.40"
+"@protokol/client@npm:1.0.0-beta.41":
+  version: 1.0.0-beta.41
+  resolution: "@protokol/client@npm:1.0.0-beta.41"
   dependencies:
     "@arkecosystem/client": 2.0.0
     is-url-superb: ^5.0.0
@@ -2271,7 +2271,7 @@ __metadata:
     ky-universal: ^0.8.2
     lodash.orderby: ^4.6.0
     semver: ^7.3.2
-  checksum: 6c1d7ad2d09de99f038c0ead63b1780597a89b169d40cce5a2833d61fe47fff80027552cd4be22d3ba58711380586af022572263f4f658db0ef056289155be20
+  checksum: a755d9bd9d322c44cd9cb64949156c36511582a28ec9cdf7abd03d523a3f9722498909fc180112dd5b2739e6c50515eac9f87fa9698a38edef4a60976b53facd
   languageName: node
   linkType: hard
 
@@ -2416,8 +2416,8 @@ __metadata:
   resolution: "@protokol/hammer@workspace:packages/hammer"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
-    "@arkecosystem/platform-sdk-crypto": 8.0.4
-    "@protokol/client": 1.0.0-beta.40
+    "@arkecosystem/platform-sdk-crypto": 8.1.23
+    "@protokol/client": 1.0.0-beta.41
     "@protokol/nft-base-crypto": 1.0.0-beta.61
     "@protokol/nft-exchange-crypto": 1.0.0-beta.61
     "@types/faker": ^5.5.1
