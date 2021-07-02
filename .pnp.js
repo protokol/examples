@@ -3021,8 +3021,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/crypto", "npm:3.0.0-next.28"],
             ["@arkecosystem/platform-sdk-crypto", "npm:10.3.5"],
             ["@protokol/client", "npm:1.0.0-beta.41"],
-            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.62"],
-            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.62"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.63"],
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.63"],
             ["@types/faker", "npm:5.5.6"],
             ["chalk", "npm:4.1.1"],
             ["delay", "npm:5.0.0"],
@@ -3084,10 +3084,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:1.0.0-beta.62", {
-          "packageLocation": "./.yarn/cache/@protokol-nft-base-crypto-npm-1.0.0-beta.62-b56ceb2bf3-68dd1997b1.zip/node_modules/@protokol/nft-base-crypto/",
+        ["npm:1.0.0-beta.63", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-base-crypto-npm-1.0.0-beta.63-f5f53bb2de-c8d52cd77d.zip/node_modules/@protokol/nft-base-crypto/",
           "packageDependencies": [
-            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.62"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.63"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.28"],
             ["@protokol/utils", "npm:1.0.0-beta.38"],
             ["bytebuffer", "npm:5.0.1"]
@@ -3149,10 +3149,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:1.0.0-beta.62", {
-          "packageLocation": "./.yarn/cache/@protokol-nft-exchange-crypto-npm-1.0.0-beta.62-14d4ee9980-12c74a1c53.zip/node_modules/@protokol/nft-exchange-crypto/",
+        ["npm:1.0.0-beta.63", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-exchange-crypto-npm-1.0.0-beta.63-e11dfcf958-f568a8e30f.zip/node_modules/@protokol/nft-exchange-crypto/",
           "packageDependencies": [
-            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.62"],
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.63"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.28"],
             ["@protokol/utils", "npm:1.0.0-beta.38"],
             ["bytebuffer", "npm:5.0.1"]
