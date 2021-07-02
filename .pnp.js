@@ -2873,10 +2873,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:1.0.0-beta.41", {
-          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-beta.41-49053330d9-a755d9bd9d.zip/node_modules/@protokol/client/",
+        ["npm:1.0.0-beta.42", {
+          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-beta.42-ee75437975-25e5fd092f.zip/node_modules/@protokol/client/",
           "packageDependencies": [
-            ["@protokol/client", "npm:1.0.0-beta.41"],
+            ["@protokol/client", "npm:1.0.0-beta.42"],
             ["@arkecosystem/client", "npm:2.0.0"],
             ["is-url-superb", "npm:5.0.0"],
             ["ky", "npm:0.25.1"],
@@ -3020,7 +3020,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.28"],
             ["@arkecosystem/platform-sdk-crypto", "npm:10.3.5"],
-            ["@protokol/client", "npm:1.0.0-beta.41"],
+            ["@protokol/client", "npm:1.0.0-beta.42"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.63"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.63"],
             ["@types/faker", "npm:5.5.6"],

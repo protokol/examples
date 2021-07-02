@@ -2282,9 +2282,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/client@npm:1.0.0-beta.41":
-  version: 1.0.0-beta.41
-  resolution: "@protokol/client@npm:1.0.0-beta.41"
+"@protokol/client@npm:1.0.0-beta.42":
+  version: 1.0.0-beta.42
+  resolution: "@protokol/client@npm:1.0.0-beta.42"
   dependencies:
     "@arkecosystem/client": 2.0.0
     is-url-superb: ^5.0.0
@@ -2292,7 +2292,7 @@ __metadata:
     ky-universal: ^0.8.2
     lodash.orderby: ^4.6.0
     semver: ^7.3.2
-  checksum: a755d9bd9d322c44cd9cb64949156c36511582a28ec9cdf7abd03d523a3f9722498909fc180112dd5b2739e6c50515eac9f87fa9698a38edef4a60976b53facd
+  checksum: 25e5fd092f4422f01ccd3c52ca48023619795e1fe8cf38a6e31fe84ab1010edcf81a18674b43a145d8de17a97b5b834f8d563441aef55c1e905cfe73b45f4daf
   languageName: node
   linkType: hard
 
@@ -2445,7 +2445,7 @@ __metadata:
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
     "@arkecosystem/platform-sdk-crypto": 10.3.5
-    "@protokol/client": 1.0.0-beta.41
+    "@protokol/client": 1.0.0-beta.42
     "@protokol/nft-base-crypto": 1.0.0-beta.63
     "@protokol/nft-exchange-crypto": 1.0.0-beta.63
     "@types/faker": ^5.5.1
