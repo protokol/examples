@@ -612,10 +612,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/platform-sdk-crypto", [
-        ["npm:10.3.5", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-10.3.5-a86e8c8d90-81168e4e6b.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
+        ["npm:10.3.8", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-platform-sdk-crypto-npm-10.3.8-ed88fc6098-bba232e61d.zip/node_modules/@arkecosystem/platform-sdk-crypto/",
           "packageDependencies": [
-            ["@arkecosystem/platform-sdk-crypto", "npm:10.3.5"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:10.3.8"],
             ["argon2-browser", "npm:1.18.0"],
             ["bcryptjs", "npm:2.4.3"],
             ["bcrypto", "npm:5.4.0"],
@@ -3019,7 +3019,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.28"],
-            ["@arkecosystem/platform-sdk-crypto", "npm:10.3.5"],
+            ["@arkecosystem/platform-sdk-crypto", "npm:10.3.8"],
             ["@protokol/client", "npm:1.0.0-beta.42"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.63"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.63"],
