@@ -37,13 +37,13 @@
 	},
 	"dependencies": {
 		"@arkecosystem/crypto": "^3.0.0-next",
-		"@arkecosystem/platform-sdk-crypto": "10.3.5",
 		"@protokol/client": "1.0.0-beta.42",
 		"@protokol/nft-base-crypto": "1.0.0-beta.63",
 		"@protokol/nft-exchange-crypto": "1.0.0-beta.63",
-		"chalk": "^4.1.0",
+		"bip39": "^3.0.4",
+		"chalk": "^4.1.1",
 		"delay": "^5.0.0",
-		"faker": "^5.1.0"
+		"faker": "^5.5.3"
 	},
 	"devDependencies": {
 		"@types/faker": "^5.5.1",

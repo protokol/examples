@@ -9,8 +9,26 @@ export const NFTBid = async () => {
 	Transactions.TransactionRegistry.registerTransactionType(NFTTransactions.NFTBidTransaction);
 
 	// Configure our API client
-	const client = new ProtokolConnection("http://localhost:4003/api");
-	const passphrase = "clay harbor enemy utility margin pretty hub comic piece aerobic umbrella acquire";
+	const client = new ProtokolConnection("https://devnet-explorer.protokol.sh/api");
+	const passphrase = "give income reflect velvet derive train sudden panic quit video fancy enlist";
+
+	// Configure manager and register transaction type
+	const configs = await client.api("node").crypto();
+	const {
+		body: {
+			data: {
+				block: { height },
+			},
+		},
+	} = await client.get("blockchain");
+
+	Managers.configManager.setConfig({
+		network: configs.body.data.network,
+		milestones: configs.body.data.milestones,
+		genesisBlock: Managers.configManager.getPreset("devnet").genesisBlock,
+		exceptions: configs.body.data.exceptions,
+	});
+	Managers.configManager.setHeight(height);
 
 	// Step 1: Retrieve the nonce of the sender wallet
 	const senderWallet = await client.api("wallets").get(Identities.Address.fromPassphrase(passphrase));
@@ -20,7 +38,7 @@ export const NFTBid = async () => {
 	const transaction = new Builders.NFTBidBuilder()
 		.NFTBidAsset({
 			bidAmount: Utils.BigNumber.make("1100"),
-			auctionId: "717ce9f6dff858c4972b067a1fce8ea72fb1c4ac60c4a75cc8e9993dbbe7541a",
+			auctionId: "f5e4af457f339baf40d09a435713a37cf61319c8c7585a35b12c1c660482b2e3",
 		})
 		.nonce(senderNonce.toFixed())
 		.sign(passphrase);
@@ -29,5 +47,8 @@ export const NFTBid = async () => {
 	const broadcastResponse = await client.api("transactions").create({ transactions: [transaction.build().toJson()] });
 
 	// Step 4: Log the response
+	console.log(broadcastResponse.body)
 	console.log(JSON.stringify(broadcastResponse.body.data, null, 4));
 };
+
+void NFTBid();

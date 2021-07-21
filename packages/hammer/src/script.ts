@@ -72,7 +72,7 @@ export const main = async () => {
 	console.log(chalk.green("Transfer coins to known wallets"));
 
 	const shareCoins = new ShareCoinsScript(process.argv.slice(2).join(" "));
-	await shareCoins.splitCoins(50000, passphrasesFile.secrets);
+	await shareCoins.splitCoins(5000, passphrasesFile.secrets);
 
 	await delay(delayTime);
 
