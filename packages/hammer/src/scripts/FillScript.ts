@@ -19,7 +19,7 @@ export class FillScript {
 	public constructor(public readonly passphrases: string[], mainPassphrase?: string) {
 		this.client = new ProtokolConnection(configurations.clientHost);
 		this.mainPassphrase =
-			mainPassphrase || this.passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })]!;
+			mainPassphrase || this.passphrases[faker.datatype.number({ max: this.passphrases.length - 1, min: 0 })]!;
 	}
 
 	public async createCollection(collection: () => NFTBaseInterfaces.NFTCollectionAsset) {
@@ -115,13 +115,13 @@ export class FillScript {
 	public async createBids(bidsPerAuction: number, auctionsToBid: number): Promise<void> {
 		for (let i = 0; i < auctionsToBid; i++) {
 			for (let j = 0; j < bidsPerAuction; j++) {
-				const pass = this.passphrases[faker.random.number({ max: this.passphrases.length - 1, min: 0 })];
+				const pass = this.passphrases[faker.datatype.number({ max: this.passphrases.length - 1, min: 0 })];
 				const transactions: Interfaces.ITransactionJson[] = [];
 				const nonce = await getNextNonce(this.client, this.mainPassphrase);
 				transactions.push(
 					createBid(
 						{
-							bidAmount: Utils.BigNumber.make(faker.random.number({ max: 1000000, min: 2 }).toString()),
+							bidAmount: Utils.BigNumber.make(faker.datatype.number({ max: 1000000, min: 2 }).toString()),
 							auctionId: this.auctions[i]!,
 						},
 						nonce.toFixed(),
@@ -151,7 +151,7 @@ export class FillScript {
 				createTrade(
 					{
 						auctionId: key,
-						bidId: value[faker.random.number({ max: value.length - 1, min: 0 })]!,
+						bidId: value[faker.datatype.number({ max: value.length - 1, min: 0 })]!,
 					},
 					nonce.toFixed(),
 					this.mainPassphrase,
