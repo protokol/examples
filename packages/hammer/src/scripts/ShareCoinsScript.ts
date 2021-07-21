@@ -1,6 +1,6 @@
 import { Identities, Interfaces, Utils } from "@arkecosystem/crypto";
-import { BIP39 } from "@arkecosystem/platform-sdk-crypto";
 import { ProtokolConnection } from "@protokol/client";
+import { generateMnemonic } from "bip39";
 
 import { configurations } from "../configurations";
 import { createTransfer } from "../creation";
@@ -13,7 +13,7 @@ export class ShareCoinsScript {
 
 	public generateRandomPassphrases(wallets: number) {
 		for (let i = 0; i < wallets; i++) {
-			const pass = BIP39.generate();
+			const pass = generateMnemonic();
 			this.generatedPassphrases.push(pass);
 		}
 	}
