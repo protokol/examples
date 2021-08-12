@@ -76,7 +76,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:809c7274f53ba856fcf8aa55adedcccbd1b6c1584f03b915769364f6742d3e1dca7042b2bbe0a885cb4515cc134af8bc2701c8d7510a4479bd9d486b48a8c0ee#npm:27.0.4"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"],
-            ["typescript-language-server", "npm:0.5.4"]
+            ["typescript-language-server", "npm:0.6.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -2844,7 +2844,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:809c7274f53ba856fcf8aa55adedcccbd1b6c1584f03b915769364f6742d3e1dca7042b2bbe0a885cb4515cc134af8bc2701c8d7510a4479bd9d486b48a8c0ee#npm:27.0.4"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"],
-            ["typescript-language-server", "npm:0.5.4"]
+            ["typescript-language-server", "npm:0.6.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -15193,18 +15193,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["typescript-language-server", [
-        ["npm:0.5.4", {
-          "packageLocation": "./.yarn/cache/typescript-language-server-npm-0.5.4-e6647e1781-77fdcd37f1.zip/node_modules/typescript-language-server/",
+        ["npm:0.6.0", {
+          "packageLocation": "./.yarn/cache/typescript-language-server-npm-0.6.0-49bea194fe-002a25320c.zip/node_modules/typescript-language-server/",
           "packageDependencies": [
-            ["typescript-language-server", "npm:0.5.4"],
+            ["typescript-language-server", "npm:0.6.0"],
             ["command-exists", "npm:1.2.9"],
             ["commander", "npm:7.2.0"],
             ["fs-extra", "npm:10.0.0"],
             ["p-debounce", "npm:2.1.0"],
             ["tempy", "npm:1.0.1"],
             ["vscode-jsonrpc", "npm:5.0.1"],
-            ["vscode-languageserver", "npm:5.3.0-next.10"],
+            ["vscode-languageserver", "npm:7.0.0"],
             ["vscode-languageserver-protocol", "npm:3.16.0"],
+            ["vscode-languageserver-textdocument", "npm:1.0.1"],
             ["vscode-uri", "npm:1.0.8"]
           ],
           "linkType": "HARD",
@@ -15454,12 +15455,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["vscode-languageserver", [
-        ["npm:5.3.0-next.10", {
-          "packageLocation": "./.yarn/cache/vscode-languageserver-npm-5.3.0-next.10-4c6c72f82e-95d3445f0e.zip/node_modules/vscode-languageserver/",
+        ["npm:7.0.0", {
+          "packageLocation": "./.yarn/cache/vscode-languageserver-npm-7.0.0-1e7ab6363b-80cfbd5f8f.zip/node_modules/vscode-languageserver/",
           "packageDependencies": [
-            ["vscode-languageserver", "npm:5.3.0-next.10"],
-            ["vscode-languageserver-protocol", "npm:3.16.0"],
-            ["vscode-textbuffer", "npm:1.0.0"]
+            ["vscode-languageserver", "npm:7.0.0"],
+            ["vscode-languageserver-protocol", "npm:3.16.0"]
           ],
           "linkType": "HARD",
         }]
@@ -15475,20 +15475,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["vscode-languageserver-textdocument", [
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/vscode-languageserver-textdocument-npm-1.0.1-7e6d1e84e1-1d000a2bae.zip/node_modules/vscode-languageserver-textdocument/",
+          "packageDependencies": [
+            ["vscode-languageserver-textdocument", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["vscode-languageserver-types", [
         ["npm:3.16.0", {
           "packageLocation": "./.yarn/cache/vscode-languageserver-types-npm-3.16.0-bd03fd2d40-7a44fb10b9.zip/node_modules/vscode-languageserver-types/",
           "packageDependencies": [
             ["vscode-languageserver-types", "npm:3.16.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["vscode-textbuffer", [
-        ["npm:1.0.0", {
-          "packageLocation": "./.yarn/cache/vscode-textbuffer-npm-1.0.0-a682e536bd-64c4b1e44b.zip/node_modules/vscode-textbuffer/",
-          "packageDependencies": [
-            ["vscode-textbuffer", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]

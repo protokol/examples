@@ -2226,7 +2226,7 @@ __metadata:
     rimraf: ^3.0.2
     ts-jest: ~27.0.1
     typescript: ~4.3.2
-    typescript-language-server: ~0.5.0
+    typescript-language-server: ~0.6.0
   dependenciesMeta:
     "@arkecosystem/core":
       unplugged: true
@@ -13091,20 +13091,22 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"typescript-language-server@npm:~0.5.0":
-  version: 0.5.4
-  resolution: "typescript-language-server@npm:0.5.4"
+"typescript-language-server@npm:~0.6.0":
+  version: 0.6.0
+  resolution: "typescript-language-server@npm:0.6.0"
   dependencies:
     command-exists: ^1.2.6
     commander: ^7.2.0
     fs-extra: ^10.0.0
     p-debounce: ^2.1.0
     tempy: ^1.0.1
-    vscode-languageserver: ^5.3.0-next
+    vscode-languageserver: ^7.0.0
+    vscode-languageserver-protocol: ^3.16.0
+    vscode-languageserver-textdocument: ^1.0.1
     vscode-uri: ^1.0.5
   bin:
     typescript-language-server: lib/cli.js
-  checksum: 77fdcd37f1ca52ede4bf33dda5e6b2d9a060ecefd7d6402ec586e7e0fbb6092dfae6461498551e2a204f1b689bfe7bb1c7baf1b0d5bb4ddf6c049744ad4bd765
+  checksum: 002a25320cf12854c6d353abe7c4cd7276ae7533234c1c6435fa4f2ffdd9655fc4ddd26376f2ab0c9a01eb798867c57ddec6d27d182ebccc5f8930b594b026d0
   languageName: node
   linkType: hard
 
@@ -13347,13 +13349,20 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"vscode-languageserver-protocol@npm:^3.15.0, vscode-languageserver-protocol@npm:^3.15.0-next.8":
+"vscode-languageserver-protocol@npm:3.16.0, vscode-languageserver-protocol@npm:^3.16.0":
   version: 3.16.0
   resolution: "vscode-languageserver-protocol@npm:3.16.0"
   dependencies:
     vscode-jsonrpc: 6.0.0
     vscode-languageserver-types: 3.16.0
   checksum: ac30cbe4b778344f7b93defbaa1332dcb5a5a3a0afda6b88618a9ed44093c1ae1d2f11548bdcff42a73bb46943df025d4fe721559144dd7bf25ae60663aabe06
+  languageName: node
+  linkType: hard
+
+"vscode-languageserver-textdocument@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "vscode-languageserver-textdocument@npm:1.0.1"
+  checksum: 1d000a2bae6c05142f73690af60ec0987f5cdee656190406cfde183806e731ab7d220324bb8e819e379412419749a3cabc7228ff06188869e7d5631d5b10bc46
   languageName: node
   linkType: hard
 
@@ -13364,22 +13373,14 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"vscode-languageserver@npm:^5.3.0-next":
-  version: 5.3.0-next.10
-  resolution: "vscode-languageserver@npm:5.3.0-next.10"
+"vscode-languageserver@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "vscode-languageserver@npm:7.0.0"
   dependencies:
-    vscode-languageserver-protocol: ^3.15.0-next.8
-    vscode-textbuffer: ^1.0.0
+    vscode-languageserver-protocol: 3.16.0
   bin:
-    installServerIntoExtension: ./bin/installServerIntoExtension
-  checksum: 95d3445f0ea2e92c3cd61ea394a2d10e88f33efbe0be0022cbbdfa777b586213ea8d898a08704e743caaac93a12e8742027089943a2ee09bb230bcf22d532fc5
-  languageName: node
-  linkType: hard
-
-"vscode-textbuffer@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "vscode-textbuffer@npm:1.0.0"
-  checksum: 64c4b1e44b42111804aa7789a8d85da4f85877ba948541658959f63e6fd2f7134a22a7edc255a2790dd73ea58d98896a3a08c9dc6f98ff01ccef93ec5cd377c0
+    installServerIntoExtension: bin/installServerIntoExtension
+  checksum: 80cfbd5f8f0869c5369d1a61fe86b3210ee941cb646eb31b672045670ef3ce213dc1fd3bcd4cef6ef8bc7c5025f98e4a70dad645d97a0bd4708962bbd921683a
   languageName: node
   linkType: hard
 
