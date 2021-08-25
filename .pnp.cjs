@@ -52,7 +52,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@arkecosystem/core", "virtual:809c7274f53ba856fcf8aa55adedcccbd1b6c1584f03b915769364f6742d3e1dca7042b2bbe0a885cb4515cc134af8bc2701c8d7510a4479bd9d486b48a8c0ee#npm:3.0.0-next.31"],
             ["@arkecosystem/core-cli", "npm:3.0.0-next.31"],
-            ["@sindresorhus/tsconfig", "npm:1.0.2"],
+            ["@sindresorhus/tsconfig", "npm:2.0.0"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:27.0.0"],
@@ -2819,7 +2819,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/examples-repo", "workspace:."],
             ["@arkecosystem/core", "virtual:809c7274f53ba856fcf8aa55adedcccbd1b6c1584f03b915769364f6742d3e1dca7042b2bbe0a885cb4515cc134af8bc2701c8d7510a4479bd9d486b48a8c0ee#npm:3.0.0-next.31"],
             ["@arkecosystem/core-cli", "npm:3.0.0-next.31"],
-            ["@sindresorhus/tsconfig", "npm:1.0.2"],
+            ["@sindresorhus/tsconfig", "npm:2.0.0"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:27.0.0"],
@@ -3053,7 +3053,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/sets", "workspace:packages/sets"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.31"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.63"],
-            ["@sindresorhus/tsconfig", "npm:1.0.2"],
+            ["@sindresorhus/tsconfig", "npm:2.0.0"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/jest", "npm:27.0.0"],
             ["@types/node", "npm:14.17.6"],
@@ -3163,10 +3163,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:1.0.2", {
-          "packageLocation": "./.yarn/cache/@sindresorhus-tsconfig-npm-1.0.2-a4962efd1e-7091862d88.zip/node_modules/@sindresorhus/tsconfig/",
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/@sindresorhus-tsconfig-npm-2.0.0-61b5b9d584-fea48f9b1e.zip/node_modules/@sindresorhus/tsconfig/",
           "packageDependencies": [
-            ["@sindresorhus/tsconfig", "npm:1.0.2"]
+            ["@sindresorhus/tsconfig", "npm:2.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -11383,7 +11383,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ngrok", [
         ["npm:3.4.1", {
-          "packageLocation": "./.yarn/unplugged/ngrok-npm-3.4.1-fed079aa1a/node_modules/ngrok/",
+          "packageLocation": "./.yarn/cache/ngrok-npm-3.4.1-fed079aa1a-3d5bada2aa.zip/node_modules/ngrok/",
           "packageDependencies": [
             ["ngrok", "npm:3.4.1"],
             ["@types/node", "npm:8.10.66"],
@@ -12938,7 +12938,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["protobufjs", [
         ["npm:6.10.2", {
-          "packageLocation": "./.yarn/unplugged/protobufjs-npm-6.10.2-f0f2cab7fe/node_modules/protobufjs/",
+          "packageLocation": "./.yarn/cache/protobufjs-npm-6.10.2-f0f2cab7fe-b48257c905.zip/node_modules/protobufjs/",
           "packageDependencies": [
             ["protobufjs", "npm:6.10.2"],
             ["@protobufjs/aspromise", "npm:1.1.2"],
