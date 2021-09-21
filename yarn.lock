@@ -26,6 +26,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@arkecosystem/client@npm:3.0.0":
+  version: 3.0.0
+  resolution: "@arkecosystem/client@npm:3.0.0"
+  dependencies:
+    is-url-superb: ^4.0.0
+    ky: ^0.24.0
+    ky-universal: ^0.8.2
+    node-dotify: ^1.0.2
+  checksum: 4a1d60aec61e84ebb229c4e03151b71d2e6d5ebfb7547a676d7316c1ff43b1574c0b5c0de20ededb1d72159d6fa331df8bf3e39ddf46351e4e602eb6ca058d2d
+  languageName: node
+  linkType: hard
+
 "@arkecosystem/core-api@npm:^3.0.0-next, @arkecosystem/core-api@npm:^3.0.0-next.31, @arkecosystem/core-api@npm:next":
   version: 3.0.0-next.31
   resolution: "@arkecosystem/core-api@npm:3.0.0-next.31"
@@ -2168,6 +2180,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@protokol/client@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@protokol/client@npm:1.0.0"
+  dependencies:
+    "@arkecosystem/client": 3.0.0
+    is-url-superb: ^5.0.0
+    ky: ^0.25.0
+    ky-universal: ^0.8.2
+    lodash.orderby: ^4.6.0
+    semver: ^7.3.2
+  checksum: a9cac2eadf67a7af8b79b971e56e1af0b5b649aa9f4470ec89d46a360091e128701ff772ca9919f5d79caddcc09e1525927378d1ffb4fcb3a1e86a1604ad0878
+  languageName: node
+  linkType: hard
+
 "@protokol/client@npm:1.0.0-beta.39":
   version: 1.0.0-beta.39
   resolution: "@protokol/client@npm:1.0.0-beta.39"
@@ -2179,20 +2205,6 @@ __metadata:
     lodash.orderby: ^4.6.0
     semver: ^7.3.2
   checksum: ce3c435711d97663ed7cc3cac0e4b8369fb8d1a3402f81d1390165a7dc0ac6f583f77e790dbe077557f68de3b572438ddbe0beff6039cff2728f81de0c274382
-  languageName: node
-  linkType: hard
-
-"@protokol/client@npm:1.0.0-beta.42":
-  version: 1.0.0-beta.42
-  resolution: "@protokol/client@npm:1.0.0-beta.42"
-  dependencies:
-    "@arkecosystem/client": 2.0.0
-    is-url-superb: ^5.0.0
-    ky: ^0.25.0
-    ky-universal: ^0.8.2
-    lodash.orderby: ^4.6.0
-    semver: ^7.3.2
-  checksum: f18e49079e799ef36f1eece5ab22a144d6d156255fb9f3e739ebbb6cbb99dbd4dfb0582689b5bfff27c6f5dc909d2f45fe21dcdc590bf0b49f5b46a83afea5ef
   languageName: node
   linkType: hard
 
@@ -2343,7 +2355,7 @@ __metadata:
   resolution: "@protokol/hammer@workspace:packages/hammer"
   dependencies:
     "@arkecosystem/crypto": ^3.0.0-next
-    "@protokol/client": 1.0.0-beta.42
+    "@protokol/client": 1.0.0
     "@protokol/nft-base-crypto": 1.0.0-beta.63
     "@protokol/nft-exchange-crypto": 1.0.0-beta.63
     "@types/faker": ^5.5.1
@@ -8761,6 +8773,13 @@ fsevents@~2.1.2:
   version: 0.23.0
   resolution: "ky@npm:0.23.0"
   checksum: 60d7d2ff554b3eb8e1520d77f25f19b073bdac2f42fa5d6f2c6ee1d3798eaa9641fff25ce10f35db8181f816f2a456ed195edaadc8ce8e4841487f319ab515ea
+  languageName: node
+  linkType: hard
+
+"ky@npm:^0.24.0":
+  version: 0.24.0
+  resolution: "ky@npm:0.24.0"
+  checksum: a0b2c369f523d5f98521a91f89e4d78f9502678e10c683c5587ac5e780d2600c6c65cea3dab1de6c862178222449b0af41ed5d749497f8384289bc2a3a16f0e8
   languageName: node
   linkType: hard
 
