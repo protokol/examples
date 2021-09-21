@@ -101,6 +101,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-dotify", "npm:1.1.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-client-npm-3.0.0-c571266939-4a1d60aec6.zip/node_modules/@arkecosystem/client/",
+          "packageDependencies": [
+            ["@arkecosystem/client", "npm:3.0.0"],
+            ["is-url-superb", "npm:4.0.0"],
+            ["ky", "npm:0.24.0"],
+            ["ky-universal", "virtual:c57126693973487afb38040e6c96c808db973bfd8d8f03e0615283e81a121c2db1f9ebdc4b787626aa2152b501f6088815f958b3a1ed385d40938f84adc90592#npm:0.8.2"],
+            ["node-dotify", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@arkecosystem/core", [
@@ -2750,11 +2761,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@protokol/client", [
-        ["npm:1.0.0-beta.39", {
-          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-beta.39-85f03a1800-ce3c435711.zip/node_modules/@protokol/client/",
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-373e72ef69-a9cac2eadf.zip/node_modules/@protokol/client/",
           "packageDependencies": [
-            ["@protokol/client", "npm:1.0.0-beta.39"],
-            ["@arkecosystem/client", "npm:2.0.0"],
+            ["@protokol/client", "npm:1.0.0"],
+            ["@arkecosystem/client", "npm:3.0.0"],
             ["is-url-superb", "npm:5.0.0"],
             ["ky", "npm:0.25.1"],
             ["ky-universal", "virtual:85f03a1800c61877e0c7b0760d9b97c3dc1f328d499ff938092867e752265393746040db7567c3dd13184e6e264e117c1f8e1b5cfdbcb8bfe44c0031c6064aa4#npm:0.8.2"],
@@ -2763,10 +2774,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:1.0.0-beta.42", {
-          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-beta.42-ee75437975-f18e49079e.zip/node_modules/@protokol/client/",
+        ["npm:1.0.0-beta.39", {
+          "packageLocation": "./.yarn/cache/@protokol-client-npm-1.0.0-beta.39-85f03a1800-ce3c435711.zip/node_modules/@protokol/client/",
           "packageDependencies": [
-            ["@protokol/client", "npm:1.0.0-beta.42"],
+            ["@protokol/client", "npm:1.0.0-beta.39"],
             ["@arkecosystem/client", "npm:2.0.0"],
             ["is-url-superb", "npm:5.0.0"],
             ["ky", "npm:0.25.1"],
@@ -2908,7 +2919,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.31"],
-            ["@protokol/client", "npm:1.0.0-beta.42"],
+            ["@protokol/client", "npm:1.0.0"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.63"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.63"],
             ["@types/faker", "npm:5.5.7"],
@@ -10279,6 +10290,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:0.24.0", {
+          "packageLocation": "./.yarn/cache/ky-npm-0.24.0-2d8ce47ad5-a0b2c369f5.zip/node_modules/ky/",
+          "packageDependencies": [
+            ["ky", "npm:0.24.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:0.25.1", {
           "packageLocation": "./.yarn/cache/ky-npm-0.25.1-40ea38970a-ae1b7bebb4.zip/node_modules/ky/",
           "packageDependencies": [
@@ -10322,6 +10340,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/web-streams-polyfill", null],
             ["abort-controller", "npm:3.0.0"],
             ["ky", "npm:0.25.1"],
+            ["node-fetch", "npm:3.0.0-beta.9"],
+            ["web-streams-polyfill", null]
+          ],
+          "packagePeers": [
+            "@types/ky",
+            "@types/web-streams-polyfill",
+            "ky",
+            "web-streams-polyfill"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:c57126693973487afb38040e6c96c808db973bfd8d8f03e0615283e81a121c2db1f9ebdc4b787626aa2152b501f6088815f958b3a1ed385d40938f84adc90592#npm:0.8.2", {
+          "packageLocation": "./.yarn/__virtual__/ky-universal-virtual-222c901cb4/0/cache/ky-universal-npm-0.8.2-66bbf1e939-87ed38c5c5.zip/node_modules/ky-universal/",
+          "packageDependencies": [
+            ["ky-universal", "virtual:c57126693973487afb38040e6c96c808db973bfd8d8f03e0615283e81a121c2db1f9ebdc4b787626aa2152b501f6088815f958b3a1ed385d40938f84adc90592#npm:0.8.2"],
+            ["@types/ky", null],
+            ["@types/web-streams-polyfill", null],
+            ["abort-controller", "npm:3.0.0"],
+            ["ky", "npm:0.24.0"],
             ["node-fetch", "npm:3.0.0-beta.9"],
             ["web-streams-polyfill", null]
           ],
