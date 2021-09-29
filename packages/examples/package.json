@@ -34,12 +34,12 @@
 		"clean": "rimraf .coverage dist tmp"
 	},
 	"dependencies": {
-		"@arkecosystem/crypto": "^3.0.0-next",
-		"@protokol/client": "1.0.0-beta.39",
-		"@protokol/guardian-crypto": "1.0.0-beta.40",
-		"@protokol/nameservice-crypto": "1.0.0-beta.1",
-		"@protokol/nft-base-crypto": "1.0.0-beta.60",
-		"@protokol/nft-exchange-crypto": "1.0.0-beta.60"
+		"@arkecosystem/crypto": "^3.0.0",
+		"@protokol/client": "1.0.0",
+		"@protokol/guardian-crypto": "1.0.0",
+		"@protokol/nameservice-crypto": "1.0.0",
+		"@protokol/nft-base-crypto": "1.0.1",
+		"@protokol/nft-exchange-crypto": "1.0.1"
 	},
 	"devDependencies": {
 		"@sindresorhus/tsconfig": "^0.8.0",
