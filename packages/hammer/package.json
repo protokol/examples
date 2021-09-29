@@ -36,7 +36,7 @@
 		"clean": "rimraf .coverage dist tmp"
 	},
 	"dependencies": {
-		"@arkecosystem/crypto": "^3.0.0-next",
+		"@arkecosystem/crypto": "^3.0.0",
 		"@protokol/client": "1.0.0",
 		"@protokol/nft-base-crypto": "1.0.1",
 		"@protokol/nft-exchange-crypto": "1.0.1",
