@@ -528,6 +528,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/crypto", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-crypto-npm-3.0.0-f9879ee42b/node_modules/@arkecosystem/crypto/",
+          "packageDependencies": [
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@arkecosystem/crypto-identities", "npm:1.2.0"],
+            ["@arkecosystem/crypto-networks", "npm:1.2.0"],
+            ["@arkecosystem/utils", "npm:1.3.0"],
+            ["@types/node", "npm:16.4.3"],
+            ["ajv", "npm:6.12.6"],
+            ["ajv-keywords", "virtual:f9879ee42ba83bb129acb955b91d3e986b1089d2d8ad9edd4672e3c7598837d5580626c932e40ca4fdac6fdbdf95cb1635e9a599998a83acae706bf48386c658#npm:3.4.1"],
+            ["bcrypto", "npm:5.4.0"],
+            ["bip32", "npm:2.0.6"],
+            ["bip39", "npm:3.0.4"],
+            ["browserify-aes", "npm:1.2.0"],
+            ["bstring", "npm:0.3.9"],
+            ["buffer-xor", "npm:2.0.2"],
+            ["builtin-modules", "npm:3.2.0"],
+            ["bytebuffer", "npm:5.0.1"],
+            ["dayjs", "npm:1.10.7"],
+            ["deepmerge", "npm:4.2.2"],
+            ["fast-memoize", "npm:2.5.2"],
+            ["ipaddr.js", "npm:2.0.1"],
+            ["lodash.get", "npm:4.4.2"],
+            ["lodash.set", "npm:4.3.2"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/unplugged/@arkecosystem-crypto-npm-3.0.0-next.31-2ae897890e/node_modules/@arkecosystem/crypto/",
           "packageDependencies": [
@@ -574,6 +601,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@arkecosystem-crypto-networks-npm-1.1.0-c3f4b25b3f-795910daa8.zip/node_modules/@arkecosystem/crypto-networks/",
           "packageDependencies": [
             ["@arkecosystem/crypto-networks", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.2.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-crypto-networks-npm-1.2.0-f623186677-813c865124.zip/node_modules/@arkecosystem/crypto-networks/",
+          "packageDependencies": [
+            ["@arkecosystem/crypto-networks", "npm:1.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -2788,6 +2822,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@protokol/core-nft-crypto", [
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/@protokol-core-nft-crypto-npm-1.0.1-f9c6b7c71c-46661cc419.zip/node_modules/@protokol/core-nft-crypto/",
+          "packageDependencies": [
+            ["@protokol/core-nft-crypto", "npm:1.0.1"],
+            ["@arkecosystem/crypto", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@protokol/examples", [
         ["workspace:packages/examples", {
           "packageLocation": "./packages/examples/",
@@ -2920,8 +2964,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.31"],
             ["@protokol/client", "npm:1.0.0"],
-            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.63"],
-            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.63"],
+            ["@protokol/nft-base-crypto", "npm:1.0.1"],
+            ["@protokol/nft-exchange-crypto", "npm:1.0.1"],
             ["@types/faker", "npm:5.5.7"],
             ["bip39", "npm:3.0.4"],
             ["chalk", "npm:4.1.1"],
@@ -2983,6 +3027,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bytebuffer", "npm:5.0.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-base-crypto-npm-1.0.1-a067db9d5f-c52e879a1e.zip/node_modules/@protokol/nft-base-crypto/",
+          "packageDependencies": [
+            ["@protokol/nft-base-crypto", "npm:1.0.1"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@protokol/core-nft-crypto", "npm:1.0.1"],
+            ["@protokol/utils", "npm:1.0.0"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@protokol/nft-base-transactions", [
@@ -3038,6 +3093,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bytebuffer", "npm:5.0.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-exchange-crypto-npm-1.0.1-893d0eb6f1-228eb08b34.zip/node_modules/@protokol/nft-exchange-crypto/",
+          "packageDependencies": [
+            ["@protokol/nft-exchange-crypto", "npm:1.0.1"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@protokol/core-nft-crypto", "npm:1.0.1"],
+            ["@protokol/utils", "npm:1.0.0"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@protokol/nft-exchange-transactions", [
@@ -3081,6 +3147,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@protokol/utils", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/@protokol-utils-npm-1.0.0-7822b57f49-180b7e5a88.zip/node_modules/@protokol/utils/",
+          "packageDependencies": [
+            ["@protokol/utils", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:1.0.0-beta.38", {
           "packageLocation": "./.yarn/cache/@protokol-utils-npm-1.0.0-beta.38-cfb6f977f4-03cb6e944a.zip/node_modules/@protokol/utils/",
           "packageDependencies": [
@@ -4133,6 +4206,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ajv-keywords", [
+        ["npm:3.4.1", {
+          "packageLocation": "./.yarn/cache/ajv-keywords-npm-3.4.1-851fd088de-0ecb945d00.zip/node_modules/ajv-keywords/",
+          "packageDependencies": [
+            ["ajv-keywords", "npm:3.4.1"]
+          ],
+          "linkType": "SOFT",
+        }],
         ["npm:3.5.2", {
           "packageLocation": "./.yarn/cache/ajv-keywords-npm-3.5.2-0e391b70e2-7dc5e59316.zip/node_modules/ajv-keywords/",
           "packageDependencies": [
@@ -4144,6 +4224,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/ajv-keywords-virtual-85096776f3/0/cache/ajv-keywords-npm-3.5.2-0e391b70e2-7dc5e59316.zip/node_modules/ajv-keywords/",
           "packageDependencies": [
             ["ajv-keywords", "virtual:2ae897890e0ac1a3685b7b7084da768fac58159212323162bf167e4738577622fb919d599df460b6d284638482c8a3d739a59339459d534bdf4fd47eef0bda4c#npm:3.5.2"],
+            ["@types/ajv", null],
+            ["ajv", "npm:6.12.6"]
+          ],
+          "packagePeers": [
+            "@types/ajv",
+            "ajv"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:f9879ee42ba83bb129acb955b91d3e986b1089d2d8ad9edd4672e3c7598837d5580626c932e40ca4fdac6fdbdf95cb1635e9a599998a83acae706bf48386c658#npm:3.4.1", {
+          "packageLocation": "./.yarn/__virtual__/ajv-keywords-virtual-de3d691286/0/cache/ajv-keywords-npm-3.4.1-851fd088de-0ecb945d00.zip/node_modules/ajv-keywords/",
+          "packageDependencies": [
+            ["ajv-keywords", "virtual:f9879ee42ba83bb129acb955b91d3e986b1089d2d8ad9edd4672e3c7598837d5580626c932e40ca4fdac6fdbdf95cb1635e9a599998a83acae706bf48386c658#npm:3.4.1"],
             ["@types/ajv", null],
             ["ajv", "npm:6.12.6"]
           ],
@@ -6090,6 +6183,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/dayjs-npm-1.10.6-c9596cd594-a79af6d19c.zip/node_modules/dayjs/",
           "packageDependencies": [
             ["dayjs", "npm:1.10.6"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.10.7", {
+          "packageLocation": "./.yarn/cache/dayjs-npm-1.10.7-34318a8e39-a0a4ca95ab.zip/node_modules/dayjs/",
+          "packageDependencies": [
+            ["dayjs", "npm:1.10.7"]
           ],
           "linkType": "HARD",
         }]
