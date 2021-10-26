@@ -1861,7 +1861,7 @@ __metadata:
     "@types/eslint": ^7.2.0
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
-    "@types/node": ^14.6.0
+    "@types/node": ^16.0.0
     "@types/prettier": ^2.0.2
     "@types/rimraf": ^3.0.0
     "@typescript-eslint/eslint-plugin": ^4.15.1
@@ -2119,7 +2119,7 @@ __metadata:
     "@sindresorhus/tsconfig": ^2.0.0
     "@types/eslint": ^7.2.6
     "@types/jest": ^27.0.0
-    "@types/node": ^14.14.30
+    "@types/node": ^16.0.0
     "@types/rimraf": ^3.0.0
     ajv: ^6.12.6
     eslint: ^8.0.0
@@ -2482,10 +2482,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^14.14.10, @types/node@npm:^14.14.30, @types/node@npm:^14.6.0":
+"@types/node@npm:^14.14.10":
   version: 14.17.6
   resolution: "@types/node@npm:14.17.6"
   checksum: 19b11f3c49689d1ffd2b7b534a49ab7daca18ce702cce9d9b5d28d60e79de94367339217f602053d0353170a9e02f7ad2d5cd796200977dc176d6d7ba376cf09
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^16.0.0":
+  version: 16.11.6
+  resolution: "@types/node@npm:16.11.6"
+  checksum: 6e19634766ff589d3d2f361c2196b671f8f133cdadc5ad347a621c360d8994b6c4fbccfb2ad9c60c588c593831a96497c9c6b77d2b7e91be723384b94f6368e7
   languageName: node
   linkType: hard
 
