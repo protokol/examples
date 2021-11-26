@@ -2565,7 +2565,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/nft-exchange-crypto", "npm:1.0.1"],
             ["@types/faker", "npm:5.5.7"],
             ["bip39", "npm:3.0.4"],
-            ["chalk", "npm:4.1.1"],
+            ["chalk", "npm:5.0.0"],
             ["delay", "npm:5.0.0"],
             ["faker", "npm:5.5.3"],
             ["rimraf", "npm:3.0.2"],
@@ -5065,6 +5065,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chalk", "npm:4.1.2"],
             ["ansi-styles", "npm:4.3.0"],
             ["supports-color", "npm:7.2.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/chalk-npm-5.0.0-7be183234e-6eba7c518b.zip/node_modules/chalk/",
+          "packageDependencies": [
+            ["chalk", "npm:5.0.0"]
           ],
           "linkType": "HARD",
         }]
