@@ -1880,7 +1880,7 @@ __metadata:
     prettier: ^2.0.5
     rimraf: ^3.0.2
     ts-jest: ~27.0.1
-    typescript: ~4.4.2
+    typescript: ~4.9.0
   dependenciesMeta:
     "@arkecosystem/core":
       unplugged: true
@@ -1996,7 +1996,7 @@ __metadata:
     delay: ^5.0.0
     faker: ^5.5.3
     rimraf: ^3.0.2
-    typescript: ~4.4.2
+    typescript: ~4.9.0
   languageName: unknown
   linkType: soft
 
@@ -12374,6 +12374,26 @@ fsevents@~2.1.2:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 3109ae25705746996007161cdd3271857db4f40356b894e34d4cabc216bf9e251f53e0bb6e48df2450b5e3fd948dcbee716a616a4ad4cf7251292025e6163cb1
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@~4.9.0#~builtin<compat/typescript>":
+  version: 4.9.3
+  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=32657b"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: c61b948d9181e52c3b12874f61e067720dd35f3e2ef0e77e5fdc314a1d15bbfd53e66a9110d3347d471632f9a4871d338df967e264fd20715431c6463f64546d
+  languageName: node
+  linkType: hard
+
+typescript@~4.9.0:
+  version: 4.9.3
+  resolution: "typescript@npm:4.9.3"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 17b8f816050b412403e38d48eef0e893deb6be522d6dc7caf105e54a72e34daf6835c447735fd2b28b66784e72bfbf87f627abb4818a8e43d1fa8106396128dc
   languageName: node
   linkType: hard
 
