@@ -52,7 +52,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@arkecosystem/core", "virtual:809c7274f53ba856fcf8aa55adedcccbd1b6c1584f03b915769364f6742d3e1dca7042b2bbe0a885cb4515cc134af8bc2701c8d7510a4479bd9d486b48a8c0ee#npm:3.0.0"],
             ["@arkecosystem/core-cli", "npm:3.0.0"],
-            ["@sindresorhus/tsconfig", "npm:2.0.0"],
+            ["@sindresorhus/tsconfig", "npm:3.0.1"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:27.0.0"],
@@ -2481,7 +2481,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/examples-repo", "workspace:."],
             ["@arkecosystem/core", "virtual:809c7274f53ba856fcf8aa55adedcccbd1b6c1584f03b915769364f6742d3e1dca7042b2bbe0a885cb4515cc134af8bc2701c8d7510a4479bd9d486b48a8c0ee#npm:3.0.0"],
             ["@arkecosystem/core-cli", "npm:3.0.0"],
-            ["@sindresorhus/tsconfig", "npm:2.0.0"],
+            ["@sindresorhus/tsconfig", "npm:3.0.1"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:27.0.0"],
@@ -2697,7 +2697,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/sets", "workspace:packages/sets"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.31"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.63"],
-            ["@sindresorhus/tsconfig", "npm:2.0.0"],
+            ["@sindresorhus/tsconfig", "npm:3.0.1"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/jest", "npm:27.0.0"],
             ["@types/node", "npm:14.17.6"],
@@ -2804,10 +2804,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:2.0.0", {
-          "packageLocation": "./.yarn/cache/@sindresorhus-tsconfig-npm-2.0.0-61b5b9d584-fea48f9b1e.zip/node_modules/@sindresorhus/tsconfig/",
+        ["npm:3.0.1", {
+          "packageLocation": "./.yarn/cache/@sindresorhus-tsconfig-npm-3.0.1-2f58a89a40-8b1ae329b2.zip/node_modules/@sindresorhus/tsconfig/",
           "packageDependencies": [
-            ["@sindresorhus/tsconfig", "npm:2.0.0"]
+            ["@sindresorhus/tsconfig", "npm:3.0.1"]
           ],
           "linkType": "HARD",
         }]
