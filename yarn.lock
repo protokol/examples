@@ -1858,7 +1858,7 @@ __metadata:
     "@arkecosystem/core": ^3.0.0
     "@arkecosystem/core-cli": ^3.0.0
     "@sindresorhus/tsconfig": ^2.0.0
-    "@types/eslint": ^7.2.0
+    "@types/eslint": ^8.0.0
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
     "@types/node": ^14.6.0
@@ -2117,7 +2117,7 @@ __metadata:
     "@arkecosystem/crypto": ^3.0.0-next
     "@protokol/nft-base-crypto": ^1.0.0-beta
     "@sindresorhus/tsconfig": ^2.0.0
-    "@types/eslint": ^7.2.6
+    "@types/eslint": ^8.0.0
     "@types/jest": ^27.0.0
     "@types/node": ^14.14.30
     "@types/rimraf": ^3.0.0
@@ -2329,13 +2329,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:^7.2.0, @types/eslint@npm:^7.2.6":
+"@types/eslint@npm:*, @types/eslint@npm:^7.2.6":
   version: 7.28.0
   resolution: "@types/eslint@npm:7.28.0"
   dependencies:
     "@types/estree": "*"
     "@types/json-schema": "*"
   checksum: 75ac2577d2a2e35bae66f56d2d1c871d5e836b2721cf14bd3df450c9d584eba48fa3b1013fba710245bf4795f16e1df0ed315e543e3199c4815ee4782537d0ae
+  languageName: node
+  linkType: hard
+
+"@types/eslint@npm:^8.0.0":
+  version: 8.4.10
+  resolution: "@types/eslint@npm:8.4.10"
+  dependencies:
+    "@types/estree": "*"
+    "@types/json-schema": "*"
+  checksum: 21e009ed9ed9bc8920fdafc6e11ff321c4538b4cc18a56fdd59dc5184ea7bbf363c71638c9bdb59fc1254dddcdd567485136ed68b0ee4750948d4e32cb79c689
   languageName: node
   linkType: hard
 
