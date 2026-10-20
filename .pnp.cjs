@@ -2702,7 +2702,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.0.0"],
             ["@types/node", "npm:14.17.6"],
             ["@types/rimraf", "npm:3.0.1"],
-            ["ajv", "npm:6.12.6"],
+            ["ajv", "npm:8.20.0"],
             ["eslint", "npm:8.0.0"],
             ["jest", "virtual:809c7274f53ba856fcf8aa55adedcccbd1b6c1584f03b915769364f6742d3e1dca7042b2bbe0a885cb4515cc134af8bc2701c8d7510a4479bd9d486b48a8c0ee#npm:27.0.6"],
             ["jest-extended", "npm:0.11.5"],
@@ -3802,6 +3802,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fast-json-stable-stringify", "npm:2.1.0"],
             ["json-schema-traverse", "npm:0.4.1"],
             ["uri-js", "npm:4.4.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:8.20.0", {
+          "packageLocation": "./.yarn/cache/ajv-npm-8.20.0-d622223dad-4f18ca5fcc.zip/node_modules/ajv/",
+          "packageDependencies": [
+            ["ajv", "npm:8.20.0"],
+            ["fast-deep-equal", "npm:3.1.3"],
+            ["fast-uri", "npm:3.1.9"],
+            ["json-schema-traverse", "npm:1.0.0"],
+            ["require-from-string", "npm:2.0.2"]
           ],
           "linkType": "HARD",
         }],
@@ -7221,6 +7232,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/fast-stringify-npm-1.1.2-00aecad5c1-1b3d157af8.zip/node_modules/fast-stringify/",
           "packageDependencies": [
             ["fast-stringify", "npm:1.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fast-uri", [
+        ["npm:3.1.9", {
+          "packageLocation": "./.yarn/cache/fast-uri-npm-3.1.9-84586dee2e-4f882cff34.zip/node_modules/fast-uri/",
+          "packageDependencies": [
+            ["fast-uri", "npm:3.1.9"]
           ],
           "linkType": "HARD",
         }]
