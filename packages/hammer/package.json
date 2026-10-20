@@ -43,7 +43,7 @@
 		"bip39": "^3.0.4",
 		"chalk": "^4.1.1",
 		"delay": "^5.0.0",
-		"faker": "^5.5.3"
+		"@faker-js/faker": "^5.5.3"
 	},
 	"devDependencies": {
 		"@types/faker": "^5.5.1",

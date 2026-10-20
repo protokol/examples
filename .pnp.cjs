@@ -1397,6 +1397,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@faker-js/faker", [
+        ["npm:5.5.3", {
+          "packageLocation": "./.yarn/cache/@faker-js-faker-npm-5.5.3-d1b4d39808-d248a042e4.zip/node_modules/@faker-js/faker/",
+          "packageDependencies": [
+            ["@faker-js/faker", "npm:5.5.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@hapi/accept", [
         ["npm:5.0.2", {
           "packageLocation": "./.yarn/cache/@hapi-accept-npm-5.0.2-cfe21ffd1e-8088cbc245.zip/node_modules/@hapi/accept/",
@@ -2560,6 +2569,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@protokol/hammer", "workspace:packages/hammer"],
             ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@faker-js/faker", "npm:5.5.3"],
             ["@protokol/client", "npm:1.0.0"],
             ["@protokol/nft-base-crypto", "npm:1.0.1"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.1"],
@@ -2567,7 +2577,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bip39", "npm:3.0.4"],
             ["chalk", "npm:4.1.1"],
             ["delay", "npm:5.0.0"],
-            ["faker", "npm:5.5.3"],
             ["rimraf", "npm:3.0.2"],
             ["typescript", "patch:typescript@npm%3A4.4.2#~builtin<compat/typescript>::version=4.4.2&hash=32657b"]
           ],
@@ -7099,15 +7108,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/extsprintf-npm-1.4.0-2b015bcaab-184dc8a413.zip/node_modules/extsprintf/",
           "packageDependencies": [
             ["extsprintf", "npm:1.4.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["faker", [
-        ["npm:5.5.3", {
-          "packageLocation": "./.yarn/cache/faker-npm-5.5.3-541ce97798-684fd64c8d.zip/node_modules/faker/",
-          "packageDependencies": [
-            ["faker", "npm:5.5.3"]
           ],
           "linkType": "HARD",
         }]
